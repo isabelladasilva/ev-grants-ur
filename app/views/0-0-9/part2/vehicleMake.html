@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Enter the name of the vehicle's manufacturer -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Select the manufacturer and model of the electric vehicle</h1>
+
+    <div class="govuk-form-group">
+      <h1 class="govuk-label-wrapper">
+      </h1>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="sort">
+          Select the name of the vehicle's manufacturer
+        </label>
+        <select class="govuk-select" id="sort" name="sort">
+          <option value="published" selected>Audi</option>
+          <option value="updated">BD</option>
+          <option value="views">BMW</option>
+          <option value="comments">BYD</option>
+          <option value="comments">Chevrolet</option>
+          <option value="comments">Citroen</option>
+          <option value="comments">DS</option>
+          <option value="comments">Energica</option>
+          <option value="comments">Fiat</option>
+          <option value="comments">Ford</option>
+          <option value="comments">FUSO</option>
+          <option value="comments">Honda</option>
+          <option value="comments">Hyundai</option>
+          <option value="comments">Jaguar</option>
+          <option value="comments">Kia</option>
+          <option value="comments">Land Rover</option>
+          <option value="comments">LDV</option>
+          <option value="comments">LEVC</option>
+          <option value="comments">Lexus</option>
+          <option value="comments">Mahindra</option>
+          <option value="comments">MAN</option>
+          <option value="comments">Maxus</option>
+          <option value="comments">Mercedes-Benz</option>
+          <option value="comments">MG</option>
+          <option value="comments">MINI</option>
+          <option value="comments">Mitsibushi</option>
+          <option value="comments">Nissan</option>
+          <option value="comments">Peugeot</option>
+          <option value="comments">Polestar</option>
+          <option value="comments">Porsche</option>
+          <option value="comments">Range Rover</option>
+          <option value="comments">Renault</option>
+          <option value="comments">SEAT</option>
+          <option value="comments">Skoda</option>
+          <option value="comments">Smart EQ</option>
+          <option value="comments">Smith Electric</option>
+          <option value="comments">Tesla</option>
+          <option value="comments">Toyota</option>
+          <option value="comments">Vauxhall</option>
+          <option value="comments">Volkswagen</option>
+          <option value="comments">Volvo</option>
+        </select>
+      </div>  
+      
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="sort">
+          Select the name of the vehicle's model
+        </label>
+        <select class="govuk-select" id="sort" name="sort">
+          <option value="published" selected>---</option>
+          <option value="updated">A3 e-tron</option>
+          <option value="views">A3 Sportback 40 TFSI e</option>
+          <option value="comments">A6 50 TFSI e</option>
+          <option value="comments">A6 55 TFSI e</option>
+          <option value="comments">A7 50 TFSI e</option>
+          <option value="comments">A7 55 TFSI e</option>
+          <option value="comments">A8 TFSI e</option>
+          <option value="comments">e-tron</option>
+          <option value="comments">e-tron GT</option>
+          <option value="comments">e-tron Sportback</option>
+          <option value="comments">Q4 e-tron</option>
+          <option value="comments">Q5 TFSI e</option>
+          <option value="comments">Q7 e-tron</option>
+          <option value="comments">Q7 TFSI e</option>
+          <option value="comments">Q8 TFSI e</option>
+          <option value="comments">RS e-tron GT</option>
+        </select>
+      </div>  
+    </div>
+
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="checkYourAnswers2.html">
+        Continue
+      </a>
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

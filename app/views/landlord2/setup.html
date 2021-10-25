@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+0-0-1 setup
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-xl">Landlord Chargepoint Grant</span>
+    <h1 class="govuk-heading-xl">Iteration 0-0-2</h1>
+
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">Installer prototypes</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Description</th>
+          <th scope="col" class="govuk-table__header">Link</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Installer starting the process for their customer</td>
+          <td class="govuk-table__cell"><a href=installer1/dashboard>Go to prototype</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Installer completing the claims process</td>
+          <td class="govuk-table__cell"><a href=installer2/schemeHome>Go to prototype</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">Landlord/PMC dashboard and application process</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Description</th>
+          <th scope="col" class="govuk-table__header">Link</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Gov.UK guidance</td>
+          <td class="govuk-table__cell"><a href=../govuk/evgrantsGuidance>Go to prototype</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Landlord dashboard to application</td>
+          <td class="govuk-table__cell"><a href=part1/signIn>Go to prototype</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">PMC dashboard to application</td>
+          <td class="govuk-table__cell"><a href=part2/signIn>Go to prototype</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+{% endblock %}

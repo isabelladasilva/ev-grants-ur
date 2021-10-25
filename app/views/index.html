@@ -1,0 +1,214 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  EV grants prototype
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        EV chargepoint grants prototypes
+      </h1>
+
+
+      <!-- <p>
+        Below are all of the prototypes used to develop the EV grants service. If you have any queries about the contents of this prototype, please contact the team:
+        <ul class="govuk-list govuk-list--bullet">
+          <li><span class="govuk-body govuk-!-font-weight-bold">Interaction Designer:</span> Jack Mitchell, <a href="mailto:jack.mitchell@capgemini.com">jack.mitchell@capgemini.com</a></li>
+          <li><span class="govuk-body govuk-!-font-weight-bold">Service Designer:</span> Isabella DaSilva, <a href="mailto:isabella.dasilva@capgemini.com">isabella.dasilva@capgemini.com</a></li>
+          <li><span class="govuk-body govuk-!-font-weight-bold">User Researcher:</span> Zoe Kemp, <a href="mailto:zoe.kemp@capgemini.com">zoe.kemp@capgemini.com</a></li>
+          <li><span class="govuk-body govuk-!-font-weight-bold">Business Analyst:</span> Vincent Shell, <a href="mailto:zoe.kemp@capgemini.com">vincent.shell@capgemini.com</a></li>
+        </ul>
+      </p> -->
+
+
+      <!-- <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible"> -->
+
+      <!-- <h1 class="govuk-heading-m">Prototypes for research</h1>
+
+      <a class="govuk-button" href="0-0-5/installerSetup.html">Installers prototypes</a>
+
+      <a class="govuk-button" href="0-0-5/customerSetup.html">Customers prototypes</a> -->
+
+
+      <div class="govuk-tabs" data-module="govuk-tabs">
+        <h2 class="govuk-tabs__title">
+          Contents
+        </h2>
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+            <a class="govuk-tabs__tab" href="#landlord">
+              Landlord
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#evhs">
+              EVHS
+            </a>
+          </li>
+
+        </ul>
+
+
+        <div class="govuk-tabs__panel" id="landlord">
+          <h2 class="govuk-heading-l">Landlord Chargepoint Grant</h2>
+          <table class="govuk-table">
+            <caption class="govuk-table__caption govuk-table__caption--m">Prototypes</caption>
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Version</th>
+                <th scope="col" class="govuk-table__header">Description</th>
+                <th scope="col" class="govuk-table__header">Link</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Iteration 11</th>
+                <td class="govuk-table__cell">Latest version - In research</td>
+                <td class="govuk-table__cell"><a href="/iteration11/index">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Iteration 10</th>
+                <td class="govuk-table__cell">Dev version</td>
+                <td class="govuk-table__cell"><a href="/iteration10/index">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Iteration 9</th>
+                <td class="govuk-table__cell">Baselined for GDS assessment</td>
+                <td class="govuk-table__cell"><a href="/iteration9/index">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Iteration 8</th>
+                <td class="govuk-table__cell">Landlord grant simplified with only one address per application</td>
+                <td class="govuk-table__cell"><a href="/iteration8/index">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Iteration 7</th>
+                <td class="govuk-table__cell">Landlord grant baselined</td>
+                <td class="govuk-table__cell"><a href="/iteration7/index">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-6</th>
+                <td class="govuk-table__cell">Landlord grant baselined</td>
+                <td class="govuk-table__cell"><a href="/landlord-grant/iteration6/index">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-5</th>
+                <td class="govuk-table__cell">Landlord application journey</td>
+                <td class="govuk-table__cell"><a href="/landlord-grant/iteration5/index">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-4</th>
+                <td class="govuk-table__cell">Prototyping a journey where customers send claim to installers</td>
+                <td class="govuk-table__cell"><a href="/landlord4/setup">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-3</th>
+                <td class="govuk-table__cell">Iterating customer journeys and beginning installer journeys</td>
+                <td class="govuk-table__cell"><a href="/landlord2-1/setup">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-2</th>
+                <td class="govuk-table__cell">Iterating customer journeys and beginning installer journeys</td>
+                <td class="govuk-table__cell"><a href="/landlord2/setup">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-1</th>
+                <td class="govuk-table__cell">Initial user journey map</td>
+                <td class="govuk-table__cell"><a href="/landlord1/setup">View prototypes</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="evhs">
+          <h2 class="govuk-heading-l">Electric Vehicle Homecharge Scheme</h2>
+          <table class="govuk-table">
+            <caption class="govuk-table__caption govuk-table__caption--m">Prototypes</caption>
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Version</th>
+                <th scope="col" class="govuk-table__header">Description</th>
+                <th scope="col" class="govuk-table__header">Link</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-9</th>
+                <td class="govuk-table__cell">Iterating installer dashboard further</td>
+                <td class="govuk-table__cell"><a href="/0-0-9/setup">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-8</th>
+                <td class="govuk-table__cell">Iterating installer and customer journeys and adding gov.uk guidance template</td>
+                <td class="govuk-table__cell"><a href="/0-0-8/setup">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-7</th>
+                <td class="govuk-table__cell">Baselined understanding of installer and customer journeys</td>
+                <td class="govuk-table__cell"><a href="/0-0-7/setup">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-6</th>
+                <td class="govuk-table__cell">Claim journey & iterated version of installers and customer journey path</td>
+                <td class="govuk-table__cell"><a href="/0-0-6/setup">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-5</th>
+                <td class="govuk-table__cell">Prototypes for the first round of research with installers</td>
+                <td class="govuk-table__cell"><a href="/0-0-5/setup">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-4</th>
+                <td class="govuk-table__cell">Prototypes for the first round of research with installers</td>
+                <td class="govuk-table__cell"><a href="/0-0-4/setup">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-3</th>
+                <td class="govuk-table__cell">Initial play with entry into EVHS process for installer and customer</td>
+                <td class="govuk-table__cell"><a href="/0-0-3/setup">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-2</th>
+                <td class="govuk-table__cell">Dashboard views prepared for research</td>
+                <td class="govuk-table__cell"><a href="/0-0-2/setup">View prototypes</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">0-0-1</th>
+                <td class="govuk-table__cell">Initial play with dashboard and claim checker views</td>
+                <td class="govuk-table__cell"><a href="/0-0-1/setup">View prototypes</a></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

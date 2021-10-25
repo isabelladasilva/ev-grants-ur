@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Confirm the vehicle's details
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Confirm the vehicle's details</h1>
+
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Manufacturer</th>
+          <th scope="col" class="govuk-table__header">Model</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Audi</th>
+          <td class="govuk-table__cell">A3 e-tron</td>
+        </tr>
+      </tbody>
+    </table>
+    <a class="govuk-body" href="javascript:history.go(-1)">This is not the vehicle I am applying for</a>
+
+    <br>
+    <br>
+    <br>
+
+    <a class="govuk-button" href="documents.html">Continue</a>
+
+  </div>
+</div>
+
+
+{% endblock %}

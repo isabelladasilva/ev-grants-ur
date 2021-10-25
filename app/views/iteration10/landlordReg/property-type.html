@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Enter your customer's contact details -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="countries-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        What type of properties do you own?
+      </h1>
+    </legend>
+    <p class="govuk-body govuk-!-margin-top-6">OZEV grants are available for both residential and commercial properties. However, different rules and limits apply for each type. You will be able to create applications for both but will have do complete them separately.</p>
+    <div id="countries-hint" class="govuk-hint govuk-!-margin-top-6">
+      Select the property types that you own and intend to use the grant for.
+    </div>
+    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+        <label class="govuk-label govuk-checkboxes__label" for="countries">
+          Residential
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="countries-2" name="countries" type="checkbox" value="portugal">
+        <label class="govuk-label govuk-checkboxes__label" for="countries-2">
+          Commercial
+        </label>
+      </div>
+      <!-- <div class="govuk-checkboxes__divider govuk-body" style="font-weight: 400; font-size: 1rem; line-height: 1.25; color: #0b0c0c; width: 40px;margin-bottom: 10px;text-align: center;}">or</div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="countries-5" name="countries" type="checkbox" value="none" data-behaviour="exclusive">
+        <label class="govuk-label govuk-checkboxes__label" for="countries-5">
+          Both residential and commercial
+        </label>
+      </div> -->
+    </div>
+
+  </fieldset>
+</div>
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="check-answers.html">
+        Continue
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+{% endblock %}

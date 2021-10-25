@@ -1,0 +1,203 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Check your answers before sending your application
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Check your answers for 14 Royal Road, EC1R 1BC</h1>
+
+    <h2 class="govuk-heading-m">Details of first chargepoint type</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Chargepoint manufacturer, family and model
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Char.gy<br>CP01<br>CP01
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> xxx</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Amount of chargepoints installed
+        </dt>
+        <dd class="govuk-summary-list__value">
+          1
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> xxx</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Serial number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          B8J6HI7909
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> xxx</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+
+
+    <h2 class="govuk-heading-m">Details of second chargepoint type</h2>
+
+
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Chargepoint manufacturer, family and model
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Char.gy<br>CP02<br>CP02
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> xxx</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Amount of chargepoints installed
+        </dt>
+        <dd class="govuk-summary-list__value">
+          1
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> xxx</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Serial number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          J5E2HB3855
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> xxx</span>
+          </a>
+        </dd>
+      </div>
+      </dl>
+
+
+
+      <h2 class="govuk-heading-m">Evidence</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Proof of installation
+        </dt>
+        <dd class="govuk-summary-list__value">
+          image.png<br>image2.png<br>image3.png<br>image4.png
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> xxx</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+   <!-- <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Address</th>
+          <th scope="col" class="govuk-table__header">Number of sockets</th>
+          <th scope="col" class="govuk-table__header">Action</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">14 Royal Road,<br>London,<br>EC1R 1BC</th>
+          <td class="govuk-table__cell">2</td>
+          <td class="govuk-table__cell"><a href="chargepointModel.html">Review</td>
+        </tr>
+      </tbody>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">37 Scott Street,<br>London,<br>WC1N 1BC</th>
+          <td class="govuk-table__cell">7</td>
+          <td class="govuk-table__cell"><a href="#">Review</td>
+        </tr>
+      </tbody>
+    </table>-->
+
+    <h1 class="govuk-heading-m">Other details</h1>
+    <table class="govuk-table">
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Date that installations were completed</th>
+          <td class="govuk-table__cell">21 July 2021</td>
+          <td class="govuk-table__cell"><a href="#">Change</td>
+        </tr>
+      </tbody>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Total cost of installations</th>
+          <td class="govuk-table__cell">£3092.03</td>
+          <td class="govuk-table__cell"><a href="#">Change</td>
+        </tr>
+      </tbody>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Proof of customer invoice</th>
+          <td class="govuk-table__cell">invoice.jpg</td>
+          <td class="govuk-table__cell"><a href="#">Change</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="confirmation.html">
+        Submit this claim
+      </a>
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Landlord Chargepoint Grant dashboard
+{% endblock %}
+
+<style type="text/css">
+    .green {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #006c56!important;
+    border:1px solid #006c56;
+    }
+
+
+table th, table td {
+    text-transform: none;
+    font-size: 16px !important;
+}
+
+    </style>
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">Dashboard</h1>
+    <p class="govuk-body-m">Business name: Blue Tick Properties
+      <br>
+      <a class="govuk-!-margin-top-2" href="#">Manage account details</a></p>
+  </div>
+</div>
+
+<!-- <div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+<p class="govuk-body-l govuk-!-font-weight-bold">175 <span class="govuk-body">Residential chargepoint sockets remaining this year</span>
+<p class="govuk-body-l govuk-!-font-weight-bold">25 <span class="govuk-body">Commercial chargepoints remaining this year</span></p>
+</div>
+</div> -->
+
+    <a class="govuk-button govuk-!-margin-top-5" href="choose-grant">Start a new application</a>
+
+
+
+
+
+      </div>
+
+    </div>
+
+</div>
+</div>
+
+{% endblock %}

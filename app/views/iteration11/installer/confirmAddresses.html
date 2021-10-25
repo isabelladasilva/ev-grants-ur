@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Check your answers before sending your application -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Add chargepoint details</h1>
+    </div>
+
+
+
+    <div class="govuk-grid-column-full">
+
+
+      <!-- <label class="govuk-label govuk-!-font-weight-bold govuk-!-margin-top-7" for="business-name">
+          Number of change points installed
+      </label>
+      <p class="govuk-body">1 chargepoint<br>2 sockets</p>
+      <p class="govuk-body"><a href="#">Edit number of chargepoints</a></p>
+
+      <label class="govuk-label govuk-!-font-weight-bold govuk-!-margin-top-7" for="business-name">
+          Address
+      </label>
+      <p class="govuk-body">Kemp House 160 City Road<br> London, England <br> EC1V 2NX</p> -->
+
+
+    <table class="govuk-table ">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Address</th>
+          <th scope="col" class="govuk-table__header">Amount of chargepoint sockets installed</th>
+          <th scope="col" class="govuk-table__header">Action</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">14 Royal  Road, London, EC1R 1BC</th>
+          <td class="govuk-table__cell">3</td>
+          <td class="govuk-table__cell"><a href="#">Change amount of sockets</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="installation-cost.html">
+        Confirm and continue
+      </a>
+
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

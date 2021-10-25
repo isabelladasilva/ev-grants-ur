@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Provide proof of installation cost
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Provide the invoice sent to the customer</h1>
+
+    <p>You need to upload the invoice provided to your customer. You can upload more than one document as proof of invoice.</p>
+    <p>
+      Proof of cost includes an overall cost of installation shown on a customer invoice. The document needs to:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>be in JPG, PNG, GIF, BMP, XLS, DOC or PDF formats</li>
+      <li>be less that 2 megabytes in size</li>
+    </ul>
+
+
+    <div class="govuk-form-group govuk-!-margin-top-3">
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+    </div>
+
+    <br>
+
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="reviewApplication.html">
+        Continue
+      </a>
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

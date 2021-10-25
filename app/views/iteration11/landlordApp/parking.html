@@ -1,0 +1,125 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+What type of building is your property? -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+
+</nav> -->
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-l">Blue Tick Properties</span>
+
+    <h1 class="govuk-heading-xl">On what type of parking do you plan to install chargepoints?</h1>
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <!-- <h1 class="govuk-heading-xl">
+        <legend class="govuk-fieldset__legend govuk-!-font-weight-bold">
+
+        </legend>
+        </h1> -->
+        <div class="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
+              value="no">
+            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+              Garage
+            </label>
+            <!-- <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+              Hint text
+            </div> -->
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
+              value="no">
+            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+              Enclosed multi-storey parking
+            </label>
+            <!-- <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+              Hint text
+            </div> -->
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
+              value="no">
+            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+              Open sided multi-storey parking
+            </label>
+          </div>
+          <!-- <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+            Naturally ventilated
+          </div> -->
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio"
+              value="yes">
+            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+              Overground or surface parking
+            </label>
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
+              value="no">
+            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+              Underground parking
+            </label>
+            <!-- <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+              Hint text
+            </div> -->
+          </div>
+
+
+
+        </div>
+
+      </fieldset>
+    </div>
+
+
+    <div class="govuk-button-group govuk-!-margin-top-7">
+      <a class="govuk-button" data-module="govuk-button" href="declaration.html">
+        Continue
+      </a>
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

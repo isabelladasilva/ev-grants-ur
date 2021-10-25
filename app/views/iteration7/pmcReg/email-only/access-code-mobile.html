@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Enter your access code
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Enter your access code</h1>
+
+    <p class="govuk-body">We just sent a 6 digit verification code to your email.</p>
+
+    <p class="govuk-body">It may take a few minutes to arrive.</p>
+
+    <div class="govuk-form-group">
+
+      <label class="govuk-label" for="width-20">
+        Access code
+      </label>
+      <input class="govuk-input govuk-input--width-10" id="event-name" name="event-name" type="text">
+      <!-- <p class="govuk-body govuk-!-margin-top-1"><a href="">Resend code</a>
+      </p> -->
+    </div>
+
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="contact-number">
+        Continue
+      </a>
+    </div>
+
+    <p><a href="">Get help with this page</a>
+    </p>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

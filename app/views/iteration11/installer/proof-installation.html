@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Provide proof of installation of the chargepoints at this property -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <!--<span class="govuk-caption-l">14 Royal Road, EC1R 1BC</span>-->
+    <h1 class="govuk-heading-xl">Provide photo evidence of the chargepoint installated</h1>
+
+
+    <p>This information will be used for audit purposes.</p>
+
+    <p>You must upload a minimum of 2 and a maximum of 10 photos of the installed chargepoint. The photos must:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>be in JPG, PNG, GIF or BMP formats</li>
+      <li>show all of the chargepoints in private off-street parking</li>
+      <li>have maximum file size of 10MG</li>
+    </ul>
+    <div class="govuk-form-group govuk-!-margin-top-7">
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+    </div>
+
+    <details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      What do the photos need to show?
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li>guidance 1</li>
+      <li>guidance 2</li>
+      <li>guidance 3</li>
+    </ul>
+
+    <p class="govuk-body"><a href="#">Check further guidance and examples of photographs.</a></p>
+
+  </div>
+</details>
+
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="chargepoint2.html">
+        Continue
+      </a>
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,202 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Select the chargepoint manufacturer -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+  <!-- <span class="govuk-caption-l">14 Royal Road, EC1R 1BC</span> -->
+  <!--<span class="govuk-caption-xl">14 Royal Road, EC1R 1BC</span>-->
+
+    <h1 class="govuk-heading-xl">Add chargepoint models installed</h1>
+
+    <p>This information will be used for audit purposes.</p>
+
+    <!-- <div class="govuk-inset-text">
+
+    <p class="govuk-!-font-size-27 govuk-!-font-weight-bold">0 of 3 <span class="govuk-body">chargepoint sockets added</span></p>
+
+    </div> -->
+
+    <div data-module="moj-add-another">
+
+  <!-- <h2 class="govuk-heading-l moj-add-another__heading" tabindex="-1">Add a person</h2> -->
+
+  <form method="post">
+
+    <fieldset class="govuk-fieldset moj-add-another__item">
+
+      <legend class="govuk-fieldset__legend moj-add-another__title govuk-fieldset__legend--m">
+
+        Chargepoint model 1
+
+      </legend>
+
+      <div class="govuk-form-group govuk-!-margin-top-7">
+
+        <label class="govuk-label" for="sort">
+          Chargepoint manufacturer
+        </label>
+        <select class="govuk-select" id="sort" name="sort">
+          <option value="published" selected></option>
+          <option value="published">ABB Ltd</option>
+          <option value="updated">Alfen ICU B.V.</option>
+          <option value="views">Andersen</option>
+          <option value="comments">Bloova</option>
+          <option value="comments">BP Chargemaster</option>
+          <option value="comments">Bumblebee EV Limited</option>
+          <option value="comments">Charge-m8</option>
+          <option value="comments">Char.gy</option>
+          <option value="comments">Chargepoint Inc</option>
+          <option value="comments">CITA</option>
+          <option value="comments">CityEV Limited</option>
+          <option value="comments">Connected Kerb</option>
+          <option value="comments">CTEK SWEDEN AB</option>
+          <option value="comments">Delta Electronics</option>
+          <option value="comments">Easee</option>
+          <option value="comments">EC Charging</option>
+          <option value="comments">Ecotap</option>
+          <option value="comments">Elinta</option>
+          <option value="comments">Enel X</option>
+          <option value="comments">En+ Technologies</option>
+          <option value="comments">EO Charging (Juuce Ltd)</option>
+          <option value="comments">Etrel</option>
+          <option value="comments">EVBox</option>
+          <option value="comments">EV Charge Points</option>
+          <option value="comments">EV Expert s.r.o</option>
+          <option value="comments">EV Meter</option>
+          <option value="comments">Garo</option>
+          <option value="comments">Gewiss</option>
+          <option value="comments">Honda</option>
+          <option value="comments">Hypervolt Limited</option>
+          <option value="comments">iAccess Corporation Limited</option>
+          <option value="comments">ICS Intelligent Charging Systems</option>
+          <option value="comments">Indra Renewable Technologies</option>
+          <option value="comments">Indra Renewable Technologies Ltd.</option>
+          <option value="comments">innogy</option>
+          <option value="comments">Keba AG</option>
+          <option value="comments">Linkcharging Technology Company Limited</option>
+          <option value="comments">macXcharging</option>
+          <option value="comments">Mennekes</option>
+          <option value="comments">Myenergi Ltd</option>
+          <option value="comments">NewMotion</option>
+          <option value="comments">Pod Point</option>
+          <option value="comments">Rolec Services Ltd</option>
+          <option value="comments">Scame-UK</option>
+          <option value="comments">Schneider Electric</option>
+          <option value="comments">Sevadis</option>
+          <option value="comments">Shenzhen Atess Power Technology Co., Ltd</option>
+          <option value="comments">Siemens</option>
+          <option value="comments">Smappee NV</option>
+          <option value="comments">SolarEdge Technologies</option>
+          <option value="comments">Swarco</option>
+          <option value="comments">Swarco UK Ltd</option>
+          <option value="comments">ubitricity</option>
+          <option value="comments">Vestel</option>
+          <option value="comments">Viridian EV</option>
+          <option value="comments">Volkswagen Group Charging GmbH</option>
+          <option value="comments">Voltshare Ltd</option>
+          <option value="comments">wallbe GmbH</option>
+          <option value="comments">Wallbox Chargers</option>
+          <option value="comments">Webasto</option>
+          <option value="comments">Zaptec Chargers AS</option>
+          <option value="comments">ZHEJIANG MOSS HUADE TECHNOLOGY CO .,LTD</option>
+        </select>
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label " for="sort">
+          Chargepoint model
+        </label>
+        <select class="govuk-select" style="width: 200px" id="sort" name="sort">
+          <option value="published" selected></option>
+          <option value="published">CP01</option>
+          <option value="updated">CP02</option>
+          <option value="views">CP03</option>
+        </select>
+      </div>
+
+      <div class="govuk-form-group govuk-!-margin-top-4">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-label">
+        Number of sockets
+      </legend>
+      <div class="govuk-radios govuk-radios--inline">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+          <label class="govuk-label govuk-radios__label" for="changed-name">
+            1 socket
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+          <label class="govuk-label govuk-radios__label" for="changed-name-2">
+            2 sockets
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+          <label class="govuk-label govuk-radios__label" for="changed-name-2">
+            3 sockets
+          </label>
+        </div>
+      </div>
+      </div>
+
+    </fieldset>
+
+    <div class="moj-button-action">
+
+      <button class="govuk-button govuk-button--secondary moj-add-another__add-button govuk-!-margin-bottom-4" data-module="govuk-button">
+        Add another chargepoint model
+      </button>
+
+    </div>
+
+
+<a class="govuk-button" data-module="govuk-button" href="chargepoint2">Continue</a>
+<!-- <p><a href="">Save and continue later</a></p> -->
+
+
+  </form>
+
+</div>
+
+
+
+
+
+
+
+  </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

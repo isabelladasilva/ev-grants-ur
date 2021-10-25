@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+0-0-5 setup
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="../index">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Prototypes for installers</h1>
+
+    <p>Use these prototypes to understand how installers expect to engage with their customer's eligibility - whether it's similar to WCS (customer gives installer a voucher) or if they expect to email/text their customer a link to complete the journey.</p>
+
+    <br>
+    <br>
+    
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">WCS (voucher) inspired journeys</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Description</th>
+          <th scope="col" class="govuk-table__header">Link</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">A view that takes users directly to a view of their applications</th>
+          <td class="govuk-table__cell"><a href=dashboard1>Go to prototype</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">A view that links to application statuses to filter by</th>
+          <td class="govuk-table__cell"><a href=dashboard2>Go to prototype</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+    <br>
+
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">Email/text sent to the customer</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Description</th>
+          <th scope="col" class="govuk-table__header">Link</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">A view that takes users directly to a view of their applications</th>
+          <td class="govuk-table__cell"><a href=dashboard3>Go to prototype</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">A view that links to application dates to filter by</th>
+          <td class="govuk-table__cell"><a href=dashboard4>Go to prototype</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </div>
+</div>
+
+{% endblock %}

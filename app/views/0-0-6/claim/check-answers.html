@@ -1,0 +1,155 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+EHVS Home
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Check your answers before sending your claim</h1>
+
+    <h2 class="govuk-heading-m">Installation safety and compliance</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Question
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Answer
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="driversLicence.html">
+                Change<span class="govuk-visually-hidden"> xxx</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Question
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Answer
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="driversLicence.html">
+                Change<span class="govuk-visually-hidden"> xxx</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Question
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Answer
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="driversLicence.html">
+                Change<span class="govuk-visually-hidden"> xxx</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+
+
+        <h2 class="govuk-heading-m">Installation details</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Question
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Answer
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="driversLicence.html">
+                  Change<span class="govuk-visually-hidden"> xxx</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Question
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Answer
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="driversLicence.html">
+                  Change<span class="govuk-visually-hidden"> xxx</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Question
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Answer
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="driversLicence.html">
+                  Change<span class="govuk-visually-hidden"> xxx</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+
+        <h1 class="govuk-heading-m">Declaration</h1>
+
+        <p>By submitting this claim, you confirm that:</p>
+
+
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>all details are correct to the best of your knowledge</li>
+          <li>you have followed safety and compliance regulations</li>
+          <li>you have checked your customer documents</li>
+        </ul>
+
+        <div class="govuk-warning-text">
+    		  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+    		  <strong class="govuk-warning-text__text">
+    		    <span class="govuk-warning-text__assistive">Warning</span>
+    		    <b>It is an offence to make a false declaration to obtain a grant and you could be fined or prosecuted.</b>
+    		  </strong>
+    		</div>
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="confirmation-claim">
+        Confirm and submit claim
+      </a>
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

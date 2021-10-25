@@ -1,0 +1,162 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Residential Chargepoint Grant
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="dashboard">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Residential Chargepoint Grant</a>
+    </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Residential Chargepoint Grant</h1>
+</div>
+</div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-postcode">
+        Search:
+      </label>
+      <input class="govuk-input" id="address-postcode" name="address-postcode" type="text">
+    </div>
+    <a class="govuk-button" href="#">Search for application</a>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m">Electric City Installer's applications</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Reference number</th>
+                <th scope="col" class="govuk-table__header">Customer name</th>
+                <th scope="col" class="govuk-table__header">Status</th>
+                <th scope="col" class="govuk-table__header">Action</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">#657609</th>
+                <td class="govuk-table__cell">Joe Bloggs</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Accepted for payment</strong></td>
+                <td class="govuk-table__cell"><a href="#">View application</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">#058839</th>
+                <td class="govuk-table__cell">Jane Bloggs</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Accepted for payment</strong></td>
+                <td class="govuk-table__cell"><a href="#">View application</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">#647722</th>
+                <td class="govuk-table__cell">Harry Bloggs</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Accepted for payment</strong></td>
+                <td class="govuk-table__cell"><a href="#">View application</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">#050833</th>
+                <td class="govuk-table__cell">Emma Bloggs</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Accepted for payment</strong></td>
+                <td class="govuk-table__cell"><a href="#">View application</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">#759033</th>
+                <td class="govuk-table__cell">Liam Bloggs</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">Rejected</strong></td>
+                <td class="govuk-table__cell"><a href="#">View application</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">#537982</th>
+                <td class="govuk-table__cell">Kim Bloggs</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Accepted for payment</strong></td>
+                <td class="govuk-table__cell"><a href="#">Submit claim</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">#029992</th>
+                <td class="govuk-table__cell">Reginald Bloggs</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">Rejected</strong></td>
+                <td class="govuk-table__cell"><a href="#">View application</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">#567234</th>
+                <td class="govuk-table__cell">Lauren Bloggs</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Accepted for payment</strong></td>
+                <td class="govuk-table__cell"><a href="#">Submit claim</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">#987345</th>
+                <td class="govuk-table__cell">William Bloggs</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Accepted for payment</strong></td>
+                <td class="govuk-table__cell"><a href="#">View application</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">#335321</th>
+                <td class="govuk-table__cell">Eilidh Bloggs</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Accepted for payment</strong></td>
+                <td class="govuk-table__cell"><a href="#">View application</a></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <nav class="moj-pagination" id="pagination-label">
+
+            <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+            <ul class="moj-pagination__list">
+              <li class="moj-pagination__item  moj-pagination__item--prev">
+                <a class="moj-pagination__link" href="">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+              </li>
+
+              <li class="moj-pagination__item moj-pagination__item--Accepted for payment">1</li>
+
+              <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">2</a></li>
+
+              <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">3</a></li>
+
+              <li class="moj-pagination__item  moj-pagination__item--next">
+                <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+              </li>
+            </ul>
+            <p class="moj-pagination__results">Showing <b>1</b> to <b>10</b> of <b>48</b> results</p>
+          </nav>
+
+    </div>
+  </div>
+
+  {% endblock %}

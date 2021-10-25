@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+EHVS Home
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="/0-0-3/entry2">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">You must read the following before starting your application</h1>
+
+    <p>By clicking continue, I confirm that:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>I agree to be contacted by OZEV or its agents for audit purposes, should my installation be chosen for audit.</li>
+      <li>I understand the information provided and any supporting evidence will be used to assess my claim for the Electric Vehicle Homecharge grant.</li>
+      <li>I confirm the information I have provided is correct to the best of my knowledge.</li>
+    </ul>
+
+    <br>
+
+        <div class="govuk-button-group">
+          <a class="govuk-button" data-module="govuk-button" href="residentialAddress.html">
+            Continue
+          </a>
+        </div>
+
+  </div>
+</div>
+
+
+{% endblock %}

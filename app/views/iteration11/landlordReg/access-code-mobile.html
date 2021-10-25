@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Enter your mobile access code
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Enter your mobile access code</h1>
+
+    <p class="govuk-body">We have sent an SMS message to <b>07732 780434</b> with a 6 digit verification code.</p>
+
+    <p class="govuk-body">It may take a few minutes to arrive.</p>
+
+    <div class="govuk-form-group">
+
+      <label class="govuk-label" for="width-20">
+        Access code
+      </label>
+      <input class="govuk-input govuk-input--width-10" id="event-name" name="event-name" type="text">
+      <p class="govuk-body govuk-!-margin-top-2"><a href="">Resend code</a></p>
+    </div>
+
+
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="phone-verified">
+        Continue
+      </a>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Select the model of the vehicle
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Select the family and model of the chargepoint</h1>
+
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">Showing results for 'char.gy'</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Manufacturer</th>
+          <th scope="col" class="govuk-table__header">Family</th>
+          <th scope="col" class="govuk-table__header">Model</th>
+          <th scope="col" class="govuk-table__header">Action</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Char.gy</th>
+          <td class="govuk-table__cell">CP01</td>
+          <td class="govuk-table__cell">CP01</td>
+          <td class="govuk-table__cell"><a href="confirmChargepoint2.html">Select model</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Char.gy</th>
+          <td class="govuk-table__cell">CP02</td>
+          <td class="govuk-table__cell">CP02</td>
+          <td class="govuk-table__cell"><a href="#">Select model</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Char.gy</th>
+          <td class="govuk-table__cell">CP03</td>
+          <td class="govuk-table__cell">CP03</td>
+          <td class="govuk-table__cell"><a href="#">Select model</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Confirm your customer</h1>
+
+    <p>We confirm this customer has an Electric Vehicles Grants account or a property management company representing them.</p>
+    <p>Once you confirm these details, we will send them an application form to complete.</p>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Company number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          12050845
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="customerEmail">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Customer name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Blue Tick Properties
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="customerEmail">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+    <a class="govuk-button" href="customerSent">Send application to customer</a>
+
+  </div>
+</div>
+
+
+{% endblock %}

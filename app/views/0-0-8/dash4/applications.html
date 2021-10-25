@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Applications
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl" style="margin-bottom:10px">Residential Chargepoint Grant applications</h1>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">6 applications need action</h2>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="#">Ready for installation</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Applications to be resubmitted</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">8 applications are pending</h2>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="#">Applications sent to customer</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Applications Under review by OZEV</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">48 completed applications</h2>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="#">Applications approved for payment</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Applications rejected</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="govuk-button-group">
+  <a class="govuk-button" data-module="govuk-button" href="customerEmail.html">
+    Start a customer's application
+  </a>
+</div>
+
+
+</div>
+</div>
+
+{% endblock %}

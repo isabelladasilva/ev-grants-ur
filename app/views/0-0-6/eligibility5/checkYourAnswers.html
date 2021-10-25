@@ -1,0 +1,215 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+EHVS Home
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Check your answers before sending your application</h1>
+
+    <h2 class="govuk-heading-m">About you</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Your driving licence name and number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              J Smith
+              <br>
+              JSMITH123456JS1XS
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="driversLicence.html">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+
+
+        <h2 class="govuk-heading-m">About your property</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Property address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              5 Some Road<br>Some Town<br>AB1 2BC
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="driversLicence.html">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Your ownership of property
+            </dt>
+            <dd class="govuk-summary-list__value">
+              I rent the property
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="customerPhone.html">
+                Change<span class="govuk-visually-hidden"> licence type</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Your freeholder's email address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              bstevenson@gmail.com
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="customerEmail.html">
+                Change<span class="govuk-visually-hidden"> home address</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Your freeholder's contact number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              07575152535
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="customerEmail.html">
+                Change<span class="govuk-visually-hidden"> home address</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <h2 class="govuk-heading-m">About your vehicle</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Vehicle registration number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              MT17 RWR
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="driversLicence.html">
+                Change<span class="govuk-visually-hidden"> vehicle registration number</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Vehicle manufacturer
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Audi
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="driversLicence.html">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Vehicle model
+            </dt>
+            <dd class="govuk-summary-list__value">
+              A3 e-tron
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="customerPhone.html">
+                Change<span class="govuk-visually-hidden"> licence type</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Ownership of vehicle
+            </dt>
+            <dd class="govuk-summary-list__value">
+              I am the nominated user of an employee vehicle
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="customerEmail.html">
+                Change<span class="govuk-visually-hidden"> home address</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <h2 class="govuk-heading-m">Application contact details</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Telephone number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              07639843766
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="driversLicence.html">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Email address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              jsmith@gmail.com
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="customerPhone.html">
+                Change<span class="govuk-visually-hidden"> licence type</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <!-- <h1 class="govuk-heading-m">Declaration</h1>
+
+        <p>By submitting my application, I am confirming that my details are correct to the best of my knowledge.</p> -->
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="declaration2">
+        Continue
+      </a>
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

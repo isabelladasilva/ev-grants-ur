@@ -1,0 +1,186 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Check your answers before sending your application
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Check your answers</h1>
+
+    <h1 class="govuk-heading-m">Installation details</h1>
+    <table class="govuk-table">
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Address</th>
+          <td class="govuk-table__cell">14 Royal Road,<br>London,<br>EC1R 1XS</td>
+          <td class="govuk-table__cell"><a href="#"></a></td>
+        </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Date installations were completed</th>
+            <td class="govuk-table__cell">21 July 2021</td>
+            <td class="govuk-table__cell"><a href="#">Change</td>
+          </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Responsible for installation</th>
+          <td class="govuk-table__cell">Subcontractor<br>Name: Angus Young Installations<br>Number: 49320553</td>
+          <td class="govuk-table__cell"><a href="#">Change</td>
+        </tr>
+
+        <!-- <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Number of chargepoint sockets</th>
+          <td class="govuk-table__cell">2</td>
+          <td class="govuk-table__cell"><a href="#">Change</a></td>
+        </tr> -->
+
+
+
+      </tbody>
+    </table>
+
+    <br><br>
+
+
+    <h2 class="govuk-heading-m ">Financial details</h2>
+
+    <table class="govuk-table">
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Total cost of installations</th>
+          <td class="govuk-table__cell">£3092.03</td>
+          <td class="govuk-table__cell"><a href="#">Change</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Proof of customer invoice</th>
+          <td class="govuk-table__cell">invoice.jpg</td>
+          <td class="govuk-table__cell"><a href="#">Change</td>
+        </tr>
+      </tbody>
+
+
+    </table>
+
+    <br>
+    <br>
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-7">Chargepoints details</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Chargepoint 1
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <b>Manufacturer:</b> Char.gy <br>
+          <b>Model:</b> CP01<br>
+          <b>Chargpoint sockets:</b> 1<br>
+          <b>Serial number:</b> ED1234<br>
+          <b>Photo</b> <br>image1.jpg<br>image2.jpg
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> xxx</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Chargepoint 2
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <b>Manufacturer:</b> Char.gy <br>
+          <b>Model:</b> CP02<br>
+          <b>Chargpoint sockets:</b> 1<br>
+          <b>Serial number:</b> ED1243535989G4<br>
+          <b>Photo</b> <br>image.jpg<br>image4.jpg
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> xxx</span>
+          </a>
+        </dd>
+      </div>
+      <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Chargepoint 3
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <b>Manufacturer:</b> Char.gy <br>
+          <b>Model:</b> CP02<br>
+          <b>Chargpoint sockets:</b> 1<br>
+          <b>Serial number:</b> ED1243535989G4<br>
+          <b>Photo</b> <br>image.jpg<br>image4.jpg
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> xxx</span>
+          </a>
+        </dd>
+      </div> -->
+    </dl>
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-7">Grant amount</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Number of chagepoint sockets installer
+        </dt>
+        <dd class="govuk-summary-list__value">
+          2
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> xxx</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Total grant amount to receive
+        </dt>
+        <dd class="govuk-summary-list__value">
+          £750
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> xxx</span>
+          </a>
+        </dd>
+      </div>
+      </dl>
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="confirmation.html">
+        Submit this claim
+      </a>
+      <p><a href="">Save and continue later</a></p>
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

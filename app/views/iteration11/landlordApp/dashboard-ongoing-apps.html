@@ -1,0 +1,186 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Landlord Chargepoint Grant dashboard
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag" style="font-size: 19px !important">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text" style="font-size: 19px !important">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">Dashboard</h1>
+    <p class="govuk-body-m">Business name: Blue Tick Properties
+      <br>
+      <a class="govuk-!-margin-top-2" href="#">Manage account details</a></p>
+  </div>
+</div>
+
+<br>
+
+<div class="govuk-grid-row">
+
+
+
+</div>
+
+
+
+    <a class="govuk-button" href="property-type.html">Start a new application</a>
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third govuk-!-margin-top-2">
+        <label class=" govuk-heading-s" for="filter-country-applications-by-status">
+            Filter by
+          </label>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="address-postcode" style="font-size: 19px !important">
+            Reference number
+          </label>
+          <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+        </div>
+        <!-- <div class="govuk-form-group">
+          <label class="govuk-label" for="address-postcode">
+            Name
+          </label>
+          <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+        </div> -->
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="address-postcode" style="font-size: 19px !important">
+            Postcode
+          </label>
+          <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+        </div>
+        <p>Status</p>
+        <fieldset class="govuk-fieldset">
+          <div class="govuk-checkboxes govuk-checkboxes--small">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+              <label class="govuk-label govuk-checkboxes__label" for="organisation" style="font-size: 19px !important">
+                Sent to installer (1)
+              </label>
+            </div>
+            <!-- <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+              <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                Completed by installer (2)
+              </label>
+            </div> -->
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+              <label class="govuk-label govuk-checkboxes__label" for="organisation-2" style="font-size: 19px !important">
+                Confirm intallation (1)
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+              <label class="govuk-label govuk-checkboxes__label" for="organisation-2" style="font-size: 19px !important">
+                Claim completed (1)
+              </label>
+            </div>
+          </div>
+
+
+        </fieldset>
+
+        <br>
+
+      <div class="govuk-button-group">
+        <a class="govuk-button" href="#" style="font-size: 19px !important">Apply filter</a>
+        <a class="govuk-link" href="#" style="font-size: 19px !important">Clear filter</a>
+      </div>
+
+
+      </div>
+
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-2">
+          <h2 class="govuk-heading-s">List of grant applications and claims </h2>
+            <table class="govuk-table" style="font-size: 19px !important">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Reference number</th>
+                  <th scope="col" class="govuk-table__header">Postcode</th>
+                  <th scope="col" class="govuk-table__header">Status</th>
+                  <th scope="col" class="govuk-table__header">Action</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">1221</th>
+                  <td class="govuk-table__cell">PH1 1XX</td>
+                  <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red" style="font-size: 16px !important">Confirm installation</strong></td>
+                  <td class="govuk-table__cell"><a href="confirm-installation">Review details by 11 Nov 2021</a></td>
+                </tr>
+                <!-- <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">#098521</th>
+                  <td class="govuk-table__cell">L1 1XX</td>
+                  <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">Confirm installation</strong></td>
+                  <td class="govuk-table__cell"><a href="#">Review application</a></td>
+                </tr> -->
+                <!-- <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">#209048</th>
+                  <td class="govuk-table__cell">DD1 1XX</td>
+                  <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Completed by installer</strong></td>
+                  <td class="govuk-table__cell"><a href="installerCompleted.html">View application</a></td>
+                </tr> -->
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">10042</th>
+                  <td class="govuk-table__cell">SY1 1XX</td>
+                  <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow" style="font-size: 16px !important">Sent to installer</strong></td>
+                  <td class="govuk-table__cell"><a href="sent-to-installer">View application</a></td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">390</th>
+                  <td class="govuk-table__cell">ZE1 1XX</td>
+                  <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green" style="font-size: 16px !important">Claim completed</strong></td>
+                  <td class="govuk-table__cell"><a href="#">View installer claim</a></td>
+                </tr>
+              </tbody>
+            </table>
+
+
+      </div>
+    </div>
+
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Applications
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl" style="margin-bottom:10px">Residential Chargepoint Grant applications</h1>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <h2 class="govuk-heading-m">Ongoing applications</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>1 eligibility check sent to customer</li>
+      <li>4 eligibility checks being reviewed by OZEV</li>
+      <li>6 claims being reviewed by OZEV</li>
+      <li>3 installations ready to be claimed for</li>
+    </ul>
+    <p><a href="schemeHome.html">View current applications</a></p>
+  </div>
+
+  <div class="govuk-grid-column-one-half">
+    <h2 class="govuk-heading-m">Completed applications</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>17 claims accepted for payment by OZEV</li>
+      <li>1 eligibility checks rejected by OZEV</li>
+      <li>1 claim rejected by OZEV</li>
+    </ul>
+    <p><a href="schemeHome2.html">View completed applications</a></p>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="govuk-button-group">
+  <a class="govuk-button" data-module="govuk-button" href="customerEmail.html">
+    Start a new application
+  </a>
+</div>
+
+</div>
+</div>
+
+{% endblock %}

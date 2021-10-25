@@ -1,0 +1,212 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Check your answers before sending your application -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Check your answers</h1>
+
+
+          <h2 class="govuk-heading-m">Account details</h2>
+
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Registered email
+              </dt>
+              <dd class="govuk-summary-list__value">
+                john.doe@pmc.co.uk
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="account-type">
+                  Change<span class="govuk-visually-hidden"> previous application number</span>
+                </a>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Type of account
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Landlord
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="account-type">
+                  Change<span class="govuk-visually-hidden"> previous application number</span>
+                </a>
+              </dd>
+            </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              John Doe
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="contact">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Role within the business
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Property owner
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="contact">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Contact number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              +44 07732 780434
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="contact">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div>
+      </dl>
+
+<h2 class="govuk-heading-m">Business details</h2>
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+              Public authority
+            </dt>
+            <dd class="govuk-summary-list__value">
+              No
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Linked enterprise
+            </dt>
+            <dd class="govuk-summary-list__value">
+              No
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Companies House number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              12050845
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Business name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Blue Tick Properties
+            </dd>
+            <dd class="govuk-summary-list__actions">
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Business address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Kemp House,<br> 160 City Road
+              <br>London, England
+              <br>WS1V 2NX
+            </dd>
+            <dd class="govuk-summary-list__actions">
+            </dd>
+          </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Type of properties owned
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Residential<br>
+                Commercial
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> previous application number</span>
+                </a>
+              </dd>
+            </div>
+        </dl>
+
+        <h1 class="govuk-heading-m">Declaration</h1>
+
+    <p>By continuing, you confirm that you:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>will only use the grant to install electric vehicle chargepoints on properties with private off-street parking</li>
+      <li>will provide the correct information to the best of your knowledge</li>
+      <li>understand the information provided and any supporting evidence will be used to assess your application when you apply for the grant</li>
+      <li>agree to be contacted by the Office for Zero Emission Vehicles (OZEV) or its agents for audit purposes, should your installation be chosen for audit</li>
+    </ul>
+    <br>
+    <br>
+        </div>
+        </div>
+
+
+        <div class="govuk-button-group">
+          <a class="govuk-button" data-module="govuk-button" href="confirmation-account.html">
+            Confirm and continue
+          </a>
+        </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Register your email
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Register your email</h1>
+
+    <p class="govuk-body">This is the email address that you will use to access your account.</p><p>After confirming your address, you will receive a link to verify your email and continue the registration process.
+    </p>
+    <!-- <div class="govuk-form-group govuk-!-margin-top-7">
+      <label class="govuk-label" for="customer-email">
+        Full name
+      </label>
+      <input class="govuk-input govuk-!-width-full" id="customer-email" name="customer-email" type="text"></div>
+
+      <div class="govuk-form-group govuk-!-margin-top-7">
+        <label class="govuk-label" for="customer-email">
+          Role within the business
+        </label>
+        <div id="hint-text" class="govuk-hint">
+          For example, Property Owner or Managing Director.
+        </div>
+        <input class="govuk-input govuk-!-width-full" id="customer-email" name="customer-email" type="text"></div> -->
+
+    <div class="govuk-form-group govuk-!-margin-top-7">
+      <label class="govuk-label" for="customer-email">
+        Enter your email address
+      </label>
+      <input class="govuk-input govuk-!-width-two-thirds" id="customer-email" name="customer-email" type="text"></div>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="customer-email">
+        Repeat your email address
+      </label>
+      <input class="govuk-input govuk-!-width-two-thirds" id="customer-email" name="customer-email" type="text"></div>
+
+      <!-- <div class="govuk-form-group">
+        <label class="govuk-label" for="customer-email">
+          Create a password
+        </label>
+        <div id="hint-text" class="govuk-hint">
+          Your password must be 8 characters or longer and include a letter and a number or symbol.
+        </div>
+        <input class="govuk-input govuk-!-width-two-thirds" id="customer-email" name="customer-email" type="text"></div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="customer-email">
+            Repeat your password
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="customer-email" name="customer-email" type="text"></div> -->
+
+        <div class="govuk-button-group">
+          <a class="govuk-button" data-module="govuk-button" href="check-email.html">
+            Continue
+          </a>
+        </div>
+
+  </div>
+</div>
+
+
+{% endblock %}

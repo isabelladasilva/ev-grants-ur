@@ -1,0 +1,135 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+EHVS Home
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="/0-0-1/dashboard1">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Electric Vehicles Homecharge Scheme</h1>
+
+    <h2 class="govuk-heading-m">Previous claim details</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Customer Name</th>
+              <th scope="col" class="govuk-table__header">Address</th>
+              <th scope="col" class="govuk-table__header">Action</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Fiona Apple</td>
+              <td class="govuk-table__cell">3 Abbey Road, NW8 9AY</td>
+              <td class="govuk-table__cell"><a href="#">View claim</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Tyler Okonma</td>
+              <td class="govuk-table__cell">12 Flower Lane, EB3 ZBH</td>
+              <td class="govuk-table__cell"><a href="#">View claim</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Chris Groves</td>
+              <td class="govuk-table__cell">77 Fox Road, BH19 1LB</td>
+              <td class="govuk-table__cell"><a href="#">View claim</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Joni Mitchell</td>
+              <td class="govuk-table__cell">17 Scott Street, PH2 8JR</td>
+              <td class="govuk-table__cell"><a href="#">View claim</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">George Invierno</td>
+              <td class="govuk-table__cell">40 Morris Street, TW3 2BT</td>
+              <td class="govuk-table__cell"><a href="#">View claim</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Kim Gordon</td>
+              <td class="govuk-table__cell">4a Porter Road, B12 1QR</td>
+              <td class="govuk-table__cell"><a href="#">View claim</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Travis Parsons</td>
+              <td class="govuk-table__cell">9 Morningside Road, EH12 4NH</td>
+              <td class="govuk-table__cell"><a href="#">View claim</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Lisa Jackson</td>
+              <td class="govuk-table__cell">5 River Road, L3 5BH</td>
+              <td class="govuk-table__cell"><a href="#">View claim</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Lauryn Hill</td>
+              <td class="govuk-table__cell">93 Victoria Lane, KE7 3LO</td>
+              <td class="govuk-table__cell"><a href="#">View claim</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Reginald Morrison</td>
+              <td class="govuk-table__cell">4 Parkhead Road, SW8 4AA</td>
+              <td class="govuk-table__cell"><a href="#">View claim</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <nav class="moj-pagination" id="pagination-label">
+
+          <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+        
+          <ul class="moj-pagination__list">
+            <li class="moj-pagination__item  moj-pagination__item--prev">
+              <a class="moj-pagination__link" href="">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+            </li>
+        
+            <li class="moj-pagination__item moj-pagination__item--active">1</li>
+        
+            <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">2</a></li>
+        
+            <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">3</a></li>
+        
+            <li class="moj-pagination__item  moj-pagination__item--next">
+              <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+            </li>
+          </ul>
+          <p class="moj-pagination__results">Showing <b>1</b> to <b>10</b> of <b>30</b> results</p>
+        </nav>
+
+        <br>
+        <br>
+
+        <div class="govuk-button-group">
+          <button class="govuk-button" data-module="govuk-button">
+            Create a new claim
+          </button>
+        
+          <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+            Check a customer's eligibility
+          </button>
+        </div>
+
+  </div>
+</div>
+
+
+{% endblock %}

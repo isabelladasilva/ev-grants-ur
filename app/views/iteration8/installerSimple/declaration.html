@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+You must read the following before proceeding with your application
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">You must read the following before proceeding with your claim</h1>
+
+    <!-- <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        It is an offence to make a false declaration to obtain a grant and you could be fined or prosecuted.
+      </strong>
+    </div> -->
+
+    <p>By continuing, you confirm that you:</p>
+
+    <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+      <li>installed the chargepoints in a private off-street car parking</li>
+      <li>will provide the correct information to the best of your knowledge</li>
+      <li>have conducted a survey prior to installation</li>
+      <li>completed the BS7671 Electrical Installation Certificate</li>
+      <li>notified the local Distribution Network Operator (DNO) of this installation</li>
+
+    </ul>
+
+    <!-- <p>You confirm that you installed the chargepoints in private off-street car parking.</p> -->
+
+        <div class="govuk-button-group govuk-!-margin-top-7">
+          <a class="govuk-button" data-module="govuk-button" href="subcontractor.html">
+            Agree and continue
+          </a>
+        </div>
+
+  </div>
+</div>
+
+
+{% endblock %}

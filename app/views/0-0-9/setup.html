@@ -1,0 +1,118 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+0-0-9 setup
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-xl">Electric Vehicle Homecharge Scheme</span>
+    <h1 class="govuk-heading-xl">Iteration 0-0-9</h1>
+
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">Application process</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Who completes?</th>
+          <th scope="col" class="govuk-table__header">Description</th>
+          <th scope="col" class="govuk-table__header">Link</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Installer</th>
+          <td class="govuk-table__cell">Initiating the process by sending the customer an email with the eligibility check inside</td>
+          <td class="govuk-table__cell"><a href=part1/dashboard>Go to prototype</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Customer</th>
+          <td class="govuk-table__cell">Continue the application from the email that the installer sent</td>
+          <td class="govuk-table__cell"><a href=part2/email>Go to prototype</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Installer</th>
+          <td class="govuk-table__cell">Complete the final claim aspect of the application</td>
+          <td class="govuk-table__cell"><a href=part3/schemeHome>Go to prototype</a></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <br>
+<!--
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">Dashboard options</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Number</th>
+          <th scope="col" class="govuk-table__header">Description</th>
+          <th scope="col" class="govuk-table__header">Link</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Option 1</th>
+          <td class="govuk-table__cell">From homepage, to new or current applications</td>
+          <td class="govuk-table__cell"><a href="dash1/dashboard">Go to prototype</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Option 2</th>
+          <td class="govuk-table__cell">Sorting by actions (action, ongoing, completed)</td>
+          <td class="govuk-table__cell"><a href="dash2/dashboard">Go to prototype</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Option 3</th>
+          <td class="govuk-table__cell">Eligibility + claims dashboard</td>
+          <td class="govuk-table__cell"><a href="dash3/dashboard">Go to prototype</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br> -->
+
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">Other prototypes</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">What is it?</th>
+          <th scope="col" class="govuk-table__header">Description</th>
+          <th scope="col" class="govuk-table__header">Link</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Gov.uk guidance</th>
+          <td class="govuk-table__cell">Initiating the process by sending the customer an email with the eligibility check inside</td>
+          <td class="govuk-table__cell"><a href="govukGuidance">Go to prototype</a></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+  </div>
+</div>
+
+{% endblock %}

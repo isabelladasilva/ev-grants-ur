@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Check your answers before sending your application
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-l">Blue Tick Properties</span>
+
+    <h1 class="govuk-heading-xl">Confirm this is your installer</h1>
+
+    <p><span class="govuk-body govuk-!-font-weight-bold">Installer name:</span> Electric City Installers<br><span class="govuk-body govuk-!-font-weight-bold">Installer number:</span> 739224<br><span class="govuk-body govuk-!-font-weight-bold">Address:</span> 12 Long Lane, SE1 1BC</p>
+
+    <br>
+    <div class="govuk-button-group">
+      <a class="govuk-button" href="address.html">
+        Confirm installer
+      </a>
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

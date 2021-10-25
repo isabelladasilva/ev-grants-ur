@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Check your answers before sending your claim
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Verify the chargepoints installed as part of the application</h1>
+
+    <p>Changing the chargepoints that you installed as part of this application will not impact your eligibility for the Landlord Chargepoint Grant.</p>
+
+    <h2 class="govuk-heading-m">Chargepoints</h2>
+
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Manufacturer</th>
+          <th scope="col" class="govuk-table__header">Family</th>
+          <th scope="col" class="govuk-table__header">Model</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Char.gy</th>
+          <td class="govuk-table__cell">CP01</td>
+          <td class="govuk-table__cell">CP01</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Char.gy</th>
+          <td class="govuk-table__cell">CP02</td>
+          <td class="govuk-table__cell">CP02</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="proof-installation.html">
+        Confirm chargepoints
+      </a>
+      <a class="govuk-button govuk-button--secondary" data-module="govuk-button govuk-button--secondary" href="confirmation-claim">
+        Add new chargepoint details
+      </a>
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

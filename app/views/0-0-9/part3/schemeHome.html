@@ -1,0 +1,209 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+EHVS Home
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../dashboard3">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Electric Vehicle Homecharge Scheme applications</a>
+    </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Electric Vehicle Homecharge Scheme applications</h1>
+</div>
+</div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <p>Filter by:</p>
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-postcode">
+        Reference
+      </label>
+      <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+    </div>
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-postcode">
+        Name
+      </label>
+      <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+    </div>
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-postcode">
+        Postcode
+      </label>
+      <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+    </div>
+    <p>Status</p>
+    <fieldset class="govuk-fieldset">
+      <div class="govuk-checkboxes govuk-checkboxes--small">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+          <label class="govuk-label govuk-checkboxes__label" for="organisation">
+            Sent to customer (4)
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+          <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+            Ready to claim (12)
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+          <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+            Submitted for review (11)
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+          <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+            Accepted by OZEV (7)
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+          <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+            Rejected by OZEV (1)
+          </label>
+        </div>
+      </div>
+
+    </fieldset>
+<br>
+    <p>
+    <a href="#">Apply filter</a>
+  </p>
+  </div>
+
+  <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m">Electric City Installer's applications</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Reference number</th>
+              <th scope="col" class="govuk-table__header">Postcode</th>
+              <th scope="col" class="govuk-table__header">Status</th>
+              <th scope="col" class="govuk-table__header">Action</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">#403287</th>
+              <td class="govuk-table__cell">GU22 1BC</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Ready to claim</strong></td>
+              <td class="govuk-table__cell"><a href="readyToClaim.html">View application</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">#390466</th>
+              <td class="govuk-table__cell">Not available</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--purple">Sent to customer</strong></td>
+              <td class="govuk-table__cell"><a href="#">View application</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">#209048</th>
+              <td class="govuk-table__cell">EH1 1BC</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Ready to claim</strong></td>
+              <td class="govuk-table__cell"><a href="#">View application</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">#864442</th>
+              <td class="govuk-table__cell">G1 1BC</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">Submitted for review</strong></td>
+              <td class="govuk-table__cell"><a href="#">View application</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">#098521</th>
+              <td class="govuk-table__cell">DD1 1BC</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">Accepted by OZEV</strong></td>
+              <td class="govuk-table__cell"><a href="#">View application</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">#122154</th>
+              <td class="govuk-table__cell">Not available</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--purple">Sent to customer</strong></td>
+              <td class="govuk-table__cell"><a href="#">View application</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">#099939</th>
+              <td class="govuk-table__cell">Not available</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--purple">Sent to customer</strong></td>
+              <td class="govuk-table__cell"><a href="#">View application</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">#456793</th>
+              <td class="govuk-table__cell">PH1 1BC</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Ready to claim</strong></td>
+              <td class="govuk-table__cell"><a href="#">View application</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">#239038</th>
+              <td class="govuk-table__cell">SY1 1BC</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">Submitted for review</strong></td>
+              <td class="govuk-table__cell"><a href="#">View application</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">#947535</th>
+              <td class="govuk-table__cell">EC1R 1BC</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">Accepted by OZEV</strong></td>
+              <td class="govuk-table__cell"><a href="#">View application</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+          <nav class="moj-pagination" id="pagination-label">
+
+            <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+            <ul class="moj-pagination__list">
+              <li class="moj-pagination__item  moj-pagination__item--prev">
+                <a class="moj-pagination__link" href="">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+              </li>
+
+              <li class="moj-pagination__item moj-pagination__item--Completed">1</li>
+
+              <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">2</a></li>
+
+              <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">3</a></li>
+
+              <li class="moj-pagination__item  moj-pagination__item--next">
+                <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+              </li>
+            </ul>
+            <p class="moj-pagination__results">Showing <b>1</b> to <b>10</b> of <b>30</b> results</p>
+          </nav>
+
+    </div>
+  </div>
+
+  {% endblock %}
