@@ -5,7 +5,7 @@ var version = "iteration12";
     router.post('/' + version + '/installer/subcontractor', function (req, res) {
           var installer_type = req.session.data['installer_type']
           if (installer_type == "installer") {
-          res.redirect(301, '/' + version + '/installer/subcontractor')
+          res.redirect(301, '/' + version + '/installer/dateOfCompletion')
           } else {
           res.redirect(301, '/' + version + '/installer/confirmSubcontractor')
           }
