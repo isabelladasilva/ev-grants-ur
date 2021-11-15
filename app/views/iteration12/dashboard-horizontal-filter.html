@@ -1,0 +1,278 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Dashboard
+{% endblock %}
+
+
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+<div class="app-example-page">
+
+
+<div aria-live="polite" role="status" aria-atomic="true" class="govuk-visually-hidden"></div></div>
+
+<script src="/node_modules/hmcts-frontend/vendor/jquery.js"></script>
+<script src="/node_modules/hmcts-frontend/all.js"></script>
+<script src="/node_modules/govuk-frontend/govuk/all.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+
+<script>
+new HMCTSFrontend.SortableTable({ table: $('table')[0] });
+</script>
+
+
+
+</body>
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          beta prototype
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+
+<div class="moj-primary-navigation" style="margin-top: -30px">
+
+  <div class="moj-primary-navigation__container">
+
+    <div class="moj-primary-navigation__nav">
+
+      <nav class="moj-primary-navigation" aria-label="Primary navigation">
+
+        <ul class="moj-primary-navigation__list">
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" aria-current="page" href="#1">Grant applications</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="#2">Manage clients</a>
+          </li>
+
+          <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="#3">Manage account</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+
+</div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full govuk-!-margin-top-9">
+
+
+
+    <h1 class="govuk-heading-l">Grant applications</h1>
+
+
+    <label class=" govuk-heading-s" for="filter-country-applications-by-status">
+        Filter by
+      </label>
+
+      <div class="govuk-form-group" style="display:inline-block">
+      <label class="govuk-label" for="address-postcode">
+        Reference number
+      </label>
+      <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+
+      </div>
+
+      <div class="govuk-form-group" style="display:inline-block">
+      <label class="govuk-label" for="address-postcode" style="display:inline-">
+        Customer name
+      </label>
+      <input style="display:inline-block" class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+
+     </div>
+
+    <div class="govuk-form-group" style="display:inline-block">
+    <label class="govuk-label" for="address-postcode" style="display:inline-">
+      Postcode
+    </label>
+    <input style="display:inline-block" class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+
+  </div>
+
+
+<div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+  <label class="govuk-label" for="address-postcode">
+    Status
+  </label>
+<div class="govuk-form-group" style="display:inline-block">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+    <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+       Claim submitted
+    </label>
+  </div>
+    <div class="govuk-form-group" style="display:inline-block">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+          not started yet
+        </label>
+      </div>
+    </div>
+    <div class="govuk-form-group" style="display:inline-block">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+          Rejected
+        </label>
+      </div>
+    </div>
+    <div class="govuk-form-group" style="display:inline-block">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+           Under review
+        </label>
+      </div>
+    </div>
+    <div>
+
+    </div>
+    <a class="govuk-button" data-module="govuk-button" href="checkYourAnswers.html">
+      Apply filter
+    </a>
+    </div>
+
+    </div>
+</div>
+
+    <div class="govuk-grid-column-full">
+      <!-- <hr> -->
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m govuk-!-margin-top-3">List of applications</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+
+          <th scope="col" class="govuk-table__header" aria-sort="ascending"><button type="button" data-index="0">Reference number</button></th>
+
+          <th scope="col" class="govuk-table__header" aria-sort="none"><button type="button" data-index="1">Customer name</button></th>
+
+          <th scope="col" class="govuk-table__header" aria-sort="none"><button type="button" data-index="1">Postcode</button></th>
+
+          <th scope="col" class="govuk-table__header govuk-table__header--numeric" aria-sort="none"><button type="button" data-index="2">Status</button></th>
+
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a href="#">#893903</a></th>
+          <td class="govuk-table__cell">Blue Tick Properties</td>
+          <td class="govuk-table__cell">XX12 XXN</td>
+          <td class="govuk-table__cell" style="text-align: right"><strong class="govuk-tag govuk-tag--blue">not started yet</strong></td>
+          <!-- <td class="govuk-table__cell"><a href="declaration.html">View application</a></td> -->
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a href="#">#473320</a></th>
+          <td class="govuk-table__cell">JLB Homes</td>
+          <td class="govuk-table__cell">XX12 XXN</td>
+          <td class="govuk-table__cell" style="text-align: right"><strong class="govuk-tag govuk-tag--green">claim submitted</strong></td>
+          <!-- <td class="govuk-table__cell"><a href="#">View application</a></td> -->
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a href="#">#949032</a></th>
+          <td class="govuk-table__cell">Homezone</td>
+          <td class="govuk-table__cell">XX12 XXN</td>
+          <td class="govuk-table__cell" style="text-align: right"><strong class="govuk-tag govuk-tag--green">claim submitted</strong></td>
+          <!-- <td class="govuk-table__cell"><a href="#">View application</a></td> -->
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a href="#">#210334</a></th>
+          <td class="govuk-table__cell">Habitat Homes</td>
+          <td class="govuk-table__cell">XX12 XXN</td>
+          <td class="govuk-table__cell" style="text-align: right"><strong class="govuk-tag govuk-tag--green">claim submitted</strong></td>
+          <!-- <td class="govuk-table__cell"><a href="#">View application</a></td> -->
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a href="#">#819335</a></th>
+          <td class="govuk-table__cell">It's Coming Homes</td>
+          <td class="govuk-table__cell">XX12 XXN</td>
+          <td class="govuk-table__cell" style="text-align: right"><strong class="govuk-tag govuk-tag--green">claim submitted</strong></td>
+          <!-- <td class="govuk-table__cell"><a href="#">View application</a></td> -->
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a href="#">#555021</a></th>
+          <td class="govuk-table__cell">Ruth Smith Homes</td>
+          <td class="govuk-table__cell">XX12 XXN</td>
+          <td class="govuk-table__cell" style="text-align: right"><strong class="govuk-tag govuk-tag--red">Rejected</strong></td>
+          <!-- <td class="govuk-table__cell"><a href="#">View application</a></td> -->
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a href="#">#484430</a></th>
+          <td class="govuk-table__cell">Tayside Lettings</td>
+          <td class="govuk-table__cell">XX12 XXN</td>
+          <td class="govuk-table__cell" style="text-align: right"><strong class="govuk-tag govuk-tag--yellow">Under review</strong></td>
+          <!-- <td class="govuk-table__cell"><a href="#">View application</a></td> -->
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a href="#">#549304</a></th>
+          <td class="govuk-table__cell">EZ Lets</td>
+          <td class="govuk-table__cell">XX12 XXN</td>
+          <td class="govuk-table__cell" style="text-align: right"><strong class="govuk-tag govuk-tag--red">Rejected</strong></td>
+          <!-- <td class="govuk-table__cell"><a href="#">View application</a></td> -->
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a href="#">#438552</a></th>
+          <td class="govuk-table__cell">Snowdonia Properties</td>
+          <td class="govuk-table__cell">XX12 XXN</td>
+          <td class="govuk-table__cell" style="text-align: right"><strong class="govuk-tag govuk-tag--yellow">Under review</strong></td>
+          <!-- <td class="govuk-table__cell"><a href="#">View application</a></td> -->
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a href="#">#100554</a></th>
+          <td class="govuk-table__cell">Hill's Houses</td>
+          <td class="govuk-table__cell">XX12 XXN</td>
+          <td class="govuk-table__cell" style="text-align: right"><strong class="govuk-tag govuk-tag--green">claim submitted</strong></td>
+          <!-- <td class="govuk-table__cell"><a href="#">View application</a></td> -->
+        </tr>
+      </tbody>
+    </table>
+
+          <nav class="moj-pagination" id="pagination-label">
+
+            <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+            <ul class="moj-pagination__list">
+              <li class="moj-pagination__item  moj-pagination__item--prev">
+                <a class="moj-pagination__link" href="">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+              </li>
+
+              <li class="moj-pagination__item moj-pagination__item--Completed">1</li>
+
+              <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">2</a></li>
+
+              <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">3</a></li>
+
+              <li class="moj-pagination__item  moj-pagination__item--next">
+                <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+              </li>
+            </ul>
+            <p class="moj-pagination__results">Showing <b>1</b> to <b>10</b> of <b>30</b> results</p>
+          </nav>
+
+    </div>
+  </div>
+
+  {% endblock %}

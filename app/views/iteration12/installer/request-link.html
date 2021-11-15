@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Enter your contact details -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Request a link to access the new service</h1>
+
+
+
+  <div class="govuk-form-group govuk-!-margin-top-7">
+      <label class="govuk-label" for="customer-email">
+        Current registered email
+    </label>
+    <div id="hint-text" class="govuk-hint">
+      This is the correpondence email address you have provided to OZEV to contact you
+    </div>
+      <input class="govuk-input govuk-!-width-full" id="customer-email" name="customer-email" type="text"></div>
+
+      <div class="govuk-form-group govuk-!-margin-top-7">
+        <label class="govuk-label" for="customer-email">
+          Your OZEV installer number
+        </label>
+        <!-- <div id="hint-text" class="govuk-hint">
+          For example, Property Owner or Managing Director.
+        </div> -->
+        <input class="govuk-input govuk-!-width-full" id="customer-email" name="customer-email" type="text">
+      </div>
+
+        <div class="govuk-button-group">
+          <a class="govuk-button" data-module="govuk-button" href="access-code-mobile.html">
+            Request link
+          </a>
+        </div>
+
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,181 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Application status per country - Vehicle Operator Licensing - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+    <style type="text/css">
+
+.orange {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #c5490a !important;
+    border:1px solid #c5490a;
+    }
+
+    .red {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #b10e1e !important;
+    border:1px solid #b10e1e;
+    }
+
+    .green {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #006c56!important;
+    border:1px solid #006c56;
+    }
+
+
+table th {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+table td {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+govuk-label {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+
+    </style>
+
+
+
+
+
+    <div class="govuk-grid-row">
+     <div class="govuk-grid-column-full">
+
+
+
+    <div class="govuk-form-group ">
+        <span class="govuk-caption-l">Sherborne Properties</span>
+      <h1 class="govuk-heading-xl" style="margin-bottom:10px">Provide details for each chargepoint installed</h1>
+
+
+
+
+              <div class="govuk-!-margin-top-9">
+
+                  <table class="govuk-table" style="font-size: 19px !important">
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Chargepoint</th>
+                        <th scope="col" class="govuk-table__header">Model</th>
+                        <th scope="col" class="govuk-table__header">Sockets</th>
+                        <th scope="col" class="govuk-table__header">Serial number</th>
+                        <th scope="col" class="govuk-table__header">Photographs</th>
+                        <th scope="col" class="govuk-table__header">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">1</td>
+                        <td class="govuk-table__cell">Terra AC W7-T-0</td>
+                        <td class="govuk-table__cell">1</td>
+                        <td class="govuk-table__cell">TR66462994</td>
+                        <td class="govuk-table__cell">2</td>
+                        <td class="govuk-table__cell"><a href="chargepoint1">Edit details</a></td>
+                      </tr>
+
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">2</td>
+                        <td class="govuk-table__cell">Terra AC W22-T-RD-MC-0</td>
+                        <td class="govuk-table__cell">2</td>
+                        <td class="govuk-table__cell"></td>
+                        <td class="govuk-table__cell"></td>
+                        <!-- <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" style="font-size: 16px !important">Final rejection</strong></td> -->
+                        <td class="govuk-table__cell"><a href="chargepoint2-photos">Add details</a></td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                  <div class="govuk-button-group govuk-!-margin-top-9">
+                    <a class="govuk-button" data-module="govuk-button" href="chargepoint-dashboard-1">
+                      Save and continue
+                    </a>
+                    <p><a href="">Save and continue later</a></p>
+
+                  </div>
+
+
+                  <!-- <nav class="moj-pagination" id="pagination-label">
+
+                    <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+                    <ul class="moj-pagination__list" >
+                      <li class="moj-pagination__item  moj-pagination__item--prev">
+                        <a class="moj-pagination__link" href="" style="font-size: 19px !important">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+                      </li>
+
+                      <li class="moj-pagination__item moj-pagination__item--Completed" style="font-size: 19px !important">1</li>
+
+                      <li class="moj-pagination__item" style="font-size: 19px !important"><a class="moj-pagination__link" href="#">2</a></li>
+
+                      <li class="moj-pagination__item" style="font-size: 19px !important"><a class="moj-pagination__link" href="#">3</a></li>
+
+                      <li class="moj-pagination__item  moj-pagination__item--next" style="font-size: 19px !important">
+                        <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+                      </li>
+                    </ul>
+                    <p class="moj-pagination__results" style="font-size: 19px !important">Showing <b>1</b> to <b>10</b> of <b>50</b> results</p>
+                  </nav> -->
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+          </div>
+
+
+
+{% endblock %}

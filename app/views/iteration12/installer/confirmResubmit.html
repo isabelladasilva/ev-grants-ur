@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Claim resubmitted -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            Claim resubmitted
+          </h1>
+          <div class="govuk-panel__body">
+            Your reference number<br><strong>#098521</strong>
+          </div>
+        </div>
+
+        <p class="govuk-body">We have sent you and your customer a confirmation email.</p>
+
+        <h2 class="govuk-heading-m">What happens next</h2>
+
+        <p class="govuk-body">
+          Your claim will be assessed by the the Office for Zero Emissions Vehicles (OZEV).
+        </p>
+        <p class="govuk-body">
+          We will aim to notify you within 30 working days to either confirm your claim is successful, or to ask for more information.
+        </p>
+
+        <p class="govuk-body">
+          You can check the progress of your claim on the next page.
+        </p>
+
+
+        <p class="govuk-body">
+          <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds)
+        </p>
+      </div>
+    </div>
+
+    <div class="govuk-button-group govuk-!-margin-top-5">
+      <a class="govuk-button" data-module="govuk-button" href="installer-dashboard.html">
+        View your claims
+      </a>
+    </div>
+
+
+{% endblock %}

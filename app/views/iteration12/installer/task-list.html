@@ -1,0 +1,145 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+What was the date of installation? -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-two-thirds">
+     <h1 class="govuk-heading-xl">
+      Landlord chargepoint grant
+     </h1>
+
+     <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Application incomplete</h2>
+     <p class="govuk-body govuk-!-margin-bottom-7">You have completed 5 of 10 sections.</p>
+
+     <ol class="app-task-list">
+       <li>
+         <h2 class="app-task-list__section">
+           <span class="app-task-list__section-number">1. </span> Review customer application
+         </h2>
+         <ul class="app-task-list__items">
+           <li class="app-task-list__item">
+             <span class="app-task-list__task-name">
+               <a href="sentToInstaller.html" aria-describedby="eligibility-status">
+                 Check customer application
+               </a>
+             </span>
+             <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+           </li>
+           <li class="app-task-list__item">
+             <span class="app-task-list__task-name">
+               <a href="declaration aria-describedby="eligibility-status">
+                 Confirm declaration
+               </a>
+             </span>
+             <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+           </li>
+           <li class="app-task-list__item">
+             <span class="app-task-list__task-name">
+               <a href="subcontractor" aria-describedby="eligibility-status">
+            Confirm who completed the installation
+            </a>
+             </span>
+             <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+           </li>
+           <li class="app-task-list__item">
+             <span class="app-task-list__task-name">
+               <a href="dateOfCompletion" aria-describedby="eligibility-status">
+            Enter date of installation
+            </a>
+             </span>
+             <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+           </li>
+         </ul>
+       </li>
+
+       <li>
+         <h2 class="app-task-list__section">
+           <span class="app-task-list__section-number">2. </span> Provide charge point models
+         </h2>
+         <ul class="app-task-list__items">
+           <li class="app-task-list__item">
+             <span class="app-task-list__task-name">
+               <a href="chargepoint-model.html" aria-describedby="company-information-status">
+                 Add charge point models installed
+               </a>
+             </span>
+             <strong class="govuk-tag app-task-list__tag" id="company-information-status">Completed</strong>
+           </li>
+           <li class="app-task-list__item">
+             <span class="app-task-list__task-name">
+               <a href="chargepoint-dashboard.html" aria-describedby="list-convictions-status">
+                 Add serial numbers and photographs
+               </a>
+             </span>
+              <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+           </li>
+         </ul>
+       </li>
+
+       <li>
+         <h2 class="app-task-list__section">
+           <span class="app-task-list__section-number">3. </span> Provide financial details
+         </h2>
+         <ul class="app-task-list__items">
+           <li class="app-task-list__item">
+             <span class="app-task-list__task-name">
+            Total cost of installation
+             </span>
+             <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="submit-pay-status">Not started</strong>
+           </li>
+         </ul>
+       </li>
+       <li>
+         <h2 class="app-task-list__section">
+           <span class="app-task-list__section-number">4. </span> Apply
+         </h2>
+         <ul class="app-task-list__items">
+           <li class="app-task-list__item">
+             <span class="app-task-list__task-name">
+               Check grant totol
+             </span>
+             <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="submit-pay-status">Cannot start yet</strong>
+           </li>
+           <li class="app-task-list__item">
+             <span class="app-task-list__task-name">
+               Review your answers
+             </span>
+             <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="submit-pay-status">Cannot start yet</strong>
+           </li>
+         </ul>
+       </li>
+     </ol>
+     <div class="govuk-button-group govuk-!-margin-top-7">
+       <a class="govuk-button" data-module="govuk-button" href="installer-dashboard">
+        Dashboard
+       </a>
+     </div>
+   </div>
+ </div>
+
+
+
+{% endblock %}

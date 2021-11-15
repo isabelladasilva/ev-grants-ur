@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Applications that require action -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+</nav> -->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-l">Blue Tick Properties</span>
+    <h1 class="govuk-heading-xl">Enter your installer's OZEV number</h1>
+
+    <p class="govuk-body">To apply for this grant you will need your installer's OZEV number.</p>
+
+    <p class="govuk-body">If you have not chose the installer you will work with, you will need to do before continuing. You can check <a rel="noreferrer noopener" target="_blank" href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1026192/evhs-installer-authorisations-log.csv/preview">OZEV's list of approved installers (opens in new tab)</a>.</p>
+
+    <div class="govuk-form-group govuk-!-margin-top-7">
+      <label class="govuk-label" for="address-county">
+        Installer's OZEV number
+      </label>
+      <input class="govuk-input govuk-!-width-one-third" id="address-county" name="address-county" type="text"></div>
+
+      <details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      I don't know my installer number
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <p>If you do not know your installer number, you need to contact you installer and ask for this information.</p>
+
+    <p>This is the number they receive when they register with OZEV to install chargepoints.</p>
+  </div>
+</details>
+
+      <a class="govuk-button" href="installerConfirm.html">Continue</a>
+
+  </div>
+</div>
+
+  {% endblock %}

@@ -1,0 +1,465 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Application status per country - Vehicle Operator Licensing - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+  <!-- <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a> -->
+{% endblock %}
+
+{% block content %}
+
+    <style type="text/css">
+
+
+
+.orange {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #c5490a !important;
+    border:1px solid #c5490a;
+    }
+
+    .red {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #b10e1e !important;
+    border:1px solid #b10e1e;
+    }
+
+    .green {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #006c56!important;
+    border:1px solid #006c56;
+    }
+
+
+table th {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+table td {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+govuk-label {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+
+    </style>
+
+
+
+
+
+    <div class="govuk-grid-row">
+     <div class="govuk-grid-column-full">
+
+       <!-- <div class="moj-primary-navigation">
+
+         <div class="moj-primary-navigation__container">
+
+           <div class="moj-primary-navigation__nav">
+
+             <nav class="moj-primary-navigation" aria-label="Primary navigation">
+
+               <ul class="moj-primary-navigation__list">
+                 <li class="moj-primary-navigation__item">
+                   <a class="moj-primary-navigation__link" aria-current="page" href="#1">Nav item 1</a>
+                 </li>
+
+                 <li class="moj-primary-navigation__item">
+                   <a class="moj-primary-navigation__link" href="#2">Nav item 2</a>
+                 </li>
+
+                 <li class="moj-primary-navigation__item">
+                   <a class="moj-primary-navigation__link" href="#3">Nav item 3</a>
+                 </li>
+               </ul>
+
+             </nav>
+
+           </div>
+         </div>
+
+       </div> -->
+
+    <div class="govuk-form-group">
+      <h1 class="govuk-heading-l" style="margin-bottom:10px">Installer dashboard</h1>
+      <p class="govuk-body-m"><a href="#">Manage account details</a></p>
+    </div>
+
+<div class="moj-filter">
+
+  <div class="moj-filter__header">
+
+    <div class="moj-filter__header-title">
+      <h2 class="govuk-heading-s">Filter</h2>
+    </div>
+
+  </div>
+
+  <div class="moj-filter__content">
+
+    <div class="moj-filter__options">
+
+
+
+      <div class="govuk-form-group">
+        <!-- <label class="govuk-label govuk-label--s"  style="font-size: 19px !important;" for="keywords">
+          Keywords
+        </label>
+        <div class="govuk-hint " style="font-size: 19px !important;">Filter by reference number, grant type, customer name or postcode
+        <input class="govuk-input govuk-!-margin-top-2" id="keywords" name="keywords" type="text"> -->
+        <div class="govuk-form-group" style="display:inline-block">
+        <label class="govuk-label" for="address-postcode" style="font-size: 19px !important;">
+          Reference
+        </label>
+        <input class="govuk-input govuk-input--width-5" id="address-postcode" name="address-postcode" type="text">
+
+        </div>
+
+        <div class="govuk-form-group" style="display:inline-block">
+        <label class="govuk-label" for="address-postcode" style="font-size: 19px !important;">
+          Grant type
+        </label>
+        <input style="display:inline-block" class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+        </div>
+
+        <div class="govuk-form-group" style="display:inline-block">
+        <label class="govuk-label" for="address-postcode" style="font-size: 19px !important;">
+          Customer
+        </label>
+        <input style="display:inline-block" class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+
+       </div>
+
+      <div class="govuk-form-group" style="display:inline-block">
+      <label class="govuk-label" for="address-postcode" style="font-size: 19px !important;">
+        Postcode
+      </label>
+      <input style="display:inline-block" class="govuk-input govuk-input--width-5" id="address-postcode" name="address-postcode" type="text">
+      </div>
+
+
+
+
+      <div class="govuk-form-group">
+
+        <fieldset class="govuk-fieldset govuk-!-margin-top-1">
+
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--s "  style="font-size: 19px !important;">
+            Status
+          </legend>
+
+          <div class="govuk-form-group" >
+            <div class="govuk-checkboxes__item govuk-checkboxes--small" style="display:inline-block">
+              <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+              <label class="govuk-label govuk-checkboxes__label" for="organisation-2" style="font-size: 19px !important;">
+                 Ready to claim
+              </label>
+            </div>
+
+                <div class="govuk-checkboxes__item govuk-checkboxes--small" style="display:inline-block">
+                  <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+                  <label class="govuk-label govuk-checkboxes__label" for="organisation-2" style="font-size: 19px !important;">
+                    Submitted for review
+                  </label>
+                </div>
+
+
+                <div class="govuk-checkboxes__item govuk-checkboxes--small" style="display:inline-block">
+                  <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+                  <label class="govuk-label govuk-checkboxes__label" for="organisation-2" style="font-size: 19px !important;">
+                    Expiring soon
+                  </label>
+                </div>
+
+                <div class="govuk-checkboxes__item govuk-checkboxes--small" style="display:inline-block">
+                  <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+                  <label class="govuk-label govuk-checkboxes__label" for="organisation-2" style="font-size: 19px !important;">
+                    Not approved
+                  </label>
+                </div>
+
+                <div class="govuk-checkboxes__item govuk-checkboxes--small" style="display:inline-block">
+                  <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+                  <label class="govuk-label govuk-checkboxes__label" for="organisation-2" style="font-size: 19px !important;">
+                    Approved for payment
+                  </label>
+                </div>
+
+
+                <div class="govuk-checkboxes__item govuk-checkboxes--small" style="display:inline-block">
+                  <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+                  <label class="govuk-label govuk-checkboxes__label" for="organisation-2" style="font-size: 19px !important;">
+                    Rejected
+                  </label>
+                </div>
+
+
+                <div class="govuk-checkboxes__item govuk-checkboxes--small govuk-visually-hidden">
+                  <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+                  <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                  </label>
+                </div>
+
+                <div class="govuk-button-group">
+                  <a class="govuk-button" style="font-size: 19px !important" href="#">Apply filter</a>
+                  <a class="govuk-link"  style="font-size: 19px !important" href="#">Clear filter</a>
+                </div>
+
+        </fieldset>
+            </div>
+
+
+
+
+
+      </div>
+
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+      <!-- <div class="govuk-form-group govuk-!-margin-top-9">
+      <label class="govuk-label govuk-!-font-weight-bold govuk-!-margin-bottom-4" for="filter-country-applications-by-status">
+        Filter
+      </label>
+      <div class="govuk-form-group" style="display:inline-block">
+      <label class="govuk-label" for="address-postcode">
+        Reference number
+      </label>
+      <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+
+      </div>
+
+      <div class="govuk-form-group" style="display:inline-block">
+      <label class="govuk-label" for="address-postcode" style="display:inline-">
+        Customer name
+      </label>
+      <input style="display:inline-block" class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+
+     </div>
+
+    <div class="govuk-form-group" style="display:inline-block">
+    <label class="govuk-label" for="address-postcode" style="display:inline-">
+      Postcode
+    </label>
+    <input style="display:inline-block" class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+
+  </div>
+
+      <div class="govuk-form-group" >
+        <div class="govuk-checkboxes__item govuk-checkboxes--small" style="display:inline-block">
+          <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+          <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+             Ready to claim
+          </label>
+        </div>
+
+            <div class="govuk-checkboxes__item govuk-checkboxes--small" style="display:inline-block">
+              <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+              <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                Submitted for review
+              </label>
+            </div>
+
+
+            <div class="govuk-checkboxes__item govuk-checkboxes--small" style="display:inline-block">
+              <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+              <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                Approved for payment
+              </label>
+            </div>
+
+            <div class="govuk-checkboxes__item govuk-checkboxes--small" style="display:inline-block">
+              <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+              <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                Expiring soon
+              </label>
+            </div>
+
+
+            <div class="govuk-checkboxes__item govuk-checkboxes--small" style="display:inline-block">
+              <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+              <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                Not approved
+              </label>
+            </div>
+
+            <div class="govuk-checkboxes__item govuk-checkboxes--small" style="display:inline-block">
+              <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+              <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                Rejected
+              </label>
+            </div>
+
+
+            <div class="govuk-checkboxes__item govuk-checkboxes--small govuk-visually-hidden">
+              <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+              <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+              </label>
+            </div>
+
+</div>
+
+<div>
+
+      <button title="click to filter country applications by the status you have selected" class="govuk-button govuk-!-margin-right-4" data-module="govuk-button"  href="">
+        Apply filter
+      </button>
+</div> -->
+
+</div>
+
+
+
+
+<div class="govuk-form-group govuk-!-margin-top-9" >
+<table class="govuk-table" style="font-size: 19px !important">
+  <!-- <caption class="govuk-table__caption govuk-table__caption--s govuk-!-margin-top-3">List of claims</caption> -->
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Reference number</th>
+      <th scope="col" class="govuk-table__header">Grant type</th>
+      <th scope="col" class="govuk-table__header">Customer</th>
+      <th scope="col" class="govuk-table__header">Postcode</th>
+      <th scope="col" class="govuk-table__header">Claim status</th>
+      <th scope="col" class="govuk-table__header">Action</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <!-- <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">#893903</th>
+      <td class="govuk-table__cell">Blue Tick Properties</td>
+      <td class="govuk-table__cell">EC1R 1BC</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--orange" style="font-size: 16px !important">Expiring soon</strong></td>
+      <td class="govuk-table__cell"><a href="">Submit or renew by 31 Oct 2021</a></td>
+    </tr> -->
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">893903</th>
+      <td class="govuk-table__cell">Residential</td>
+      <td class="govuk-table__cell">Blue Tick Properties</td>
+      <td class="govuk-table__cell">EC1R 1BC</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue" style="font-size: 16px !important">Ready to claim</strong></td>
+      <td class="govuk-table__cell"><a href="sentToInstaller.html">Not started</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">390466</th>
+      <td class="govuk-table__cell">Commercial</td>
+      <td class="govuk-table__cell">Victoria House</td>
+      <td class="govuk-table__cell">W1 1XX</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue" style="font-size: 16px !important">Ready to claim</strong></td>
+      <td class="govuk-table__cell"><a href="sentToInstaller.html">Submit claim by 13 Nov 2021</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">#893903</td>
+      <td class="govuk-table__cell">Residential</td>
+      <td class="govuk-table__cell">Blue Tick Properties</td>
+      <td class="govuk-table__cell">EC1R 1BC</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--orange" style="font-size: 16px !important">Expiring soon</strong></td>
+      <td class="govuk-table__cell"><a href="">Submit or renew by 31 Oct 2021</a></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">#098521</td>
+      <td class="govuk-table__cell">Commercial</td>
+      <td class="govuk-table__cell">Blue Tick Properties</td>
+      <td class="govuk-table__cell">WC1N 1XX</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red" style="font-size: 16px !important">Not approved</strong></td>
+      <td class="govuk-table__cell"><a href="rejectedOZEV.html">Resubmit claim</a></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">#864442</td>
+      <td class="govuk-table__cell">Residential</td>
+      <td class="govuk-table__cell">Blue Tick Properties</td>
+      <td class="govuk-table__cell">E1 1XX</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green" style="font-size: 16px !important"> Approved for payment</strong></td>
+      <td class="govuk-table__cell"><a href="acceptedOZEV.html">View claim</a></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">#098521</td>
+      <td class="govuk-table__cell">Commercial</td>
+      <td class="govuk-table__cell">Blue Tick Properties</td>
+      <td class="govuk-table__cell">WC1N 1XX</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" style="font-size: 16px !important">Rejected</strong></td>
+      <td class="govuk-table__cell"><a href=""></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <nav class="moj-pagination" id="pagination-label" >
+
+  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+  <ul class="moj-pagination__list">
+    <li class="moj-pagination__item  moj-pagination__item--prev">
+      <a class="moj-pagination__link" href="">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+    </li>
+
+    <li class="moj-pagination__item moj-pagination__item--Completed">1</li>
+
+    <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">2</a></li>
+
+    <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">3</a></li>
+
+    <li class="moj-pagination__item  moj-pagination__item--next">
+      <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+    </li>
+  </ul>
+  <p class="moj-pagination__results">Showing <b>1</b> to <b>10</b> of <b>50</b> results</p>
+</nav> -->
+
+
+</div>
+
+
+
+{% endblock %}

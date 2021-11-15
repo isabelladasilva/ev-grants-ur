@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Who completed the installation? -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  <span class="govuk-caption-l">Sherborne Properties</span>
+    <h1 class="govuk-heading-xl">Enter the details of your subcontractor?</h1>
+<form class="form" method="post">
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                <p>Subcontractors must be approved by OZEV and need to have their own installer number.</p>
+                <details class="govuk-details govuk-!-margin-top-6" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    What if I don't know my subcontractor's installer number?
+                  </span>
+
+                </summary>
+
+                <div class="govuk-details__text govuk-!-margin-top">
+                  <p> If you do not know thier installer number, you can check the <a href="https://www.gov.uk/government/publications/electric-vehicle-homecharge-scheme-authorised-installers" class="govuk-link" rel="noreferrer noopener" target="_blank">OZEV list of authorised installers</a>.</p>
+                </div>
+              </details>
+
+                <p>Enter your subcontractor's OZEV number</p>
+              <input class="govuk-input govuk-!-width-one-third" id="installer_type-2" name="installer_type
+              " type="tel" autocomplete="tel"></div>
+          </div>
+        </div>
+        <div class="govuk-button-group">
+          <a class="govuk-button" data-module="govuk-button" href="confirmSubcontractor">
+            Save and continue
+          </a>
+          <p><a href="">Save and continue later</a></p>
+        </div>
+      </form>
+  </div>
+</div>
+
+
+{% endblock %}

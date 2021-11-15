@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+What was the total cost of installation? -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+  <span class="govuk-caption-l">Sherborne Properties</span>
+    <h1 class="govuk-heading-xl">Provide details of the cost of installation</h1>
+
+    <div class="govuk-form-group govuk-!-margin-top-7">
+    <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="cost">
+        Total cost of installation
+      </label>
+    </h2>
+    <div id="event-name-hint" class="govuk-hint">
+     Enter the full cost of the chargepoint including VAT, purchase and installation
+  </div>
+      <div class="govuk-input__wrapper">
+      <div class="govuk-input__prefix" aria-hidden="true">£</div>
+      <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
+      <!-- <div class="govuk-input__suffix" aria-hidden="true">per item</div> -->
+    </div>
+
+  <details class="govuk-details govuk-!-margin-top-6" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      What may the total cost of installation include
+    </span>
+
+  </summary>
+
+  <div class="govuk-details__text govuk-!-margin-top">
+    <ul>
+        <li>Cost of the chargepoint unit</li>
+        <li>Electrical components</li>
+        <li>Civil engineering works</li>
+        <li>Labour costs (for installation)</li>
+        <li>Hardware costs</li>
+        <li>VAT incurred by the customer</li>
+        <li>Site survey works (relating only to the completed installation)</li>
+    </ul>
+  </div>
+</details>
+  </div>
+
+  <div class="govuk-form-group govuk-!-margin-top-9">
+  <h2 class="govuk-heading-s">Upload a copy of the invoice sent to the customer</h2>
+
+  <p>You need to upload the invoice provided to your customer. You can upload more than one document as proof of invoice.</p>
+  <p>
+    Financial proof includes an overall cost of installation shown on a customer invoice. The document needs to be in JPG, PNG, GIF, BMP, XLS, DOC or PDF formats.
+  </p>
+  </div>
+
+
+  <div class="govuk-form-group govuk-!-margin-top-3">
+      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+  </div>
+
+  <form action="grant-amount" method="post" novalidate>
+  <div class="govuk-button-group govuk-!-margin-top-7">
+    <button class="govuk-button" data-module="govuk-button">
+      Save and continue
+    </button>
+    <p><a href="task-list">Save and continue later</a></p>
+  </div>
+
+</form>
+  </div>
+</div>
+
+
+{% endblock %}
