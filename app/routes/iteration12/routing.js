@@ -14,3 +14,6 @@ var version = "iteration12";
         router.post('/' + version + '/installer/dateOfCompletion', function (req, res) {
                 res.redirect(301, '/' + version + '/installer/chargepoint-model')
         })
+
+
+}
