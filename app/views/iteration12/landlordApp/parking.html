@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout-ll.html" %}
 
 {% block pageTitle %}
 What type of building is your property? -
@@ -44,75 +44,41 @@ What type of building is your property? -
   <div class="govuk-grid-column-two-thirds">
     <span class="govuk-caption-l">Blue Tick Properties</span>
 
-    <h1 class="govuk-heading-xl">On what type of parking do you plan to install chargepoints?</h1>
-
+    <h1 class="govuk-heading-xl">What type of parking do you plan to install the chargepoints?</h1>
     <div class="govuk-form-group">
-      <fieldset class="govuk-fieldset">
-        <!-- <h1 class="govuk-heading-xl">
-        <legend class="govuk-fieldset__legend govuk-!-font-weight-bold">
-
-        </legend>
-        </h1> -->
-        <div class="govuk-radios">
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
-              value="no">
-            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-              Garage
-            </label>
-            <!-- <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
-              Hint text
-            </div> -->
-          </div>
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
-              value="no">
-            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-              Enclosed multi-storey parking
-            </label>
-            <!-- <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
-              Hint text
-            </div> -->
-          </div>
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
-              value="no">
-            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-              Open sided multi-storey parking
-            </label>
-          </div>
-          <!-- <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
-            Naturally ventilated
-          </div> -->
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio"
-              value="yes">
-            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-              Overground or surface parking
-            </label>
-          </div>
-
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
-              value="no">
-            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-              Underground parking
-            </label>
-            <!-- <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
-              Hint text
-            </div> -->
-          </div>
-
-
-
-        </div>
-
-      </fieldset>
+  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    </legend>
+    <div id="waste-hint" class="govuk-hint">
+      Select all that apply
     </div>
+    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste">
+        Overground or surface parking
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+        Multi-storey or underground parking
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Garage
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
 
 
     <div class="govuk-button-group govuk-!-margin-top-7">
-      <a class="govuk-button" data-module="govuk-button" href="declaration.html">
+      <a class="govuk-button" data-module="govuk-button" href="numberSockets">
         Continue
       </a>
     </div>

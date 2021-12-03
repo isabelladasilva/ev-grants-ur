@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Sign in to your OZEV Electric Vehicle Chargepoint Grants account
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">Sign in or create an account </h1>
+  </div>
+
+<div class="govuk-grid-column-one-half">
+  <h2 class="govuk-heading-m">Sign in</h2>
+  <p>If you already have an account, sign in.</p>
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-county">
+      Email address
+    </label>
+    <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-county">
+      Password
+    </label>
+    <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+  </div>
+
+  <a class="govuk-button" data-module="govuk-button" href="../pmcApp/dashboard">
+    Sign in
+  </a>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <h2 class="govuk-heading-m">Create an account</h2>
+
+    <p>To use this service you first need to create an account.</p>
+
+    <a class="govuk-button" data-module="govuk-button" href="account-type">
+      Create an account
+    </a>
+  </div>
+
+
+</div>
+
+<!-- <div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Create an account or sign in </h1>
+
+    <h2 class="govuk-heading-m">Create an account</h2>
+
+    <p>To use this service you first need to create an account.</p>
+
+    <a class="govuk-button" data-module="govuk-button" href="">
+      Create an account
+    </a>
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-7">Sign in</h2>
+
+    <p>If you have already registered, sign in here.</p>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-county">
+        Email address
+      </label>
+      <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+    </div>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-county">
+        Password
+      </label>
+      <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+    </div>
+
+    <a class="govuk-button" data-module="govuk-button" href="">
+      Sign in
+    </a> -->
+
+
+
+    <div class="govuk-form-group govuk-!-margin-top-7" style="margin-left: 15px">
+			<h2 class="govuk-heading-s">Need help signing in?</h2>
+        <ul class="govuk-list">
+					<li><a href="../landlordReg/forgotten-password">I have forgotten my password</a></li>
+        </ul>
+		</div>
+
+  </div>
+
+
+{% endblock %}

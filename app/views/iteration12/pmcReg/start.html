@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page example
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Apply for the OZEV {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+      <p>Use this service to:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>apply for the Landlord Chargepoint Grant</li>
+        <li>login or manage your account on the OZEV EV Chargepoint Grants portal</li>
+        <li>register as a Property Management company to apply for an EV chargepoint grant on behalf of your clients</li>
+        <li>register as a Landlord to apply for an EV chargepoint grant for your properties</li>
+      </ul>
+
+      <h2 class="govuk-heading-m">Before you apply</h2>
+      <p>To apply for grant you will first need to register and create an account.</p>
+      <p>If you are a landlord you will need:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>your Companies House number, VAT number, Private Registered Provider of Social Housing (PRP) or Charity number </li>
+        <li>an email address</li>
+        <li>a mobile number</li>
+      </ul>
+
+      <p>If you are a Property Management company you will need:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>your Companies House number, VAT number, Private Registered Provider of Social Housing (PRP) or Charity number </li>
+        <li>an email address</li>
+        <li>a mobile number</li>
+        <li>the information listed above for each client you register</li>
+      </ul>
+
+      <!-- <p>To help keep your data safe from identity fraud, OZEV will ask you to add a device to your account account. We’ll send an access code to your device each time you sign in.</p> -->
+
+      <!-- <p>Registering takes around 5 minutes.</p> -->
+
+      <a href="signIn" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
+
+      <!-- <h2 class="govuk-heading-m">Before you start</h2> -->
+
+      <p>You can also <a href="#">register by post</a>.</p>
+
+      <p>The online service is also available in <a href="#">Welsh (Cymraeg)</a>.</p>
+
+      <!-- <p>You cannot register for this service if you are not a UK registered business.</p> -->
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}

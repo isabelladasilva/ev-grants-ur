@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout-ll.html" %}
 
 {% block pageTitle %}
 Check your answers before sending your application
@@ -42,21 +42,13 @@ Check your answers before sending your application
   <div class="govuk-grid-column-two-thirds">
     <!-- <span class="govuk-caption-l">Blue Tick Properties</span> -->
 
-    <h1 class="govuk-heading-xl">Review claim details submitted by installer</h1>
+    <h1 class="govuk-heading-xl">Review completed claim</h1>
 
 <p>Your installer has completed the claim. You can review the information and the installation evidence provided.</p>
 <p>You have <b>4 more days</b> confirm or challenge the details the installer has provided.</p>
 
 
     <dl class="govuk-summary-list govuk-!-margin-bottom-9 govuk-!-margin-top-7">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Status of application
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <strong class="govuk-tag govuk-tag--red">Confirm installation</strong>
-        </dd>
-      </div>
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Reference number
@@ -69,7 +61,7 @@ Check your answers before sending your application
           Installer name name
         </dt>
         <dd class="govuk-summary-list__value">
-          Fiona Apple
+          Electric City
         </dd>
       </div>
       <div class="govuk-summary-list__row">
@@ -82,7 +74,7 @@ Check your answers before sending your application
       </div>
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Date that installation were completed
+          Date of installation
         </dt>
         <dd class="govuk-summary-list__value">
           21 July 2021
@@ -90,10 +82,18 @@ Check your answers before sending your application
       </div>
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Date that claim was submitted
+          Date claim was submitted
         </dt>
         <dd class="govuk-summary-list__value">
           30 July 2021
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Status of application
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <strong class="govuk-tag govuk-tag--red">Awaiting customer review</strong>
         </dd>
       </div>
     </dl>
@@ -239,9 +239,9 @@ Check your answers before sending your application
 
 
 <div class="govuk-button-group">
-<button class="govuk-button" data-module="govuk-button">
-  Confirm installation
-</button>
+  <a class="govuk-button" data-module="govuk-button" href="dashboard-ongoing-apps">
+  Approve installation
+  </a>
 
 <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
   Challenge installation

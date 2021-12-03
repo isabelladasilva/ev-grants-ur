@@ -1,0 +1,74 @@
+{% extends "layout-pmc.html" %}
+
+{% block pageTitle %}
+Enter an address where a chargepoint will be installed -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+
+</nav> -->
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form>
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend">
+            <span class="govuk-caption-l">Highfield Properties</span>
+            <h1 class="govuk-heading-xl " id="postcode">
+              What is the installation address?
+            </h1>
+          </legend>
+            <div>
+              <label class="govuk-label" for="address-postcode">
+                Postcode
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code"></div>
+                <div class="govuk-button-group govuk-!-margin-top-7">
+                  <a type="submit" class="govuk-button" href="address-list">
+                  Continue
+                  </a>
+                </div>
+        </fieldset>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+
+{% endblock %}

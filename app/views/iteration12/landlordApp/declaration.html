@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout-ll.html" %}
 
 {% block pageTitle %}
 You must read the following before proceeding with your application -
@@ -52,11 +52,19 @@ You must read the following before proceeding with your application -
       <li>have agreed to complete the installation that you are applying for with an Office for Zero Emission Vehicles (OZEV) approved installer</li>
       <li>will provide the correct information to the best of your knowledge</li>
       <li>understand the information provided and any supporting evidence will be used to assess your application and claim for this grant</li>
-      <li>agree to be contacted by OZEV or its agents for audit purposes, should your installation be chosen for audit</li>
+      <li>agree to be contacted by OZEV or its agents for audit purposes, should this installation be chosen for audit</li>
       <li>understand that any chargepoints you apply for must be installed in the property's dedicated private parking</li>
     </ul>
 
     <p>You also confirm that you will consider the needs of EV owners who may be disabled or have mobility issues when installing a chargepoint.</p>
+
+    <div class="govuk-warning-text govuk-!-margin-top-7">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        <b>It is an offence to make a false declaration to obtain a grant and you could be fined or prosecuted.</b>
+      </strong>
+    </div>
 
         <div class="govuk-button-group govuk-!-margin-top-7">
           <a class="govuk-button" data-module="govuk-button" href="installerDetail.html">

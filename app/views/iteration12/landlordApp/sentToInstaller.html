@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout-ll.html" %}
 
 {% block pageTitle %}
 Check your answers before sending your application
@@ -42,88 +42,100 @@ Check your answers before sending your application
   <div class="govuk-grid-column-two-thirds">
     <span class="govuk-caption-l">Blue Tick Properties</span>
 
-    <h1 class="govuk-heading-xl">View customer application</h1>
+    <h1 class="govuk-heading-xl">View or update application</h1>
 
-    <p>This installer has been sent this application to complete. This page will update with further details once they have completed the application.</p>
+    <p>Your applicatiion has been sent to Electric City Installers who need to complete thier part of the application.</p>
 
+    <p>You can withdraw your application or change the number of charge points before your installer completes thier part of the applicatiion.</p>
 
+      <p>This page will update with further details once they have completed the application.</p>
 
-    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Status of application
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <strong class="govuk-tag govuk-tag--yellow">Sent to installer</strong>
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Installer name name
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Electric City Installers
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Installer number
-        </dt>
-        <dd class="govuk-summary-list__value">
-          835722
-        </dd>
-      </div>
-    </dl>
+    <h1 class="govuk-heading-m govuk-!-margin-top-5">Installation details</h1>
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Installer name name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Electric City Installers
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Installer number
+          </dt>
+          <dd class="govuk-summary-list__value">
+            835722
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Status of application
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <strong class="govuk-tag govuk-tag--yellow">Sent to installer</strong>
+          </dd>
+        </div>
+      </dl>
 
-    <h1 class="govuk-heading-m">Address details</h1>
+      <h1 class="govuk-heading-m">Address details</h1>
 
-    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Property type
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Residential
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Address
-        </dt>
-        <dd class="govuk-summary-list__value">
-          14 Royal Road
-          <br>London
-          <br>EC1R 1BC
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Amount of sockets
-        </dt>
-        <dd class="govuk-summary-list__value">
-          3
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Private off-street parking
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Yes
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Building type
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Bungalow
-        </dd>
-      </div>
-    </dl>
+      <dl class="govuk-summary-list govuk-!-margin-bottom-7">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Property type
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Residential
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            14 Royal Road
+            <br>London
+            <br>EC1R 1BC
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Amount of sockets
+          </dt>
+          <dd class="govuk-summary-list__value">
+            3
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Private off-street parking
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Building type
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Bungalow
+          </dd>
+        </div>
+      </dl>
 
-  </div>
-</div>
+    </div>
+      </div>
+      <div class="govuk-button-group">
+        <button class="govuk-button" data-module="govuk-button">
+          Withdraw application
+        </button>
+        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Change number of chargepoint sockets
+        </button>
+      </div>
+
 
 
 {% endblock %}

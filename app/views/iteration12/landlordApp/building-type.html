@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout-ll.html" %}
 
 {% block pageTitle %}
 What type of building is your property? -
@@ -44,65 +44,64 @@ What type of building is your property? -
   <div class="govuk-grid-column-two-thirds">
     <span class="govuk-caption-l">Blue Tick Properties</span>
 
-    <h1 class="govuk-heading-xl">What type of building is this property?</h1>
+    <h1 class="govuk-heading-xl">What best decribes your property?</h1>
 
     <div class="govuk-form-group">
-      <fieldset class="govuk-fieldset">
-        <div class="govuk-radios">
+      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+        <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio"
-              value="yes">
-            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-              Apartment building 
+            <input class="govuk-radios__input" id="installer_type" name="installer_type" type="radio" value="installer" data-aria-controls="conditional-contact">
+            <label class="govuk-label govuk-radios__label" for="installer_type">
+              Apartment building
             </label>
-            <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
-              <!-- A single building containing separate residential apartments -->
-            </div>
           </div>
-          <!-- <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio"
-              value="yes">
-            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-              Flat
-            </label>
-          </div> -->
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
-              value="no">
-            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+            <input class="govuk-radios__input" id="installer_type" name="installer_type" type="radio" value="installer" data-aria-controls="conditional-contact">
+            <label class="govuk-label govuk-radios__label" for="installer_type">
+              Estate
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="installer_type" name="installer_type" type="radio" value="installer" data-aria-controls="conditional-contact">
+            <label class="govuk-label govuk-radios__label" for="installer_type">
               Detached property
             </label>
           </div>
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
-              value="no">
-            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+            <input class="govuk-radios__input" id="installer_type" name="installer_type" type="radio" value="installer" data-aria-controls="conditional-contact">
+            <label class="govuk-label govuk-radios__label" for="installer_type">
               Semi-detached property
             </label>
           </div>
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
-              value="no">
-            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-              Terraced property
+            <input class="govuk-radios__input" id="installer_type" name="installer_type" type="radio" value="installer" data-aria-controls="conditional-contact">
+            <label class="govuk-label govuk-radios__label" for="installer_type">
+                Terraced property
             </label>
           </div>
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
-              value="no">
-            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-              Bungalow
+            <input class="govuk-radios__input" id="installer_type" name="installer_type" type="radio" value="installer" data-aria-controls="conditional-contact">
+            <label class="govuk-label govuk-radios__label" for="installer_type">
+                Bungalow
             </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="installer_type-2" name="installer_type" type="radio" value="subcontractor" data-aria-controls="conditional-contact-2">
+            <label class="govuk-label govuk-radios__label" for="installer_type">
+              Other
+            </label>
+          </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="contact-by-phone">
+                Enter the property type
+              </label>
+              <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel"></div>
           </div>
         </div>
 
-      </fieldset>
-    </div>
 
-    <br>
-
-
-    <div class="govuk-button-group">
+    <div class="govuk-button-group govuk-!-margin-top-7">
       <a class="govuk-button" data-module="govuk-button" href="property-details">
         Continue
       </a>

@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Business type
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" method="post">
+
+    <div class="govuk-form-group-govuk-!-margin-top-7">
+      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            Select the option that best describes your business
+          </h1>
+        </legend>
+
+        <div class="govuk-radios govuk-!-margin-top-5 govuk-radios--conditional" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="business_type2" name="business_type" type="radio" value="landlord" data-aria-controls="conditional-business-2">
+            <label class="govuk-label govuk-radios__label" for="business_type2">
+              Landlord
+            </label>
+            <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+              You are the freeholder or leaseholder. You’ll create an account to apply for the grant for properties you own.
+            </div>
+          </div>
+
+          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="business_type" name="business_type" type="radio" value="pmc" data-aria-controls="conditional-business">
+              <label class="govuk-label govuk-radios__label" for="business_type">
+                Property management company
+              </label>
+              <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                You are the the representative or managing agent of more than one landlord. This is also know as property factor in Scotland. You’ll create an account to apply for the grant on behalf of your clients.
+              </div>
+            </div>
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="business_type2" name="business_type" type="radio" value="installer" data-aria-controls="conditional-business-2">
+                <label class="govuk-label govuk-radios__label" for="business_type">
+                Installer
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  You are responsible for doing the chargepoint installation.
+                </div>
+              </div>
+
+        </div>
+    </div>
+
+
+      </fieldset>
+
+
+
+<div class="govuk-button-group govuk-!-margin-top-5">
+  <button class="govuk-button" data-module="govuk-button">
+    Save and continue
+  </button>
+
+</div>
+
+</form>
+
+  </div>
+</div>
+
+
+{% endblock %}

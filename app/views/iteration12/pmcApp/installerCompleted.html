@@ -1,0 +1,209 @@
+{% extends "layout-pmc.html" %}
+
+{% block pageTitle %}
+Check your answers before sending your application
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-l">Highfield Lodge</span>
+
+    <h1 class="govuk-heading-xl">View application #209048</h1>
+
+    <p>The installer has completed the claim. OZEV will confirm with them when the claim has been accepted for payment.</p>
+
+
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Status of application
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <strong class="govuk-tag govuk-tag--green">Completed</strong>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Installer name name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Tyler Okonma
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Installer number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          118490
+        </dd>
+      </div>
+    </dl>
+
+    <h1 class="govuk-heading-m">Address details</h1>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Property type
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Residential
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          129 Letham Lane
+          <br>Perth
+          <br>PH1 1XX
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Amount of sockets
+        </dt>
+        <dd class="govuk-summary-list__value">
+          7
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Private off-street parking
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Yes
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Building type
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Bungalow
+        </dd>
+      </div>
+    </dl>
+
+<br>
+<h2 class="govuk-heading-m">Chargepoints in application</h2>
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Serial number</th>
+      <th scope="col" class="govuk-table__header">Chargepoint</th>
+      <th scope="col" class="govuk-table__header">Amount of sockets</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">ED1234</th>
+      <td class="govuk-table__cell">Char.gy, CP01</td>
+      <td class="govuk-table__cell">2</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">PH5678</th>
+      <td class="govuk-table__cell">Char.gy, CP02</td>
+      <td class="govuk-table__cell">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+
+<!-- <table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Address</th>
+      <th scope="col" class="govuk-table__header">Number of sockets</th>
+      <th scope="col" class="govuk-table__header">Action</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">14 Royal Road,<br>London,<br>EC1R 1BC</th>
+      <td class="govuk-table__cell">2</td>
+      <td class="govuk-table__cell"><a href="chargepointModel.html">Review</td>
+    </tr>
+  </tbody>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">37 Scott Street,<br>London,<br>WC1N 1BC</th>
+      <td class="govuk-table__cell">7</td>
+      <td class="govuk-table__cell"><a href="#">Review</td>
+    </tr>
+  </tbody>
+</table>-->
+
+<h1 class="govuk-heading-m">Other details</h1>
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Proof of installation</th>
+      <td class="govuk-table__cell">image1.jpg<br>image2.jpg</td>
+    </tr>
+  </tbody>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Date that installations were completed</th>
+      <td class="govuk-table__cell">21 July 2021</td>
+    </tr>
+  </tbody>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Total cost of installations</th>
+      <td class="govuk-table__cell">£3092.03</td>
+    </tr>
+  </tbody>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Proof of customer invoice</th>
+      <td class="govuk-table__cell">invoice.jpg</td>
+    </tr>
+  </tbody>
+</table>
+
+
+  </div>
+</div>
+
+
+{% endblock %}
