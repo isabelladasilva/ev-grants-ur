@@ -39,7 +39,7 @@ router.post('/' + version + '/pmcApp/linked-enterprise', function (req, res){
                         if (landlord_type == "yes") {
                         res.redirect(301, '/' + version + '/pmcApp/id-linked-enterprise')
                         } else {
-                        res.redirect(301, '/' + version + '/PMCApp/company-identification')
+                        res.redirect(301, '/' + version + '/pmcApp/company-identification')
       }})
 
 router.post('/' + version + '/landlordReg/account-type', function (req, res){
