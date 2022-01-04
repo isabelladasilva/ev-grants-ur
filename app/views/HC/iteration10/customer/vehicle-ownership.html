@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Declaration
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Are you responsible for an electric vehicle?</h1>
+
+    <p>You are responsible for the vehicle if you are:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>the registered owner of the vehicle</li>
+      <li>leasing the vehicle or have a finance agreement for this vehicle</li>
+      <li>leasing the vehicle as part of a salary sacrifice scheme</li>
+      <li>the nominated user of an employer vehicle</li>
+      <li>leasing a vehicle as part of the Motability scheme</li>
+    </ul>
+
+
+    <form class="form" action="/own-vehicle" method="post">
+
+        {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+        {{
+          govukRadios({
+            idPrefix: "vehicle-ownership",
+            name: "vehicle-ownership",
+            fieldset: {
+              legend: {
+                text: "",
+                isPageHeading: true,
+                classes: "govuk-fieldset__legend--l"
+              }
+            },
+            items: [
+              {
+                value: "yes",
+                text: "Yes",
+                checked: checked("vehicle-ownership", "yes")
+              },
+              {
+                value: "no",
+                text: "No",
+                checked: checked("vehicle-ownership", "no")
+              }
+            ]
+          })
+        }}
+
+        <br>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+        <!--<div class="govuk-button-group govuk-!-margin-top-6">
+          <a class="govuk-button" data-module="govuk-button" href="vehicle-information">
+            Continue
+          </a>
+        </div>-->
+
+  </div>
+</div>
+
+
+{% endblock %}

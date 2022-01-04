@@ -1,0 +1,227 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Check your answers before sending your application
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <!-- <span class="govuk-caption-l">John Doe</span> -->
+    <h1 class="govuk-heading-xl">Review customer application</h1>
+
+    <p>You have received this application from John Doe. You can submit this claim once you have completed the chargepoints installation at the below address.</p>
+
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9 govuk-!-margin-top-9">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Reference number
+        </dt>
+        <dd class="govuk-summary-list__value">390466
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Status of application
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <strong class="govuk-tag govuk-tag--blue">Ready to Claim</strong>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Customer name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Jonh Smith
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Customer email
+        </dt>
+        <dd class="govuk-summary-list__value">
+          john.smith@gmail.com
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Customer mobile number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          07384123456
+        </dd>
+      </div>
+
+      <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date you need to submit this claim by
+        </dt>
+        <dd class="govuk-summary-list__value">
+          13 October 2021
+        </dd>
+      </div> -->
+    </dl>
+
+    <h1 class="govuk-heading-m">Customer's eligibility details</h1>
+
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Claimed before
+        </dt>
+        <dd class="govuk-summary-list__value">
+          No
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Residential property
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Yes
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Off street parking
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Yes
+        </dd>
+      </div>
+    </dl>
+
+  <h1 class="govuk-heading-m">About their property</h1>
+
+  <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Ownership of property
+      </dt>
+      <dd class="govuk-summary-list__value">
+        They own the property
+      </dd>
+    </div>
+
+
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Type of property
+      </dt>
+      <dd class="govuk-summary-list__value">
+        Flat
+      </dd>
+    </div>
+
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Proprty address
+      </dt>
+      <dd class="govuk-summary-list__value">
+        5 Some Road <br> Some Town <br> AB1 2BC
+      </dd>
+    </div>
+  </dl>
+
+  <h1 class="govuk-heading-m">About their electric vehicle</h1>
+
+  <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Do they own the vehicle
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Yes
+        </dd>
+      </div>
+
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Vehicle's registration number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          AB13 CFE
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Vehcile manufacturer
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Audi
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Vehcile's model'
+        </dt>
+        <dd class="govuk-summary-list__value">
+          A3 e-tron
+        </dd>
+      </div>
+
+  </dl>
+
+    <div class="govuk-inset-text">
+      Advise installers what to do if the information provided by the customer is incorrect.
+   </div>
+
+
+    <!-- <p><a class="govuk-button govuk-button--secondary" href="declaration.html">Change number of chargepoint sockets</a></p> -->
+    <p><a class="govuk-button govuk-!-margin-top-1" href="declaration">Confirm and continue claim</a></p>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

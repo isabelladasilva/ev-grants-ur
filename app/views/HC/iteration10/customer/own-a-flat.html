@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Does the property have dedicated off-street private parking? -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Do you own a flat?</h1>
+
+    <p>You can only claim this grant if you own a flat.</p>
+
+    <br>
+
+<form class="form" action="/own-apartment" method="post">
+
+    {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+    {{
+      govukRadios({
+        idPrefix: "own-appartment",
+        name: "own-appartment",
+        fieldset: {
+          legend: {
+            text: "",
+            isPageHeading: true,
+            classes: "govuk-fieldset__legend--l"
+          }
+        },
+        items: [
+          {
+            value: "yes",
+            text: "Yes",
+            checked: checked("own-appartment", "yes")
+          },
+          {
+            value: "no",
+            text: "No",
+            checked: checked("own-appartment", "no")
+          }
+        ]
+      })
+    }}
+
+    <br>
+
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    <!--<div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="consent-to-install">
+        Continue
+      </a>
+    </div>-->
+
+
+  </div>
+</div>
+
+
+{% endblock %}

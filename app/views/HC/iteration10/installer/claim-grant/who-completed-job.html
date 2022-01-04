@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Who completed the job
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Who completed the installation?</h1>
+
+<form class="form" method="post">
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+        <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="installer_type" name="installer_type" type="radio" value="installer" data-aria-controls="conditional-contact">
+            <label class="govuk-label govuk-radios__label" for="installer_type">
+              An employee of your company
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="installer_type-2" name="installer_type" type="radio" value="subcontractor" data-aria-controls="conditional-contact-2">
+            <label class="govuk-label govuk-radios__label" for="installer_type-2">
+              A subcontractor
+            </label>
+          </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+            <div class="govuk-form-group">
+              <p>Subcontractors must be approved by OZEV and need to have their own installer number. If you do not know thier installer number, you can check the <a href="https://www.gov.uk/government/publications/electric-vehicle-homecharge-scheme-authorised-installers" class="govuk-link" rel="noreferrer noopener" target="_blank">OZEV list of authorised installers</a>.</p>
+              <label class="govuk-label" for="contact-by-phone">
+                Enter the subcontractor's OZEV installer number
+              </label>
+              <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel"></div>
+          </div>
+        </div>
+
+      </fieldset>
+    </div>
+
+    <div class="govuk-button-group govuk-!-margin-top-7">
+      <button class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+    </div>
+
+</form>
+  </div>
+</div>
+
+
+{% endblock %}
