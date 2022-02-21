@@ -1,0 +1,85 @@
+{% extends "layout-ll.html" %}
+
+{% block pageTitle %}
+Landlord Chargepoint Grant dashboard
+{% endblock %}
+
+<style type="text/css">
+    .green {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #006c56!important;
+    border:1px solid #006c56;
+    }
+
+
+table th, table td {
+    text-transform: none;
+    font-size: 16px !important;
+}
+
+    </style>
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <a href="#" class="govuk-back-link">Back</a>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <!-- <p class="govuk-body govuk-!-margin-top-3">You are signned in as: <a href="account">Blue Tick Properties</a></p>-->
+  </div>
+</div>
+
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Dashboard</h1>
+
+          <p class="govuk-body">You have not started any grant applications yet.</p>
+          <p class="govuk-body">Once you submit an application it will be shown on your dashboard and you will be able to track its progress.</p>
+          <p class="govuk-body">You can also update your account details and add new users within the your account which can be found in the navigation at the top of this service.</p>
+      <a class="govuk-button govuk-!-margin-top-5" href="type-of-grant-property">Start a new application</a>
+
+    </div>
+
+
+
+
+{% endblock %}

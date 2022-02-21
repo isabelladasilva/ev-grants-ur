@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Enter your access code -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">You're car park does not qualify for funding</h1>
+
+    <p>Your carpark must contain at least 5 paking spaces to qualify for funding to install electric vehicle chargepoints in a residential car park.</p>
+    <p>you can still apply for the Landlord grant for residential parking.</p>
+
+
+    <div class="govuk-button-group govuk-!-margin-top-7">
+      <a class="govuk-button" data-module="govuk-button" href="dashboard-first-time">
+        Go to your dashboard
+      </a>
+    </div>
+
+
+  </div>
+</div>
+{% endblock %}

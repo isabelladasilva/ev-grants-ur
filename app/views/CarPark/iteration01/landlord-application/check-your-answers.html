@@ -1,0 +1,197 @@
+{% extends "layout-ll.html" %}
+
+{% block pageTitle %}
+Check your answers before sending your application
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-l">Blue Tick Properties</span>
+
+    <h1 class="govuk-heading-xl">Check your answers</h1>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <!-- <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Property type
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Residential
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div> -->
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Type of grant
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Residential landlord grant
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                <!-- Change<span class="govuk-visually-hidden"> previous application number</span> -->
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Private parking
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Yes
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                <!-- Change<span class="govuk-visually-hidden"> previous application number</span> -->
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Installer details
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Installer unique number: 12050845<br>
+              Installer name: Electric City Installers
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                <!-- Change<span class="govuk-visually-hidden"> previous application number</span> -->
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Installation address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              14 Royal Road
+              <br>London
+              <br>EC1R 1BC
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                <!-- Change<span class="govuk-visually-hidden"> previous application number</span> -->
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Building type
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Apartment building
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                <!-- Change<span class="govuk-visually-hidden"> previous application number</span> -->
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Property details
+            </dt>
+            <dd class="govuk-summary-list__value">
+              2 to 10 units<br>
+              5 to 10 pargking bays
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                <!-- Change<span class="govuk-visually-hidden"> previous application number</span> -->
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Type of car park
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Overground or surface car park
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                <!-- Change<span class="govuk-visually-hidden"> previous application number</span> -->
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Number of chargepoints
+            </dt>
+            <dd class="govuk-summary-list__value">
+              2
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                <!-- Change<span class="govuk-visually-hidden"> previous application number</span> -->
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Number of chargepoint sockets
+            </dt>
+            <dd class="govuk-summary-list__value">
+              3
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                <!-- Change<span class="govuk-visually-hidden"> previous application number</span> -->
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="confirmation.html">
+        Submit application
+      </a>
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}
