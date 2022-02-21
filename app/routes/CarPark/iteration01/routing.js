@@ -11,7 +11,7 @@ module.exports = function (router) {
   //var installerClaimGrant = installerPath + '/claim-grant';//
 
 
-  //Who completed the job - company or sub-subcontractor for claiming a grant journey
+  //Who completed the job - company or sub-subcontractor for claiming a grant journey.
   router.post('/installation-job', function (req, res)
   {
     if (req.session.data['installer_type'] == "installer") {
