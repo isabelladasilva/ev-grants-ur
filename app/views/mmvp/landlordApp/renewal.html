@@ -1,0 +1,197 @@
+{% extends "layout-ll.html" %}
+
+{% block pageTitle %}
+Renew application
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Renew application</h1>
+    <p>
+        Your application is due to expire on <b>10 December 2021</b>.
+    </p>
+    <p>If you need more time to complete the installation you can renew for a further 90 days or ask your installer to submit the claim.
+      </p>
+
+      <h1 class="govuk-heading-m">Application summary</h1>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-7">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              14 Royal Road
+              <br>London
+              <br>EC1R 1BC
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Number of sockets
+            </dt>
+            <dd class="govuk-summary-list__value">
+              3
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Installer name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Electric City Installers
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Installer number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              835722
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Status of application
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <strong class="govuk-tag govuk-tag--red">Expiring soon</strong>
+            </dd>
+          </div>
+        </dl>
+        <div class="govuk-button-group">
+        <a class="govuk-button govuk govuk-!-margin-top-3" data-module="govuk-button" href="renew-confirm">
+        Renew application
+      </a>
+      <a class="govuk-button govuk-button--secondary govuk-!-margin-top-3" data-module="govuk-button" href="withdraw">
+        Withdraw application
+      </a>
+      </div>
+</div>
+
+        </div>
+
+      <!--  <h1 class="govuk-heading-m">Claim history</h1>
+
+
+        <div class="moj-timeline">
+
+          <div class="moj-timeline__item">
+
+          <div class="moj-timeline__header">
+            <h2 class="moj-timeline__title">Application is expiring soon</h2>
+
+            <p class="moj-timeline__byline">by OZEV</p>
+
+          </div>
+
+          <p class="moj-timeline__date">
+            <time datetime="2019-05-21T13:15:00.000Z">3 December 2021 at 15:00</time>
+          </p>
+
+          <div class="moj-timeline__description">Your applicatiion is expiring soon and needs to be renewed by 15th December 2021.
+            <div>
+              <div class="govuk-button-group">
+              <a class="govuk-button govuk govuk-!-margin-top-3" data-module="govuk-button" href="renew-confirm">
+              Renew application
+            </a>
+            <a class="govuk-button govuk-button--secondary govuk-!-margin-top-3" data-module="govuk-button" href="withdraw">
+              Withdraw application
+            </a>
+            </div>
+          </div>
+</div>
+
+          </div>
+
+
+        <div class="moj-timeline__item">
+
+        <div class="moj-timeline__header">
+          <h2 class="moj-timeline__title">Claim started</h2>
+
+          <p class="moj-timeline__byline">by Electric City Installers</p>
+
+        </div>
+
+        <p class="moj-timeline__date">
+          <time datetime="2019-05-21T13:15:00.000Z">15 September 2021 at 15:00</time>
+        </p>
+
+        </div>
+
+        <div class="moj-timeline__item">
+
+        <div class="moj-timeline__header">
+          <h2 class="moj-timeline__title">Eligibility confirmed</h2>
+
+          <p class="moj-timeline__byline">by OZEV</p>
+
+        </div>
+
+        <p class="moj-timeline__date">
+          <time datetime="2019-05-21T13:15:00.000Z">21 September 2021 at 17:00</time>
+        </p>
+        <div class="moj-timeline__description">Your application has been received – reference 390466</div>
+
+        </div>
+
+        <div class="moj-timeline__item">
+
+        <div class="moj-timeline__header">
+          <h2 class="moj-timeline__title">Application submitted</h2>
+
+          <p class="moj-timeline__byline">by Bluetick Properties</p>
+
+        </div>
+
+        <p class="moj-timeline__date">
+          <time datetime="2019-05-28T10:45:00.000Z">21 September 2021 at 16:00</time>
+        </p>
+
+        <div class="moj-timeline__description">
+          <ul class="govuk-list govuk-list--bullet">
+            <li><a class="govuk-link" href="#">View application</a></li>
+          </ul>
+        </div>
+
+        </div>
+
+        </div> -->
+
+
+
+{% endblock %}

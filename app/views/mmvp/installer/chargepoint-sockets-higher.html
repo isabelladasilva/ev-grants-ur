@@ -1,0 +1,55 @@
+{% extends "layout-installer.html" %}
+
+{% block pageTitle %}
+You have exceeded the number of sockets you can claim for
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+  <!-- <span class="govuk-caption-l">14 Royal Road, EC1R 1BC</span> -->
+  <!--<span class="govuk-caption-xl">14 Royal Road, EC1R 1BC</span>-->
+  <!-- <span class="govuk-caption-l">Sherborne Properties</span> -->
+    <h1 class="govuk-heading-l">You have exceeded the number of sockets you can claim for</h1>
+
+    <p class="govuk-body">Your customer has applied for a total of 3 chargepoint sockets. That is the total amount you can claim for.</p>
+
+    <p class="govuk-body">If you have installed 5 chargepoint sockets, you will need to contact your customer and advise them to cancel this application and submit a new one.</p>
+
+    <div class="govuk-button-group govuk-!-margin-top-9">
+      <a class="govuk-button" data-module="govuk-button" href="chargepoint-model">
+        Return and review
+      </a>
+      <!-- <p><a href="task-list" role="button">Save and continue later</a></p> -->
+
+    </div>
+
+
+</div>
+
+</div>
+
+
+{% endblock %}

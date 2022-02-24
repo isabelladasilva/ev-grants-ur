@@ -1,0 +1,93 @@
+{% extends "layout-com.html" %}
+
+{% block pageTitle %}
+Does this property have private parking?
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="countries-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <span class="govuk-caption-l">Blue Tick Properties</span>
+      <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-5">
+        Does this property have private parking?
+      </h1>
+    </legend>
+
+    <form class="form" method="post">
+
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="parking" name="parking" type="radio" value="yes" data-aria-controls="conditional-parking">
+      <label class="govuk-label govuk-radios__label" for="parking">
+        Yes
+      </label>
+    </div>
+
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="parking-2" name="parking" type="radio" value="no" data-aria-controls="conditional-parking-2">
+      <label class="govuk-label govuk-radios__label" for="parking">
+        No
+      </label>
+    </div>
+
+    <details class="govuk-details govuk-!-margin-top-7" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          What is private parking?
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+      <p>The address where you’re applying to install chargepoints must have private parking. You must own the parking space or have sole legal right to it.</p>
+
+      <p>The private parking may be co-located with the property or separate from it.</p>
+
+      <p>Where the parking is separate from the property you must be able to demonstrate you have a legal entitlement to the parking space through the provision of Land Registry title deeds.</p>
+
+      <p> If you do not own the parking space or have sole legal right to it you cannot apply for the grant. This includes:</P>
+        <ul class="govuk-list govuk-list--bullet">
+            <li>rented spaces</li>
+            <li>spaces shared with other properties</li>
+            <li>spaces that provide access routes to other properties</li>
+          </ul>
+        <p>We are not able to permit arrangements that involve cables being placed over public land, such as pavements, even if it is temporary.</p>
+     </div>
+    </details>
+
+    <div class="govuk-button-group govuk-!-margin-top-7">
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+    </div>
+
+      </form>
+  </fieldset>
+</div>
+
+
+    </div>
+  </div>
+
+
+{% endblock %}

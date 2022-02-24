@@ -1,0 +1,218 @@
+
+{% extends "layout-installer.html" %}
+
+{% block pageTitle %}
+  Application status per country - Vehicle Operator Licensing - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+    <style type="text/css">
+
+.orange {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #c5490a !important;
+    border:1px solid #c5490a;
+    }
+
+    .red {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #b10e1e !important;
+    border:1px solid #b10e1e;
+    }
+
+    .green {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #006c56!important;
+    border:1px solid #006c56;
+    }
+
+
+table th {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+table td {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+govuk-label {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+
+    </style>
+
+
+
+
+
+    <div class="govuk-grid-row">
+     <div class="govuk-grid-column-full">
+
+
+
+    <div class="govuk-form-group ">
+        <span class="govuk-caption-l">Sherborne Properties</span>
+      <h1 class="govuk-heading-xl">Provide additional details for each chargepoint</h1>
+      <h1 class="govuk-heading-l">Terra AC W7-T-0</h1>
+      <div class="govuk-form-group">
+        <p class="govuk-body"><b>Number of chargepoints installed:</b> 3</p>
+          <p class="govuk-body"><b>Sockets per chargepoint:</b> 1</p>
+      </div>
+
+      <p>Add the serial number and the photographs for each chargepoint installed.</p>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+          <legend class="govuk-fieldset__legend moj-add-another__title govuk-fieldset__legend--m">
+          </legend>
+        </div>
+        <div class="govuk-grid-column-one-quarter">
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="chargepoint-model-add">
+            Add chargepoint
+          </a>
+        </div>
+      </div>
+              <div class="govuk-!-margin-top-2">
+
+                  <table class="govuk-table" style="font-size: 19px !important">
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Chargepoint</th>
+                        <th scope="col" class="govuk-table__header">Serial number</th>
+                        <th scope="col" class="govuk-table__header">Photographs</th>
+                        <th scope="col" class="govuk-table__header">Action</th>
+                        <th scope="col" class="govuk-table__header">Remove</th>
+
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">1</td>
+                        <td class="govuk-table__cell"></td>
+                        <td class="govuk-table__cell"></td>
+                        <td class="govuk-table__cell"><a href="chargepoint1">Add details</a></td>
+                        <td class="govuk-table__cell"><a href="chargepoint2">Delete</a></td>
+                      </tr>
+
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">2</td>
+                        <td class="govuk-table__cell"></td>
+                        <td class="govuk-table__cell"></td>
+                        <td class="govuk-table__cell"><a href="chargepoint1">Add details</a></td>
+                        <td class="govuk-table__cell"><a href="chargepoint-dashboard">Delete</a></td>
+                      </tr>
+
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">3</td>
+                        <td class="govuk-table__cell"></td>
+                        <td class="govuk-table__cell"></td>
+                        <td class="govuk-table__cell"><a href="chargepoint1">Add details</a></td>
+                        <td class="govuk-table__cell"><a href="chargepoint-dashboard">Delete</a></td>
+                      </tr>
+
+
+                      <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">4</td>
+                      <td class="govuk-table__cell"></td>
+                      <td class="govuk-table__cell"></td>
+                      <td class="govuk-table__cell"><a href="chargepoint1">Add details</a></td>
+                      <td class="govuk-table__cell"><a href="chargepoint-dashboard">Delete</a></td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                  <!--   <h1 class="govuk-heading-m !-margin-top-10">Terra AC W22-T-RD-MC-0</h1>
+
+                <p>You have installed 3 Terra AC W7-T-0 chargepoints which have 1 socket. Enter the serial number and add the photographs.</p>
+
+                          <div class="govuk-!-margin-top-5">
+
+                              <table class="govuk-table" style="font-size: 19px !important">
+                                <thead class="govuk-table__head">
+                                  <tr class="govuk-table__row">
+                                    <th scope="col" class="govuk-table__header">Chargepoint</th>
+                                    <th scope="col" class="govuk-table__header">Serial number</th>
+                                    <th scope="col" class="govuk-table__header">Photographs</th>
+                                    <th scope="col" class="govuk-table__header">Action</th>
+                                    <th scope="col" class="govuk-table__header">Remove</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="govuk-table__body">
+
+                                  <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">2</td>
+                                    <td class="govuk-table__cell"></td>
+                                    <td class="govuk-table__cell"></td>
+                                    <!-- <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" style="font-size: 16px !important">Final rejection</strong></td>
+                                    <td class="govuk-table__cell"><a href="chargepoint1">Add details</a></td>
+                                    <td class="govuk-table__cell"><a href="chargepoint">Delete</a></td>
+
+                                  </tr>
+
+                                </tbody>
+                              </table> -->
+
+
+                  <a class="govuk-button govuk-button--secondary govuk-!-margin-top-5" data-module="govuk-button" href="chargepoint-model-add">
+                    Add another chargepoint model
+                  </a>
+
+          <div class="govuk-button-group govuk-!-margin-top-5">
+            <a class="govuk-button" data-module="govuk-button" href="chargepoint-dashboard">
+              Save and continue
+            </a>
+            <p><a href="task-list" role="button">Save and continue later</a></p>
+          </div>
+
+        </div>
+
+
+
+
+          </div>
+
+
+
+{% endblock %}

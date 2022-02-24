@@ -1,0 +1,119 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Apply for the OZEV electric vehicle chargepoint grant: installers
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Claim for the landlord chargepoint grant: installers
+      </h1>
+
+      <h2 class="govuk-heading-s">Use this service to:</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>sign in using your email and password</li>
+        <li>submit claims on behalf of your customers</li>
+        <li>manage your installer account</li>
+        <li>manage your client applications</li>
+      </ul>
+
+<h2 class="govuk-heading-s">Who can use this service</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>existing OZEV authorised installers can access this service for the first time by requesting a link to create a password</li>
+        <li>new installers must apply to be an <a href="https://forms.dft.gov.uk/ozev-authorised-installer-application/">OZEV authorised installer</a> before you can use this service</li>
+      </ul>
+
+      <a href="signIn.html" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+      <p>To create an account you will need:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>the email address you used to register with OZEV</li>
+        <li>your OZEV installer number</li>
+</ul>
+<p>You will also need:</p>
+<ul class="govuk-list govuk-list--bullet">
+        <li>access to an email address</li>
+        <li>a UK mobile phone with signal, as we will text you a security code </li>
+      </ul>
+
+
+      <!-- <p>Creating an account takes around 5 minutes.</p> -->
+
+     <div class="govuk-inset-text">
+      If you are an installer without an account <a href="https://forms.dft.gov.uk/ozev-authorised-installer-application/">check how to create an installer account</a>. If you have already set-up your access, you can <a href="signIn">sign in to continue</a> using your email and password.
+      </div>
+
+      <p>There are different services and guidance available for the <a href="#">Electric Vehicle Homecharge Scheme (EVHS)</a> and <a href="https://www.gov.uk/government/publications/workplace-charging-scheme-guidance-for-applicants-installers-and-manufacturers/workplace-charging-scheme-guidance-for-applicants-chargepoint-installers-and-manufacturers">Workplace Chargepoint Scheme (WCS)</a>.</p>
+
+
+      <!-- <h2 class="govuk-heading-m">Before you start</h2> -->
+
+      <!-- <p>You can also <a href="#">register by post</a>.</p> -->
+
+      <p>This service is also available in <a href="#">Welsh (Cymraeg)</a>.</p>
+
+      <!-- <p>You cannot register for this service if you are not a UK registered business.</p> -->
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}

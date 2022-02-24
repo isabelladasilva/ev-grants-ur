@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Confirmation code is incorrect
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Incorrect verification code</h1>
+
+    <p class="govuk-body">The verification code you have entered is incorrect.</p>
+    <p class="govuk-body">You will need to request a new code to continue. This code will be sent to the email address you have provided to us.</p>
+
+
+<div class="govuk-button-group govuk-!-margin-top-7">
+  <a class="govuk-button" data-module="govuk-button" href="check-email-resent">
+  Request a new code
+  </a>
+
+  </div>
+</div>
+
+
+{% endblock %}

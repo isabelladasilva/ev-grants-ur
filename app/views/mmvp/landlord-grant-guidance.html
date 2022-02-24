@@ -1,0 +1,353 @@
+{% extends "layout.html" %}
+
+
+
+{% block pageTitle %}
+GOV guidance
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+.app-c-contents-list__list-item {
+    padding-top: 10px;
+    line-height: 1.3;
+    list-style-type: none;
+}
+.app-c-contents-list__list-item {
+    padding-top: 7.5px;
+}
+.app-c-contents-list__list-item--dashed {
+    margin-left: -15px;
+    padding-right: 25px;
+}
+.app-c-contents-list__list-item--dashed::before {
+    content: "— ";
+    margin-left: -25px;
+    padding-right: 5px;
+}
+
+.part-navigation-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #bfc1c3;
+}
+/*pagination */
+.pub-c-pagination {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.pub-c-pagination__list {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 641px)
+.pub-c-pagination__item {
+    font-size: 16px;
+    line-height: 1.25;
+}
+.pub-c-pagination__item {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    float: left;
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+.pub-c-pagination__link:visited {
+    color: #005ea5;
+}
+a:visited {
+    color: #4c2c92;
+}
+a:link {
+    color: #005ea5;
+}
+.pub-c-pagination__link {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+@media (min-width: 641px)
+.pub-c-pagination__link-title {
+    font-size: 27px;
+    line-height: 1.25;
+}
+
+.pub-c-pagination__link-title {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 20px;
+    line-height: 1.1111111111;
+    display: block;
+}
+.visually-hidden, .visuallyhidden {
+    position: absolute;
+    left: -9999em;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.pub-c-pagination__link-label {
+    display: inline-block;
+    margin-top: 0.1em;
+    text-decoration: underline;
+}
+
+.pub-c-pagination__item--next {
+    float: right;
+    text-align: right;
+}
+
+@media (min-width: 641px)
+.pub-c-pagination__item {
+    font-size: 16px;
+    line-height: 1.25;
+}
+.pub-c-pagination__item {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    float: left;
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+.pub-c-pagination__list:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.pub-c-pagination__item--previous {
+    float: left;
+    text-align: left;
+}
+.pub-c-pagination__item--next {
+    float: right;
+    text-align: right;
+}
+
+
+</style>
+
+<div class="govuk-grid-row">
+
+<div class="govuk-grid-column-two-thirds">
+<span class="govuk-caption-xl gem-c-title__context">
+Guidance
+</span>
+<h1 class="govuk-heading-l">Electric vehicle chargepoint grant for landlords</h1>
+
+<p class="pub-c-lead-paragraph">Funding is available to landlords, social housing providers and property factors who want to install electric vehicle (EV) chargepoints on their rental property. This page has guidance on who can apply, how to apply, and the grant rules.</p>
+
+<aside class="part-navigation-container" role="complementary">
+
+<nav role="navigation" class="app-c-contents-list " data-module="track-click" aria-label="Pages in this guide">
+<h2 class="govuk-body-s">
+Contents
+</h2>
+
+<ol class="gem-c-contents-list__list">
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 1" data-track-label="#overview" data-track-options="" href="#overview">Overview</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 1" data-track-label="#who-can-apply" data-track-options="" href="#who-can-apply">Who can apply</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 2" data-track-label="#land-pm" data-track-options="" href="#land-pm">Check your property is eligible for a grant</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 2" data-track-label="#how-the-grant-works" data-track-options="" href="#how-the-grant-works">How the grant works</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="#installer" data-track-options="" href="#installer">Working with an OZEV authorised installer</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="#parking" data-track-options="" href="#parking">Private parking</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="#before-you-apply" data-track-options="" href="#before-you-apply">Before you apply</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="#prepare" data-track-options="" href="#prepare">Preparing your application</a>
+</li>
+
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="#how-to-apply" data-track-options="" href="#how-to-apply">How to apply</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="#rules" data-track-options="" href="#rules">Grant rules and restrictions</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="#other-grants" data-track-options="" href="#other-grants">Other help you can get</a>
+</li>
+
+
+</ol>
+</nav>
+</aside>
+
+<h2 class="govuk-heading-m" id="overview">Overview</h2>
+<p class="govuk-body">The Electric vehicle landlord chargepoint grant gives financial support to landlords to buy and install electric vehicle chargepoints at their residential rental properties in the UK.</p>
+
+<p class="govuk-body">The grant provides funding of 75% (up to £350) towards the cost of buying and installing electric vehicle (EV) chargepoint sockets in eligible UK rental properties. The grant amount given is per chargepoint socket. If the chargepoint has 2 sockets then the grant amount will be up to £700. (A chargepoint with 2 sockets can charge 2 cars at the same time.)</p>
+
+<p class="govuk-body">Landlords can apply for up to 200 chargepoint sockets per year.</p>
+
+<p class="govuk-body">The grant is provided by the Office for Zero Emission Vehicles (OZEV).</p>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="who-can-apply">Who can apply</h2>
+
+<p class="govuk-body">This grant is for UK registered landlords who want to install EV chargepoints on properties they own or lease.</p>
+
+<p class="govuk-body">Residents who manage the building as a company and have a common ownership of the parking space, can apply for this grant.</p>
+
+<p class="govuk-body">You may apply for this grant if you are one of the following:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>landlord with property that you let or intend to let</li>
+<li>right to manage (RTM) company</li>
+<li>companies owning the freehold</li>
+<li>companies owning the building’s common areas including shareholders who are the leaseholders</li>
+<li>leaseholders who have the freeholder’s consent to install chargepoints</li>
+<li>property factors</li>
+<li>private registered providers of social housing (PRP)</li>
+<li>housing associations</li>
+<li>social housing providers</li>
+<li>public authorities</li>
+</ul>
+
+<p class="govuk-body">You must be a UK company registered at Companies House or VAT registered with HMRC.</p>
+<p class="govuk-body">If you are a registered company, charity or public sector organisation you can use your Companies House company registration number or VAT registration number to apply.</p>
+<p class="govuk-body">Your company registration number is the best number to use as it will speed up the application process.</p>
+
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="land-pm">Check your property is eligible for a grant</h2>
+<p class="govuk-body">Your property must have private parking and it must be located in England, Wales, Scotland or Northern Ireland. Properties in the Channel Islands and Isle of Man are not included.</p>
+
+<p class="govuk-body">You can apply for:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>single-unit properties such as flats and houses</li>
+  <li>multi-unit properties such as apartment blocks</li>
+</ul>
+<p class="govuk-body">Holiday rental properties are not covered by this grant.</p>
+<p class="govuk-body">If you live in the single unit that you are applying for and you do not have rights over the car park, your property is not covered by this grant.</p>
+<p class="govuk-body">You cannot apply for this grant if you use the property for your own business.</p>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="how-the-grant-works">How the grant works</h2>
+<p class="govuk-body">You can get funding for 75% of the total cost of buying and installing an OZEV approved chargepoint socket, up to a maximum of £350.</p>
+<p class="govuk-body">OZEV pays the grant to your OZEV authorised installer who passes the discount on to you.</p>
+<p class="govuk-body">Landlords of residential properties can apply for up to 200 chargepoint sockets per financial year. The financial year runs from 6 April to 5 April the next year.</p>
+
+<ol class="govuk-list govuk-list--number">
+  <li>Once you start an application, your installer will have 90 days to get the work done and to submit their part of the claim.</li>
+  <li>If you or your installer need more time, you can request an extra 90 days for up to 12 months from the date you first applied.</li>
+  <li>When your installer finishes the installation, they have to prove it is complete. This means that when your installer submits their part of the claim, they must send us proof that the work is done. This evidence includes a copy of your invoice and photos of the chargepoints they installed.</li>
+</ol>
+
+<h2 class="govuk-heading-s govuk-!-margin-top-7" id="installer">Working with an OZEV authorised installer</h2>
+<p class="govuk-body">Only <a href="https://www.gov.uk/guidance/evhs-and-wcs-become-an-authorised-installer#approved-installer-list">OZEV authorised installers</a> can claim for the EV landlord chargepoint grant.</p>
+<p class="govuk-body">Installers must ensure that any chargepoint installed is listed on the <a href="https://www.gov.uk/government/publications/electric-vehicle-homecharge-scheme-approved-chargepoint-model-list">OZEV approved chargepoint model list</a>.</p>
+<p class="govuk-body">Installers work with landlords and property owners to help you understand the chargepoint installation process.</p>
+<p class="govuk-body">Once you and your installer agree to proceed with the job, the installer will give you their OZEV installer number.</p>
+<p class="govuk-body">Use your installer’s OZEV number to start the application and to choose your installer as the supplier for the job.</p>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="before-you-apply">Before you apply</h2>
+<p class="govuk-body">Before you begin your application, you should:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>engage with your installer and agree what you want installed</li>
+  <li>familiarize yourself with the <a href="#rules">grant rules and restrictions</a></li>
+  <li>discuss your needs with your chosen <a href="https://www.gov.uk/guidance/evhs-and-wcs-become-an-authorised-installer#approved-installer-list">OZEV authorised installer</a></li>
+  <li>ensure that any chargepoint installed is on the <a href="https://www.gov.uk/government/publications/electric-vehicle-homecharge-scheme-approved-chargepoint-model-list">OZEV approved chargepoint model list</a></li>
+  <li>workout how you will manage the chargepoints once they are installed, including maintenance and the electricity costs</li>
+  <li>ensure accessibility needs are addressed throughout the process when installing an EV chargepoint particularly for EV owners who may be disabled or have mobility needs</li>
+  <li>get your installer’s OZEV installer number and start your application</li>
+</ul>
+
+<h3 class="govuk-heading-m" id="parking">Private parking</h3>
+<p class="govuk-body">The space where you are applying to install chargepoints must have a private parking space. You must own the parking space or have the sole legal right to it.</p>
+<p class="govuk-body">The private parking may be connected to the property or separate from it.</p>
+<p class="govuk-body">You must be able to show you have legal entitlement to the parking space if it is separate from the property. You may prove this through the provision of Land Registry title deeds.</p>
+<p class="govuk-body">If you do not own the parking space or have the sole legal right to it, you cannot apply for the grant. This includes rented spaces.</p>
+<p class="govuk-body">Cables are not permitted over public land such as pavements. This is true even if the arrangement is temporary.</p>
+
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="prepare">Preparing your application</h2>
+<p class="govuk-body">To start your application, you will need one of the following: </p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>company registration number</li>
+  <li>VAT registration number</li>
+</ul>
+<p class="govuk-body">You will also need:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>access to an email address</li>
+  <li>a UK mobile phone with signal as we will text you a security code </li>
+</ul>
+<p class="govuk-body">Linked enterprises must apply through their controlling company using their  company registration number.</p>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="how-to-apply">How to apply for the EV landlord grant</h2>
+<p class="govuk-body">If you are applying for a grant you need to create an account and manage your applications.</p>
+<ol class="govuk-list govuk-list--number">
+  <li>Find and choose an <a href="https://www.gov.uk/guidance/evhs-and-wcs-become-an-authorised-installer#approved-installer-list">OZEV authorised installer</a>.</li>
+  <li>Confirm your chargepoint is on the <a href="https://www.gov.uk/government/publications/electric-vehicle-homecharge-scheme-approved-chargepoint-model-list">list of OZEV approved chargepoint models</a>.</li>
+  <li>Get a quote from the installer.</li>
+  <li>Review and approve your installer quote and get their OZEV installer number.</li>
+  <li><a href="landlordApp/signIn">Create an account</a> and submit your application.</li>
+  <li>Once the grant amount is approved the installer will be authorised to proceed with the work. They have 90 days to complete the job.</li>
+  <li>After completing the job, the installer will submit proof of installation and claim for the grant.</li>
+  <li>The full grant discount will be passed on to you.</li>
+</ol>
+<p class="govuk-body"></p>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="rules">Grant rules and restrictions</h2>
+
+<p class="govuk-body">You can apply for one address per application. There may be multiple residences in one property that share the car park and multiple chargepoint sockets can be applied for in the same application.</p>
+<p class="govuk-body">Each application should be treated as one job and have a single invoice.</p>
+<p class="govuk-body">A twin or double chargepoint counts as 2 chargepoint sockets.</p>
+<p class="govuk-body">One application should be handled by one installer. If you use multiple installers you will need to submit multiple applications.</p>
+<p class="govuk-body">The grant approved amount is valid for 90 days from the application submission date. If the work is not completed within 90 days, you can extend the approval period for another 90 days.</p>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="other-grants">Other help you can get</h2>
+<p class="govuk-body">There are other grants available for:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li><a href="https://www.gov.uk/guidance/workplace-charging-scheme-guidance-for-applicant">Businesses</a> - Workplace charging scheme (WCS)</li>
+  <li><a href="https://energysavingtrust.org.uk/grants-and-loans/domestic-charge-point-funding/">Energy Savings Trust</a> - Domestic chargepoint funding in Scotland</li>
+  <li><a href="https://www.gov.uk/government/publications/customer-guidance-electric-vehicle-homecharge-scheme/electric-vehicle-homecharge-scheme-guidance-for-customers">EV Homecharge Scheme (EVHS)</a> - for tenants only</li>
+</ul>
+
+</div>
+
+
+{% endblock %}

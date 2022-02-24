@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+What type of landlord are you?
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" method="post">
+
+    <div class="govuk-form-group-govuk-!-margin-top-7">
+      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            What type of landlord are you?
+          </h1>
+        </legend>
+
+        <div class="govuk-radios govuk-!-margin-top-5 govuk-radios--conditional" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="landlord_type" name="landlord_type" type="radio" value="landlord" data-aria-controls="conditional-landlord">
+            <label class="govuk-label govuk-radios__label" for="landlord_type">
+              Private landlord
+            </label>
+          </div>
+
+          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="landlord_type2" name="landlord_type" type="radio" value="public" data-aria-controls="conditional-landlord-2">
+              <label class="govuk-label govuk-radios__label" for="landlord_type">
+                Public authority
+              </label>
+            </div>
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="landlord_type3" name="landlord_type" type="radio" value="social" data-aria-controls="conditional-landlord-3">
+                <label class="govuk-label govuk-radios__label" for="landlord_type">
+              Property factor or a social housing provider
+                </label>
+              </div>
+
+        </div>
+    </div>
+
+      </fieldset>
+
+      <div class= "govuk-!-margin-top-7">
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What is a public authority or social housing provider?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+
+              <p class="govuk-body">A <span class="govuk-!-font-weight-bold">public authority </span> is a government organisation that carries out tasks in the public interest or exercises the official authority it has been given. This includes government departments and their agencies, the Armed Forces, local government, the NHS and emergency services.</p>
+
+              <p class="govuk-body">When OZEV is considering eligibility, it checks the public authorities listed in Section 33 of the LGA 2003, the Freedom of Information Act, Schedule 1, parts 1-3.</p>
+
+              <p class="govuk-body">If you are still unsure you can <a rel="noreferrer noopener" target="_blank" href="https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/datasets/publicsectorclassificationguide">find out if you fall into this category (opens in new tab).</a></p>
+
+              <p class="govuk-body">A <span class="govuk-!-font-weight-bold">registered social housing provider </span> is an English organisation that is registered with the government. It provides or intends to provide social housing in England. The provider is the landlord, or will be the landlord, of social housing. </p>
+
+              <p class="govuk-body"><span class="govuk-!-font-weight-bold">Private registered providers (PRPs)</span> are providers of social housing in England that are registered with the government and are not local authorities.</p>
+
+              <!-- <p class="govuk-body">Government departments and their agencies, the Armed Forces, local government, National Health Service and the emergency services.</p>
+              <p class="govuk-body">In considering elegibility, OZEV will use the public authorities referenced in Section 33 of the LGA 2003, the Freedom of Information Act, Schedule 1, parts 1-3.</p>
+              <p class="govuk-body">If you are still unsure you can <a href="https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/datasets/publicsectorclassificationguide">find out if you fall into this category.</a></p> -->
+            </div>
+          </details>
+          </div>
+
+
+
+<div class="govuk-button-group govuk-!-margin-top-5">
+  <button class="govuk-button" data-module="govuk-button">
+    Save and continue
+  </button>
+
+</div>
+
+</form>
+
+  </div>
+</div>
+
+
+{% endblock %}

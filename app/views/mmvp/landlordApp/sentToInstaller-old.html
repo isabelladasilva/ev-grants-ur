@@ -1,0 +1,123 @@
+{% extends "layout-ll.html" %}
+
+{% block pageTitle %}
+Grant application submitted to your installer
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">View application</h1>
+
+    <p>Your applicatiion has been sent to Electric City Installers who need to complete thier part of the application.</p>
+
+    <p>You can withdraw your application before your installer completes their part of the application.</p>
+
+      <p>This page will update with further details once the installer has completed their claim.</p>
+
+    <h1 class="govuk-heading-m govuk-!-margin-top-5">Application summary</h1>
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Reference number
+          </dt>
+          <dd class="govuk-summary-list__value">390466
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Business name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Bluetick Properties
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            14 Royal Road
+            <br>London
+            <br>EC1R 1BC
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Number of sockets
+          </dt>
+          <dd class="govuk-summary-list__value">
+            3
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Installer name name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Electric City Installers
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Installer number
+          </dt>
+          <dd class="govuk-summary-list__value">
+            835722
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Status of application
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <strong class="govuk-tag govuk-tag--yellow">Sent to installer</strong>
+          </dd>
+        </div>
+      </dl>
+
+
+      <a class="govuk-button" data-module="govuk-button" href="withdraw">
+      Withdraw application
+      </a>
+
+    </div>
+      </div>
+
+
+
+{% endblock %}

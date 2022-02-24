@@ -1,0 +1,436 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Landlord Chargepoint Grant
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-xl">Landlord Chargepoint Grant</span>
+    <h1 class="govuk-heading-xl">MMVP</h1>
+
+          <h2 class="govuk-heading-l">GOV.UK</h2>
+           <ul class="govuk-list govuk-list--bullet">
+            <li><a href=/mmvp/landlord-grant-guidance>Guidance page for landlords</a></li>
+            <ul class="govuk-list govuk-list--bullet">
+              <li style="color: blue">Content updated on 24 Feb</li>
+            </ul>
+            <li><a href="/mmvp/landlordReg/start">Landlord Start page</a></li>
+            <ul class="govuk-list govuk-list--bullet">
+              <li style="color: blue">Content updated on 31 Jan</li>
+            </ul>
+            <!--  <li><a href="/mmvp/pmcReg/start">Property Management Company Start page</a></li> -->
+            <li><a href=/mmvp/installer-grant-guidance>Guidance page for installers</a></li>
+            <ul class="govuk-list govuk-list--bullet">
+              <li style="color: blue">Content updated on 25 Feb</li>
+            </ul>
+            <li><a href="/mmvp/installer/installer-step-by-step">Installers step by step</a></li>
+            <ul class="govuk-list govuk-list--bullet">
+              <li style="color: blue">Content updated on 8 Feb</li>
+            </ul>
+            <li><a href="/mmvp/installer/start">Installers Start page</a></li>
+          </ul>
+<br>
+<hr>
+          <!-- Landlord pages -->
+          <h2 class="govuk-heading-l govuk-!-margin-top-9">Landlord journey</h2>
+          <h3 class="govuk-heading-m govuk-!-margin-top-5">Create an account</h3>
+          <ul class="govuk-list govuk-list--bullet">
+            <li><a href="/mmvp/landlordReg/account-type">Account type</a></li>
+            <ul class="govuk-list govuk-list--bullet">
+              <li style="color: blue">Content updated on 26 Jan</li>
+              <li style="color: orange"><a href="/mmvp/landlordReg/account-type-old">Old version</a></li>
+            </ul>
+              <li><a href="/mmvp/landlordReg/email">Email verification</a></li>
+              <li><a href="/mmvp/landlordReg/check-email">Check email</a></li>
+              <ul class="govuk-list govuk-list--bullet">
+                <li style="color: blue">Content updated on 16 Jan</li>
+              </ul>
+              <li><a href="/mmvp/landlordReg/email-resent">Email resent</a></li>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li style="color: red"><a href="/mmvp/landlordReg/email-code-error">Error: Incorrect confirmation code</a></li>
+                  </ul>
+                <li><a href="/mmvp/landlordReg/contact">Contact details</a></li>
+                <li><a href="/mmvp/landlordReg/access-code-mobile">Mobile verfication</a></li>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li style="color: blue">Content updated on 9 Feb</li>
+                  </ul>
+                  <li><a href="/mmvp/landlordReg/access-code-resent">SMS resent</a></li>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li style="color: blue">Content updated on 9 Feb</li>
+                  </ul>
+                  <li><a href="/mmvp/landlordReg/set-password">Set password</a></li>
+                  <li><a href="/mmvp/landlordReg/type-of-landlord">Landlord type</a></li>
+                  <li><a href="/mmvp/landlordReg/linked-enterprise">Linked enterprise</a></li>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li style="color: blue">Content updated on 26 Jan</li>
+                  </ul>
+                  <li><a href="/mmvp/landlordReg/company-identification">Company registration number</a></li>
+                  <ul class="govuk-list govuk-list--bullet">
+                        <li><a href="/mmvp/landlordReg/prp-identification">Private registered provider of social housing</a></li>
+                    </ul>
+                  <li><a href="/mmvp/landlordReg/company-identification-vat">VAT number</a></li>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li style="color: red"><a href="/mmvp/landlordReg/cannot-proceed">Error: You cannot proceed</a></li>
+                    </ul>
+                    <!--  <li><a href="/mmvp/landlordReg/number-of-employees">Number of employees</a></li> -->
+                    <li><a href="/mmvp/landlordReg/property-type">Type of properties</a></li>
+                   <!--  <li><a href="/mmvp/landlordReg/properties-owned">Number of properties</a></li> -->
+                    <li><a href="/mmvp/landlordReg/check-answers">Check your answers</a></li>
+                    <li><a href="/mmvp/landlordReg/declaration">Declaration</a></li>
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li style="color: blue">Content updated on 10 Jan</li>
+                    </ul>
+                    <li><a href="/mmvp/landlordReg/confirmation-account">Confirmation</a></li>
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li style="color: blue">Content updated on 09 Feb</li>
+                    </ul>
+</ul>
+                    <h3 class="govuk-heading-m govuk-!-margin-top-5">Submit an application</h3>
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li><a href="/mmvp/landlordApp/signIn">Sign in</a></li>
+                      <li><a href="/mmvp/landlordApp/dashboard-first-time">Dashboard - First time</a></li>
+                      <li><a href="/mmvp/landlordApp/dashboard">Dashboard</a></li>
+                      <li><a href="/mmvp/landlordApp/choose-grant">Choose grant type</a></li>
+                      <ul class="govuk-list govuk-list--bullet">
+                        <li style="color: blue">Content updated on 31 Jan</li>
+                        <li style="color: orange"><a href="/mmvp/landlordReg/choose-grant-old">Old version</a></li>
+
+                      </ul>
+                      <li><a href="/mmvp/landlordApp/off-street-parking">Private parkng</a></li>
+                      <ul class="govuk-list govuk-list--bullet">
+                        <li style="color: red"><a href="/mmvp/landlordApp/cannot-proceed">Error: You cannot proceed</a></li>
+                        </ul>
+                      <li><a href="/mmvp/landlordApp/declaration">Declaration</a></li>
+                      <ul class="govuk-list govuk-list--bullet">
+                        <li style="color: blue">Content updated on 10 Jan</li>
+                      </ul>
+                      <li><a href="/mmvp/landlordApp/installerDetail">Installer number</a></li>
+                      <ul class="govuk-list govuk-list--bullet">
+                        <li style="color: blue">Content updated on 7 Feb</li>
+                      </ul>
+                      <li><a href="/mmvp/landlordApp/installerDetail">Confirm installer details</a></li>
+                      <ul class="govuk-list govuk-list--bullet">
+                        <li style="color: blue">Content updated on 7 Feb</li>
+                      </ul>
+                      <li><a href="/mmvp/landlordApp/address">Address</a></li>
+                      <li><a href="/mmvp/landlordApp/building-type">Property type</a></li>
+                      <li><a href="/mmvp/landlordApp/numberSockets">Number of chargepoints</a></li>
+                      <li><a href="/mmvp/landlordApp/checkYourAnswers">Check your answers</a></li>
+                      <li><a href="/mmvp/landlordApp/confirmation">Confirmaton</a></li>
+                      <ul class="govuk-list govuk-list--bullet">
+                        <li style="color: blue">Content updated on 8 Feb</li>
+                      </ul>
+                      <!-- Landlord commercial jouurney pages -->
+<!--
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Commercial journey</h3>
+                      <li><a href="/mmvp/landlordApp/choose-grant">Choose grant type</a></li>
+                      <li><a href="/mmvp/landlordApp/commercial/staff-and-fleet">Staff and fleet</a></li> -->
+
+                      <h3 class="govuk-heading-m govuk-!-margin-top-5">Dashboard scenarios</h3>
+
+
+                        <li><a href="/mmvp/landlordApp/dashboard">Dashboard</a></li>
+                        <ul class="govuk-list govuk-list--bullet">
+                              <li><a href="/mmvp/landlordApp/dashboard-no-results">No results</a></li>
+                              <li><a href="/mmvp/landlordApp/dashboard-results">Results</a></li>
+                        </ul>
+<!--
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Withdraw an application</h3>
+                      <li><a href="/mmvp/landlordApp/sentToInstaller">View claim</a></li>
+                      <li><a href="/mmvp/landlordApp/withdraw">Withdraw applicatiion</a></li>
+                      <li><a href="/mmvp/landlordApp/withdraw-confirm">Withdraw confirmation</a></li>-->
+<!--
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Awaiting customer review</h3>
+                      <li><a href="/mmvp/landlordApp/confirm-installation">Confirm installation</a></li>
+                      <li><a href="/mmvp/landlordApp/approval-sent">Approve confirmation</a></li>
+                      <li><a href="/mmvp/landlordApp/challenge-installation">Challenge installation</a></li>
+                      <li><a href="/mmvp/landlordApp/challenge-sent">Challenge sent</a></li> -->
+
+                      <!--<h3 class="govuk-heading-s govuk-!-margin-top-5">Expiring soon</h3>
+                      <li><a href="/mmvp/landlordApp/renew-confirm">Confirmation</a></li> -->
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Sent to installer</h3>
+                      <li><a href="/mmvp/landlordApp/sent-to-installer">View claim sent to the installer</a></li>
+                      <ul class="govuk-list govuk-list--bullet">
+                        <li style="color: blue">Content updated on 7 Feb</li>
+                      </ul>
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Submitted by installer</h3>
+                      <li><a href="/mmvp/landlordApp/submitted-by-installer">View claim submitted by the installer</a></li>
+                      <ul class="govuk-list govuk-list--bullet">
+                        <li style="color: blue">Content updated on 7 Feb</li>
+                      </ul>
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Completed</h3>
+                      <li><a href="/mmvp/landlordApp/claim-completed">Claim completed</a></li>
+                      <ul class="govuk-list govuk-list--bullet">
+                        <li style="color: blue">Content updated on 7 Feb</li>
+                      </ul>
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Declined</h3>
+                      <li><a href="/mmvp/landlordApp/declined">Claim declined</a></li>
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Your account</h3>
+                      <li><a href="/mmvp/landlordApp/account">Personal details</a></li>
+                      <li><a href="/mmvp/landlordApp/account-details">Business details</a></li>
+
+
+<br>
+<!--
+<hr>
+
+          PMC pages -->
+        <!--  <h2 class="govuk-heading-m govuk-!-margin-top-9">Property managing agents journey</h2>
+          <h3 class="govuk-heading-s govuk-!-margin-top-5">Create an account</h3>
+          <ul class="govuk-list govuk-list--bullet">
+            <li><a href="/mmvp/pmcReg/account-type">Account type</a></li>
+            <ul class="govuk-list govuk-list--bullet">
+              <li style="color: blue">Content updated on 26 Jan</li>
+            </ul>
+              <li><a href="/mmvp/pmcReg/email">Email verification</a></li>
+              <li><a href="/mmvp/pmcReg/check-email">Check email</a></li>
+              <li><a href="/mmvp/pmcReg/existing-email">Email already exists</a></li>
+              <ul class="govuk-list govuk-list--bullet">
+                <li style="color: blue">Content updated on 16 Jan</li>
+              </ul>
+              <li><a href="/mmvp/pmcReg/email-resent">Email resent</a></li>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li style="color: red"><a href="/mmvp/pmcReg/email-code-error">Error: Incorrect confirmation code</a></li>
+                  </ul>
+                <li><a href="/mmvp/pmcReg/contact">Contact details</a></li>
+                <li><a href="/mmvp/pmcReg/access-code-mobile">Mobile verfication</a></li>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li style="color: blue">Content updated on 10 Jan</li>
+                  </ul>
+                  <li><a href="/mmvp/pmcReg/access-code-resent">SMS resent</a></li>
+                  <li><a href="/mmvp/pmcReg/set-password">Set password</a></li>
+                  <li><a href="/mmvp/pmcReg/company-identification">Company registration number</a></li>
+                  <li><a href="/mmvp/pmcReg/company-identification-vat">VAT number</a></li>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li style="color: red"><a href="/mmvp/pmcReg/cannot-proceed">Error: You cannot proceed</a></li>
+                    </ul>
+                  <li><a href="/mmvp/pmcReg/confirm-business-details">Confirm business</a></li>
+                    <li><a href="/mmvp/pmcReg/check-answers">Check your answers</a></li>
+                    <li><a href="/mmvp/pmcReg/declaration">Declaration</a></li>
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li style="color: blue">Content updated on 10 Jan</li>
+                    </ul>
+                    <li><a href="/mmvp/pmcReg/confirmation-account">Confirmation</a></li>
+
+                    <h3 class="govuk-heading-s govuk-!-margin-top-5">Submit an application</h3>
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li><a href="/mmvp/pmcApp/signIn">Sign in</a></li>
+                      <li><a href="/mmvp/pmcApp/dashboard-first-time">Dashboard - First time</a></li>
+                      <li><a href="/mmvp/pmcApp/dashboard2">Dashboard</a></li>
+                      <li><a href="/mmvp/pmcApp/choose-landlord">Choose landlord</a></li>
+                      <li><a href="/mmvp/pmcApp/choose-grant">Choose grant type</a></li>
+                      <li><a href="/mmvp/pmcApp/off-street-parking">Private parkng</a></li>
+                      <ul class="govuk-list govuk-list--bullet">
+                        <li style="color: red"><a href="/mmvp/pmcApp/cannot-proceed-parking">Error: You cannot proceed</a></li>
+                        </ul>
+                      <li><a href="/mmvp/pmcApp/declaration">Declaration</a></li>
+                      <ul class="govuk-list govuk-list--bullet">
+                        <li style="color: blue">Content updated on 10 Jan</li>
+                      </ul>
+                      <li><a href="/mmvp/landlordApp/installerDetail">Installer number</a></li>
+                      <ul class="govuk-list govuk-list--bullet">
+                        <li style="color: blue">Content updated on 26 Jan</li>
+                      </ul>
+                      <li><a href="/mmvp/pmcApp/installerDetail">Confirm installer details</a></li>
+                      <li><a href="/mmvp/pmcApp/address">Address</a></li>
+                      <li><a href="/mmvp/pmcApp/homeType">Property type</a></li>
+                      <li><a href="/mmvp/pmcApp/numberSockets">Number of chargepoints</a></li>
+                      <li><a href="/mmvp/pmcApp/checkYourAnswers">Check your answers</a></li>
+                      <li><a href="/mmvp/pmcApp/confirmation">Confirmaton</a></li>
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Commercial journey</h3>
+                      <li><a href="/mmvp/pmcApp/choose-grant">Choose grant type</a></li>
+                      <li><a href="/mmvp/pmcApp/commercial/staff-and-fleet">Staff and fleet</a></li>
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Dashboard</h3>
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Withdraw an application</h3>
+                      <li><a href="/mmvp/pmcApp/sentToInstaller">View claim</a></li>
+                      <li><a href="/mmvp/pmcApp/withdraw">Withdraw applicatiion</a></li>
+                      <li><a href="/mmvp/pmcApp/withdraw-confirm">Withdraw confirmation</a></li>
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Awaiting customer review</h3>
+                      <li><a href="/mmvp/pmcApp/confirm-installation">Confirm installation</a></li>
+                      <li><a href="/mmvp/pmcApp/approval-sent">Approve confirmation</a></li>
+                      <li><a href="/mmvp/pmcApp/challenge-installation">Challenge installation</a></li>
+                      <li><a href="/mmvp/pmcApp/challenge-sent">Challenge sent</a></li>
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Expiring soon</h3>
+                      <li><a href="/mmvp/pmcApp/renew-confirm">Confirmation</a></li>
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Submitted by installer</h3>
+                      <li><a href="/mmvp/pmcApp/submitted-by-installer">View claim</a></li>
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Completed</h3>
+                      <li><a href="/mmvp/pmcApp/claim-completed">Claim completed</a></li>
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Declined</h3>
+                      <li><a href="/mmvp/pmcApp/declined">Claim completed</a></li>
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Your account</h3>
+                      <li><a href="/mmvp/pmcApp/account">Personal details</a></li>
+                      <li><a href="/mmvp/pmcApp/account-details">Business details</a></li>
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Manage your clients</h3>
+                      <li><a href="/mmvp/pmcApp/clients">Manage clients</a></li>
+
+                      <h3 class="govuk-heading-s govuk-!-margin-top-5">Register a client</h3>
+                      <li><a href="/mmvp/pmcApp/type-of-landlord">Type of landlord</a></li
+                      <li><a href="/mmvp/pmcApp/linked-enterprise">Linked enterprise</a></li>
+                      <li><a href="/mmvp/pmcApp/id-linked-enterprise">Company registration number</a></li>
+                      <li><a href="/mmvp/pmcApp/confirm-business-details">Confirm business details</a></li>
+                      <li><a href="/mmvp/pmcApp/number-of-employees">Number of employees</a></li>
+                      <li><a href="/mmvp/pmcApp/landlord-property-type">Property type</a></li>
+                      <li><a href="/mmvp/pmcApp/properties-owned">Number of properties owned</a></li>
+                      <li><a href="/mmvp/pmcApp/check-answers-landlord">Check your answers</a></li>
+                      <li><a href="/pmcApp/declaration-landlord">Declaration</a></li
+                      <li><a href="/mmvp/pmcApp/confirmation-landlord">Confirmaton</a></li>
+
+<br>-->
+<hr>
+
+              <!-- Installer pages -->
+              <h2 class="govuk-heading-l govuk-!-margin-top-9">Installer journey</h2>
+              <h3 class="govuk-heading-m govuk-!-margin-top-2">Submit a claim</h3>
+              <li><a href="/mmvp/installer/signIn">Sign in</a></li>
+              <li><a href="/mmvp/installer/installer-dashboard">Dashboard</a></li>
+              <li><a href="/mmvp/installer/review-customer-application">Review customer application</a></li>
+              <li><a href="/mmvp/installer/declaration">Declaration</a></li>
+              <li><a href="/mmvp/installer/subcontractor">Who completed the installation?</a></li>
+              <li><a href="/mmvp/installer/chargepoint-model">Chargepoint make and model</a></li>
+              <li><a href="/mmvp/installer/chargepoint-dashboard">Chargepoint dashboard</a></li>
+              <li><a href="/mmvp/installer/chargepoint1">Add Chargepoint details</a></li>
+              <li><a href="/mmvp/installer/dateOfCompletion">Date the job was completed</a></li>
+              <li><a href="/mmvp/installer/installation-cost">Installation cost</a></li>
+              <ul class="govuk-list govuk-list--bullet">
+                <li style="color: blue">Content updated on 16 Jan</li>
+              </ul>
+               <li><a href="/mmvp/installer/grant-amount">Grant total</a></li>
+              <li><a href="/mmvp/installer/check-answers">Check your answers</a></li>
+              <li><a href="/mmvp/installer/confirmation">Confirmaton</a></li>
+
+              <h3 class="govuk-heading-m govuk-!-margin-top-5">Dashboard scenarios</h3>
+                <h3 class="govuk-heading-s govuk-!-margin-top-5">Dashboard</h3>
+                <li><a href="/mmvp/installer/installer-dashboard-submitted">Dashboard</a></li>
+
+                <h3 class="govuk-heading-s govuk-!-margin-top-5">Rejected claim</h3>
+                <li><a href="/mmvp/installer/resubmit-claim">Resubmit claim</a></li>
+                <li><a href="/mmvp/installer/confirmation-resubmitted">Resubmit confirmation</a></li>
+
+            <!--   <h3 class="govuk-heading-s govuk-!-margin-top-5">Expiring soon</h3>
+              <li><a href="/mmvp/installer/renew-confirm">Confirmation</a></li> -->
+
+              <h3 class="govuk-heading-s govuk-!-margin-top-5">Submitted for review</h3>
+              <li><a href="/mmvp/installer/submittedForReview">View claim</a></li>
+
+              <h3 class="govuk-heading-s govuk-!-margin-top-5">Incomplete</h3>
+              <li><a href="/mmvp/installer/subcontractor">Back to the start of the claim</a></li>
+
+              <h3 class="govuk-heading-s govuk-!-margin-top-5">Approved</h3>
+              <li><a href="/mmvp/installer/payment">Claim completed</a></li>
+
+              <h3 class="govuk-heading-s govuk-!-margin-top-5">Declined</h3>
+              <li><a href="/mmvp/installer/declined">Claim declined</a></li>
+
+              <h3 class="govuk-heading-s govuk-!-margin-top-5">Your account</h3>
+              <li><a href="/mmvp/installer/account">Personal details</a></li>
+              <li><a href="/mmvp/installer/account-details">Business details</a></li>
+
+              <p class="govuk-hint">Account access set-up</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li><a href="">Set up first-time access to the portal + how the grant works </a></li>
+                  <li><a href="">Request email with link to create a password</a></li>
+                </ul>
+
+<hr>
+                  <!-- Emails -->
+                  <h2 class="govuk-heading-xl govuk-!-margin-top-9">Email scenarios</h2>
+                  <h3 class="govuk-heading-l govuk-!-margin-top-2">Landlords</h3>
+                  <p class="govuk-hint">Account registration</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="/mmvp/emails/account-confirm">Account created – confirmation email (Release 1 - high priority) [shared]</a></li>
+                    <li><a href="/mmvp/emails/account-onhold">Account on hold – confirmation email</a></li>
+                  </ul>
+
+                  <p class="govuk-hint govuk-!-margin-top-7">Grant application submission</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="/mmvp/emails/submitted-installer">Application submitted – Sent to installer (Release 1 - high priority) [shared]</a></li>
+                    <li><a href="/mmvp/emails/landlord-withdrawn">Application withdrawn</a></li>
+                    <li><a href="/mmvp/emails/landlord-expiring-soon">Expiring soon</a></li>
+                    <li>Application renewal</li>
+                    <li>Expired</li>
+                    <li><a href="/mmvp/emails/customer-review">Awaiting customer review (Release 2 - high priority) [shared]</a></li>
+                    <li>Claim challenged</li>
+                    <li>Submitted by installer</li>
+                    <li>Claim completed</li>
+                    </ul>
+<!--
+                  <h3 class="govuk-heading-s govuk-!-margin-top-9">Property managing agents</h3>
+                  <p class="govuk-hint">Account registration</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="">PMC account created – confirmation email</a></li>
+                    <li><a href="">Customer registered – confirmation email</a></li>
+                    <li><a href="">Customer registration on hold – confirmation email</a></li>
+                  </ul>
+
+                  <p class="govuk-hint govuk-!-margin-top-7">Grant application submission</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="">Application submitted – Sent to installer (Release 2 - high priority) [shared] </a></li>
+                    <li><a href="">Application withdrawn</a></li>
+                    <li><a href="">Expiring soon</a></li>
+                    <li><a href="">Application renewal</a></li>
+                    <li><a href="">Expired</a></li>
+                    <li><a href="">Awaiting customer review (Release 2 - high priority) [shared]</a></li>
+                    <li><a href="">Claim challenged</a></li>
+                    <li><a href="">Submitted by installer</a></li>
+                    <li><a href="">Claim completed</a></li>
+                    </ul> -->
+
+                  <h3 class="govuk-heading-l govuk-!-margin-top-9">Installers</h3>
+
+                    <p class="govuk-hint govuk-!-margin-top-7">Making a claim</p>
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li><a href="/mmvp/emails/start-claim">Ready to start – Sent to installer (Release 1 - medium priority) [shared]</a></li>
+                      <li><a href="/mmvp/emails/installer-withdrawn">Application withdrawn</a></li>
+                      <li>Expiring soon</li>
+                      <li>Application renewal</li>
+                      <li>Expired</li>
+                      <li><a href="/mmvp/emails/review-installer">Submitted for review (Release 2 - high priority) [shared]</a></li>
+                      <li>Challenged by customer</li>
+                      <li>Rejected</li>
+                      <li>Declined (Release 2 - medium priority) [shared]</li>
+                      <li>Approved for payment</li>
+
+                  </ul>
+
+  </div>
+</div>
+
+{% endblock %}

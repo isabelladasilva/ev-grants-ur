@@ -1,0 +1,120 @@
+{% extends "layout-installer.html" %}
+
+{% block pageTitle %}
+Choose the type of account you need -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" method="post">
+
+
+          <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        Select the option that best describes your company
+      </h1>
+
+
+        <div class="govuk-radios govuk-!-margin-top-5 govuk-radios--conditional" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="business_type" name="business_type" type="radio" value="landlord" data-aria-controls="conditional-business">
+            <label class="govuk-label govuk-radios__label" for="business_type">
+              Landlord
+            </label>
+            <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">You are applying on behalf of yourself
+
+            </div>
+
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-business">
+              <div class="govuk-form-group">
+                <p class="govuk-body">for example:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>as a landlord</li>
+                    <li>a property factor applying on behalf of yourself</li>
+                    <li>a company of leaseholders applying for the property you rent (as a Right to manage company RTM)</li>
+                    <li>a freeholder applying for the property you own</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="business_type2" name="business_type" type="radio" value="pmc" data-aria-controls="conditional-business-2">
+              <label class="govuk-label govuk-radios__label" for="business_type2">
+                Property managing agent
+              </label>
+              <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">You are applying on behalf of a client
+
+                </div>
+
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-business-2">
+                  <div class="govuk-form-group">
+                    <p class="govuk-body">for example:</p>
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li>a property management company</li>
+                      <li>a property factor applying on behalf of clients (acting as a land-owning management company)</li>
+                      <li>a local authority</li>
+                      <li>a registered social landlord</li>
+                      </ul>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="business_type3" name="business_type" type="radio" value="installer" data-aria-controls="conditional-business-3">
+                <label class="govuk-label govuk-radios__label" for="business_type3">
+                Installer
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                You are the installer whose company is responsible for installing the chargepoint
+                </div>
+              </div>
+
+        </div>
+    </div>
+
+
+      </fieldset>
+
+
+
+<div class="govuk-button-group govuk-!-margin-top-5">
+  <button class="govuk-button" data-module="govuk-button">
+    Save and continue
+  </button>
+
+</div>
+
+</form>
+
+  </div>
+</div>
+
+{% endblock %}

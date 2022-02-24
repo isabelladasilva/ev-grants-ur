@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta prototype
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-xl">EV chargepoint grant for landlords</span>
+    <h1 class="govuk-heading-xl">M-MVP</h1>
+
+    <p class="govuk-body-l">Link to individual pages: <a href="index-pages">Go to index</a></p>
+
+    <table class="govuk-table govuk-!-margin-top-7">
+      <caption class="govuk-table__caption govuk-table__caption--m">GOV.UK</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Description</th>
+          <th scope="col" class="govuk-table__header" style="text-align: right">Link</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Grant guidance page</td>
+          <td class="govuk-table__cell" style="text-align: right"><a href=/mmvp/landlord-grant-guidance>Go to prototype</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Step by step for installers</td>
+          <td class="govuk-table__cell" style="text-align: right"><a href="/mmvp/installer/installer-step-by-step">Go to prototype</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="govuk-table govuk-!-margin-top-8">
+      <caption class="govuk-table__caption govuk-table__caption--m">Landlord registration and application journeys</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Description</th>
+          <th scope="col" class="govuk-table__header" style="text-align: right">Link</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <!-- <tr class="govuk-table__row">
+          <td class="govuk-table__cell">All pages index</td>
+          <td class="govuk-table__cell" style="text-align: right"><a href="index-pages">Go to index</a></td>
+        </tr> -->
+        <tr class="govuk-table__row">
+
+          <td class="govuk-table__cell">Start page (GDS page)</td>
+          <td class="govuk-table__cell" style="text-align: right"><a href="/mmvp/landlordReg/start">Go to prototype</a></td>
+          </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Registration (Release 1)</td>
+          <td class="govuk-table__cell" style="text-align: right"><a href="/mmvp/landlordReg/account-type">Go to prototype</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Application (Release 1)</td>
+            <td class="govuk-table__cell" style="text-align: right"><a href="/mmvp/landlordApp/dashboard-first-time">Go to prototype</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Dashboard</td>
+            <td class="govuk-table__cell" style="text-align: right"><a href="/mmvp/landlordApp/dashboard">Go to prototype</a></td>
+          </tr>
+
+      </tbody>
+    </table>
+
+
+    <table class="govuk-table govuk-!-margin-top-8">
+      <caption class="govuk-table__caption govuk-table__caption--m">Installer completing a claim</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Description</th>
+          <th scope="col" class="govuk-table__header" style="text-align: right">Link</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Start page (GDS page)</td>
+          <td class="govuk-table__cell" style="text-align: right"><a href="/mmvp/installer/start">Go to prototype</a></td>
+          </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Submit a claim (Release 2)</td>
+          <td class="govuk-table__cell" style="text-align: right"><a href=/mmvp/installer/signIn>Go to prototype</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Dashboard</td>
+          <td class="govuk-table__cell" style="text-align: right"><a href=/mmvp/installer/installer-dashboard>Go to prototype</a></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+{% endblock %}

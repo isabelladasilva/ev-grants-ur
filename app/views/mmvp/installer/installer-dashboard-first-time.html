@@ -1,0 +1,61 @@
+
+{% extends "layout-installer.html" %}
+
+{% block pageTitle %}
+  Installer dashboard
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+  <!-- <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a> -->
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Dashboard</h1>
+
+      <p class="govuk-body">You do not have any grant applications in progress.</p>
+
+      <p class="govuk-body">Once your customer has completed a grant application it will show on your dashboard as ‘Ready to claim’. You will be able to submit the claim once you have completed the installation.</p>
+      <p class="govuk-body">You can view your account details in ‘Your account’ at the top of this page.</p>
+  <!-- <p class="govuk-body">You can update your account details and add other users in ‘Your account’ at the top of this page.</p> -->
+
+      </div>
+<!--
+      <div class="govuk-grid-column-one-third">
+        <aside class="app-related-items" role="complementary">
+          <h2 class="govuk-heading-m" id="subsection-title">
+            Related content
+          </h2>
+          <nav role="navigation" aria-labelledby="guidance">
+            <ul class="govuk-list govuk-!-font-size-16">
+              <li>
+                <a href="/iteration13/landlord-grant-guidance">
+                  Guidance
+                </a>
+              </li>
+            </ul>
+          </nav>
+      </div> -->
+    </div>
+
+
+
+
+{% endblock %}

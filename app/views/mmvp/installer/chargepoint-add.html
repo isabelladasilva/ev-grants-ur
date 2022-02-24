@@ -1,0 +1,95 @@
+{% extends "layout-installer.html" %}
+
+{% block pageTitle %}
+Select the chargepoint manufacturer -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+  <!-- <span class="govuk-caption-l">14 Royal Road, EC1R 1BC</span> -->
+  <!--<span class="govuk-caption-xl">14 Royal Road, EC1R 1BC</span>-->
+  <span class="govuk-caption-l">Sherborne Properties</span>
+    <h1 class="govuk-heading-xl">Provide serial number and photographs</h1>
+
+    <h2 class="govuk-heading-m">Chargepoint 4</h2>
+
+    <div class="govuk-form-group">
+      <p class="govuk-body"><b>Model:</b> Terra AC W7-T-0</p>
+        <p class="govuk-body"><b>Chargpoint sockets:</b> 1</p>
+    </div>
+    <div class="govuk-form-group govuk-!-margin-top-7">
+  <label class="govuk-label" for="width-20">
+    Chargepoint serial number
+  </label>
+  <input class="govuk-input govuk-input--width-20" id="width-20" name="serialno" type="text"></div>
+
+
+  <h2 class="govuk-heading-s govuk-!-margin-top-8">Upload photo evidence of the chargepoint installed</h2>
+<p>Please upload the following:</p>
+    <ul class="govuk-list govuk-list--bullet">
+  <li>A photo showing a close up of the installed chargepoint</li>
+  <li>A photo showing the installed chargepoint and the parking space</li>
+    </ul>
+
+    <p>You must upload a minimum of 2 photos of the installed chargepoint but you can provide more.</p>
+
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Check examples chargepoint photographs
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+      <img src="https://victoriaevclub.com/wp-content/uploads/2018/12/chargepoint.jpg">
+      <img src="https://electricrevs.files.wordpress.com/2019/04/img_1586.jpg?w=700">
+      <img src="https://www.chargepoint.com/sites/default/files/blog-photos/2019-11/ChargePoint-CPE250-Tour-Installations-Blog-Images.png">
+    </div>
+  </details>
+
+  <p>The photos must:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>be a JPG, PNG, GIF or BMP file</li>
+    <li>be no more than 10MB</li>
+  </ul>
+  <div class="govuk-form-group govuk-!-margin-top-7">
+      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+  </div>
+
+
+  <div class="govuk-button-group">
+    <a class="govuk-button" data-module="govuk-button" href="chargepoint-dashboard-3-add.html">
+      Save and return
+    </a>
+    <p><a href="chargepoint-dashboard.html">Remove chargepoint</a></p>
+
+  </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

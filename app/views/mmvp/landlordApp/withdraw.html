@@ -1,0 +1,84 @@
+{% extends "layout-ll.html" %}
+
+{% block pageTitle %}
+Withdraw your application
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Withdraw your application</h1>
+    <p class="govuk-body">If you withdraw your application this means:</p>
+    <ul class="govuk-list govuk-list--bullet" style="padding-left: 25px">
+      <li>this application will be deleted</li>
+      <li>you can make a new application</li>
+    </ul>
+
+<p>You may still have a contract or an agreement with your installer. Withdrawing your application has not changed this. Contact your installer to discuss your changes.</p>
+
+<h3 class="govuk-heading-s">Do you still want to withdraw the application?</h3>
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="installer_type" name="installer_type" type="radio" value="installer" data-aria-controls="conditional-contact">
+        <label class="govuk-label govuk-radios__label" for="installer_type">
+        Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="installer_type" name="installer_type" type="radio" value="installer" data-aria-controls="conditional-contact">
+        <label class="govuk-label govuk-radios__label" for="installer_type">
+        No
+        </label>
+      </div>
+    </div>
+    </div>
+
+
+
+    <div class="govuk-button-group govuk-!-margin-top-7">
+      <a class="govuk-button" data-module="govuk-button" href="withdraw-confirm">
+      Continue
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}

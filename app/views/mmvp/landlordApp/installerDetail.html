@@ -1,0 +1,76 @@
+{% extends "layout-ll.html" %}
+
+{% block pageTitle %}
+Enter your installer's OZEV number
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+</nav> -->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-l">Blue Tick Properties</span>
+    <h1 class="govuk-heading-xl">Enter your installer's OZEV number</h1>
+
+    <p class="govuk-body">You need your installer’s OZEV number to continue your application for the grant.</p>
+
+    <!-- <p class="govuk-body">If you do not have an OZEV authorised installer you can choose from <a rel="noreferrer noopener" target="_blank" href="https://www.gov.uk/government/publications/electric-vehicle-homecharge-scheme-authorised-installers"> OZEV's list of authorised installers (opens in new tab)</a>.</p> -->
+<!-- <p>Read Working with an <a href="../landlord-grant-guidance">OZEV authorised installer</a> for more information. -->
+    <div class="govuk-form-group govuk-!-margin-top-7">
+      <label class="govuk-label" for="address-county">
+        Installer’s OZEV number
+      </label>
+      <input class="govuk-input govuk-!-width-one-third" id="address-county" name="address-county" type="text"></div>
+
+      <details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+       I don't know my installer's number
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <p>Contact your installer and ask for this information. OZEV authorised installers receive this number when they register with OZEV.</p>
+
+    <p>Only <a rel="noreferrer noopener" target="_blank" href="https://www.gov.uk/government/publications/electric-vehicle-homecharge-scheme-authorised-installers">OZEV authorised installers (opens in new tab)</a> are eligible to carry out the installation work.</p>
+
+  </div>
+</details>
+
+      <a class="govuk-button" href="installerConfirm">Continue</a>
+
+  </div>
+</div>
+
+  {% endblock %}

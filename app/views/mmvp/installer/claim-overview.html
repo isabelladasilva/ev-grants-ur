@@ -1,0 +1,367 @@
+{% extends "layout-installer.html" %}
+
+{% block pageTitle %}
+Check your answers before sending your application
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+
+
+      <span class="govuk-caption-xl">OB1122363 / 201</span>
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-7">
+      Claim overview
+      </h1>
+
+            <ol class="app-task-list">
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">1. </span> Customer application
+          </h2>
+          <ul class="app-task-list__items">
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="edit-countries" aria-describedby="review-customer-application">
+                  Customer application
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__task-completed" id="eligibility-completed" style="color: #006c56; background-color: #fff;
+                  display: inline-block;
+                  border: 1px solid;
+                  vertical-align: middle;
+                  margin: 0 6px;
+                  padding: 4px 8px 1px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  text-align: left;">Completed</strong>
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="edit-countries" aria-describedby="declaration">
+                  Declaration
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__task-completed" id="eligibility-completed" style="color: #006c56; background-color: #fff;
+                  display: inline-block;
+                  border: 1px solid;
+                  vertical-align: middle;
+                  margin: 0 6px;
+                  padding: 4px 8px 1px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  text-align: left;">Completed</strong>
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="edit-countries" aria-describedby="eligibility-completed">
+                  Who completed the application
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__task-completed" id="eligibility-completed" style="color: #006c56; background-color: #fff;
+                  display: inline-block;
+                  border: 1px solid;
+                  vertical-align: middle;
+                  margin: 0 6px;
+                  padding: 4px 8px 1px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  text-align: left;">Completed</strong>
+            </li>
+
+          </ul>
+        </li>
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">2. </span> Answer questions for individual countries
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="./belarus/belarus-info" aria-describedby="country-information-completed">
+                  Belarus
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__task-completed" id="country-information-completed"
+              style="
+              color: #6f777b; background-color: #fff;
+                  display: inline-block;
+                  border: 1px solid;
+                  vertical-align: middle;
+                  margin: 0 6px;
+                  padding: 4px 8px 1px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  text-align: left;">Ready to Claim</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="./georgia/georgia-info" aria-describedby="country-information-completed">
+                  Georgia
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__task-completed" id="country-information-completed"
+              style="
+              color: #6f777b; background-color: #fff;
+                  display: inline-block;
+                  border: 1px solid;
+                  vertical-align: middle;
+                  margin: 0 6px;
+                  padding: 4px 8px 1px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  text-align: left;">Ready to Claim</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="./kazakhstan/kazakhstan-info" aria-describedby="contact-details-completed">
+                  Kazakhstan
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__task-completed" id="contact-details-completed" style="color: #6f777b; background-color: #fff;
+                  display: inline-block;
+                  border: 1px solid;
+                  vertical-align: middle;
+                  margin: 0 6px;
+                  padding: 4px 8px 1px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  text-align: left;">Ready to Claim</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="./morocco/morocco-info" aria-describedby="contact-details-completed">
+                  Morocco
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__task-completed" id="contact-details-completed" style="color: #6f777b; background-color: #fff;
+                  display: inline-block;
+                  border: 1px solid;
+                  vertical-align: middle;
+                  margin: 0 6px;
+                  padding: 4px 8px 1px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  text-align: left;">Ready to Claim</strong>
+            </li>
+            <li class="app-task-list__item">
+            <span class="app-task-list__task-name">
+                <a href="./norway/january/norway-info" aria-describedby="country-information-completed">
+                  Norway <br>
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__task-completed" id="country-information-completed" style="
+                  color: #6f777b; background-color: #fff;
+                  display: inline-block;
+                  border: 1px solid;
+                  vertical-align: middle;
+                  margin: 0 6px;
+                  padding: 4px 8px 1px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  text-align: left;">Ready to Claim</strong>
+            </li>
+
+                        <li class="app-task-list__item">
+            <span class="app-task-list__task-name">
+                <a href="./norway/october/norway-info" aria-describedby="country-information-completed">
+                  Norway <br>
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__task-completed" id="country-information-completed" style="
+                  color: #6f777b; background-color: #fff;
+                  display: inline-block;
+                  border: 1px solid;
+                  vertical-align: middle;
+                  margin: 0 6px;
+                  padding: 4px 8px 1px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  text-align: left;">Ready to Claim</strong>
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="./russia/russia-info" aria-describedby="contact-details-completed">
+                  Russia
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__task-completed" id="contact-details-completed" style="color: #6f777b; background-color: #fff;
+                  display: inline-block;
+                  border: 1px solid;
+                  vertical-align: middle;
+                  margin: 0 6px;
+                  padding: 4px 8px 1px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  text-align: left;">Ready to Claim</strong>
+            </li>
+
+            <!-- <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="./serbia/serbia-info" aria-describedby="contact-details-completed">
+                  Serbia
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__task-completed" id="contact-details-completed" style="color: #6f777b; background-color: #fff;
+                  display: inline-block;
+                  border: 1px solid;
+                  vertical-align: middle;
+                  margin: 0 6px;
+                  padding: 4px 8px 1px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  text-align: left;">Ready to Claim</strong>
+            </li> -->
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="./tunisia/tunisia-info" aria-describedby="contact-details-completed">
+                  Tunisia
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__task-completed" id="contact-details-completed" style="color: #6f777b; background-color: #fff;
+                  display: inline-block;
+                  border: 1px solid;
+                  vertical-align: middle;
+                  margin: 0 6px;
+                  padding: 4px 8px 1px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  text-align: left;">Ready to Claim</strong>
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="./turkey/turkey-info" aria-describedby="contact-details-completed">
+                  Turkey
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__task-completed" id="contact-details-completed" style="color: #6f777b; background-color: #fff;
+                  display: inline-block;
+                  border: 1px solid;
+                  vertical-align: middle;
+                  margin: 0 6px;
+                  padding: 4px 8px 1px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  text-align: left;">Ready to Claim</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="./ukraine/ukraine-info" aria-describedby="contact-details-completed">
+                  Ukraine
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__task-completed" id="contact-details-completed" style="color: #6f777b; background-color: #fff;
+                  display: inline-block;
+                  border: 1px solid;
+                  vertical-align: middle;
+                  margin: 0 6px;
+                  padding: 4px 8px 1px;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  text-align: left;">Ready to Claim</strong>
+            </li>
+
+            <div class="govuk-!-margin-top-2" style="margin-bottom: -30px">
+            <a class="govuk-button govuk-button--secondary" style="color:#0b0c0c; background-color: #f3f2f1; box-shadow: 0 2px 0 #929191;" href="edit-countries">Edit country selection</a>
+            </div>
+
+
+          </ul>
+        </li>
+
+
+
+        <li>
+
+      </ol>
+
+</div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

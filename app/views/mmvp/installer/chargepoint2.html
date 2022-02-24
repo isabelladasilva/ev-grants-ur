@@ -1,0 +1,230 @@
+{% extends "layout-installer.html" %}
+
+{% block pageTitle %}
+Select the chargepoint manufacturer -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+  <!-- <span class="govuk-caption-l">14 Royal Road, EC1R 1BC</span> -->
+  <!--<span class="govuk-caption-xl">14 Royal Road, EC1R 1BC</span>-->
+    <h1 class="govuk-heading-xl">Provide serial number and photographs</h1>
+
+    <h2 class="govuk-heading-m">Chargepoint 2</h2>
+
+    <div class="govuk-form-group govuk-!-margin-top-7">
+
+      <label class="govuk-label" for="sort">
+        Chargepoint manufacturer
+      </label>
+      <select class="govuk-select" id="sort" name="sort">
+        <option value="published" selected></option>
+        <option value="published" selected>ABB Ltd</option>
+        <option value="updated">Alfen ICU B.V.</option>
+        <option value="views">Andersen</option>
+        <option value="comments">Bloova</option>
+        <option value="comments">BP Chargemaster</option>
+        <option value="comments">Bumblebee EV Limited</option>
+        <option value="comments">Charge-m8</option>
+        <option value="comments">Char.gy</option>
+        <option value="comments">Chargepoint Inc</option>
+        <option value="comments">CITA</option>
+        <option value="comments">CityEV Limited</option>
+        <option value="comments">Connected Kerb</option>
+        <option value="comments">CTEK SWEDEN AB</option>
+        <option value="comments">Delta Electronics</option>
+        <option value="comments">Easee</option>
+        <option value="comments">EC Charging</option>
+        <option value="comments">Ecotap</option>
+        <option value="comments">Elinta</option>
+        <option value="comments">Enel X</option>
+        <option value="comments">En+ Technologies</option>
+        <option value="comments">EO Charging (Juuce Ltd)</option>
+        <option value="comments">Etrel</option>
+        <option value="comments">EVBox</option>
+        <option value="comments">EV Charge Points</option>
+        <option value="comments">EV Expert s.r.o</option>
+        <option value="comments">EV Meter</option>
+        <option value="comments">Garo</option>
+        <option value="comments">Gewiss</option>
+        <option value="comments">Honda</option>
+        <option value="comments">Hypervolt Limited</option>
+        <option value="comments">iAccess Corporation Limited</option>
+        <option value="comments">ICS Intelligent Charging Systems</option>
+        <option value="comments">Indra Renewable Technologies</option>
+        <option value="comments">Indra Renewable Technologies Ltd.</option>
+        <option value="comments">innogy</option>
+        <option value="comments">Keba AG</option>
+        <option value="comments">Linkcharging Technology Company Limited</option>
+        <option value="comments">macXcharging</option>
+        <option value="comments">Mennekes</option>
+        <option value="comments">Myenergi Ltd</option>
+        <option value="comments">NewMotion</option>
+        <option value="comments">Pod Point</option>
+        <option value="comments">Rolec Services Ltd</option>
+        <option value="comments">Scame-UK</option>
+        <option value="comments">Schneider Electric</option>
+        <option value="comments">Sevadis</option>
+        <option value="comments">Shenzhen Atess Power Technology Co., Ltd</option>
+        <option value="comments">Siemens</option>
+        <option value="comments">Smappee NV</option>
+        <option value="comments">SolarEdge Technologies</option>
+        <option value="comments">Swarco</option>
+        <option value="comments">Swarco UK Ltd</option>
+        <option value="comments">ubitricity</option>
+        <option value="comments">Vestel</option>
+        <option value="comments">Viridian EV</option>
+        <option value="comments">Volkswagen Group Charging GmbH</option>
+        <option value="comments">Voltshare Ltd</option>
+        <option value="comments">wallbe GmbH</option>
+        <option value="comments">Wallbox Chargers</option>
+        <option value="comments">Webasto</option>
+        <option value="comments">Zaptec Chargers AS</option>
+        <option value="comments">ZHEJIANG MOSS HUADE TECHNOLOGY CO .,LTD</option>
+      </select>
+    </div>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label " for="sort">
+        Chargepoint model
+      </label>
+      <select class="govuk-select" id="sort" name="sort">
+        <option value="published" selected></option>
+        <option value="published" >Terra AC W7-T-0 (1 socket)</option>
+        <option value="updated" selected>Terra AC W22-T-0 (2 sockets)</option>
+        <option value="views">Terra AC W22-T-R-0 (1 socket)</option>
+        <option value="views">Terra AC W22-T-R-C-0 (1 socket)</option>
+        <option value="views">Terra AC W7-T-R-0 (1 socket)</option>
+        <option value="views">Terra AC W7-T-R-C-0 (2 sockets)</option>
+        <option value="views">Terra AC W22-T-RD-M-0 (2 sockets)</option>
+        <option value="views">Terra AC W22-T-RD-MC-0 (2 sockets)</option>
+        <option value="views">Terra AC W7-T-RD-MC-0 (3 sockets)</option>
+      </select>
+    </div>
+
+
+    <div class="govuk-form-group govuk-!-margin-top-7">
+  <label class="govuk-label" for="width-20">
+    Chargepoint serial number
+  </label>
+  <input class="govuk-input govuk-input--width-20" id="width-20" name="serialno" type="text"></div>
+
+
+  <h2 class="govuk-heading-s govuk-!-margin-top-9">Upload photo evidence of the chargepoint installed</h2>
+
+  <p>You must upload a minimum of 2 photos of the installed chargepoint. You can upload up to 10 photos.</p>
+  <p>You need to upload:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>a close up photo of the installed chargepoint</li>
+        <li>a photo of the installed chargepoint and the parking space </li>
+      </ul>
+
+
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Check examples of chargepoint photographs
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <h3 class="govuk-heading-s">Chargepoint close up</h3>
+          <img src="https://ev-grants.herokuapp.com/public/images/ev-cp-close.jpeg" alt="Close up of the chargepoint">
+          <h3 class="govuk-heading-s">Chargepoint and the parking space</h3>
+          <img src="https://ev-grants.herokuapp.com/public/images/ev-cp-distance.jpg" alt="Image of the chargepoint taken from further away">
+        </div>
+      </details>
+
+
+
+  <form action="">
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="file-upload-1">
+        Upload a minimum of 2 photos of the chargepoint. You can upload up to 10 photos as proof of installation.
+      </label>
+      <p class="govuk-!-margin-top-1 govuk-hint">The photos must be a JPG, JPEG, PNG, GIF or BMP file and each one can be up to 10MB in size.</p>
+      <div class="govuk-form-group govuk-!-margin-top-5">
+          <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      </div>
+      <!-- <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file" multiple> -->
+      <!-- <input type="submit"> -->
+    <!--   <div class="moj-multi-file-upload__dropzone"><input class="govuk-file-upload moj-multi-file-upload__input" id="documents" name="documents" type="file" multiple=""><p class="govuk-body">Drag and drop files here or</p><label for="documents" class="govuk-button govuk-button--secondary">Choose files</label><div aria-live="polite" role="status" class="govuk-visually-hidden">Uploading files, please wait</div></div>
+    </div>
+    <!-- <button class="govuk-button govuk-button--secondary moj-multi-file-upload__button" data-module="govuk-button">
+        Upload photos
+    </button> -->
+  <form action="/action_page.php">
+    </form>
+
+  <!-- <h3 class="govuk-heading-s">Files added</h3> -->
+    <!-- <dl class="govuk-summary-list">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__value">
+          image1.jpg
+        </dt>
+
+        <dd class="govuk-summary-list__actions">
+
+          <a class="govuk-link" href="#">
+            Delete<span class="govuk-visually-hidden"> file 1</span>
+          </a>
+
+        </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+           <dt class="govuk-summary-list__value">
+             Image2.jpg
+           </dt>
+
+
+           <dd class="govuk-summary-list__actions">
+
+             <a class="govuk-link" href="#">
+               Delete<span class="govuk-visually-hidden"> file 3</span>
+             </a>
+
+           </dd>
+
+         </div>
+
+       </dl> -->
+
+    <div class="govuk-button-group govuk-!-margin-top-7">
+      <a class="govuk-button" data-module="govuk-button" href="chargepoint-dashboard-change.html">
+        Save and return
+      </a>
+      <!-- <p><a href="chargepoint-dashboard.html">Remove chargepoint</a></p> -->
+
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

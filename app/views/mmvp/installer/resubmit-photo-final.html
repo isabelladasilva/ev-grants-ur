@@ -1,0 +1,134 @@
+{% extends "layout-installer.html" %}
+
+{% block pageTitle %}
+Check your answers before sending your application
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Resubmit claim</h1>
+    <p>Correct the details listed beelow and resubmit. You need to resubmit this claim by 30 December 2021.</p>
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-5">Chargepoint details</h2>
+    <h2 class="govuk-heading-s govuk-!-margin-top-3">What was wrong</h2>
+  <p>Chargepoint unit not visible in off road photograph. Provide a photograph showing the installed chargepoint unit.</p>
+
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-5">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Chargepoint 1
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <b>Manufacturer:</b> ABB Ltd<br>
+              <b>Model:</b> Terra AC W7-T-0<br>
+              <b>Serial number:</b> FT1243535989G7<br>
+              <b>Photos:</b><br><a href="">image1.jpg</a><br><a href="">image1.jpg</a>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+
+            <strong class="govuk-tag govuk-tag--yellow" style="font-size: 16px !important">Updated</strong
+
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="chargepoint1-resubmit">
+              Change<span class="govuk-visually-hidden">ChargePoint 1 details</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+          Chargepoint 2
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <b>Manufacturer:</b> ABB Ltd<br>
+              <b>Model:</b> Terra AC W22-T-RD-MC-0<br>
+              <b>Serial number:</b> ED1243535989G5<br>
+              <b>Photos:</b> <br><a href="">image1.jpg</a><br><a href="">image1.jpg</a>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+
+            <strong class="govuk-tag govuk-tag--green" style="font-size: 16px !important">Accepted</strong>
+
+          </dd>
+          <dd class="govuk-summary-list__actions">
+
+          </dd>
+        </div>
+      </dl>
+
+      <h2 class="govuk-heading-m govuk-!-margin-top-7">Financial details</h2>
+      <h2 class="govuk-heading-s govuk-!-margin-top-3">What was wrong</h2>
+      <p>Total cost of installation not included in the invoice. Please provide a new invoice which shows the total cost of the installation.</p>
+  <br>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-5">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Total cost of installation
+          </dt>
+          <dd class="govuk-summary-list__value">
+          £1,050
+          </dd>
+          <dd class="govuk-summary-list__actions">
+
+            <strong class="govuk-tag govuk-tag--yellow" style="font-size: 16px !important">Updated</strong
+
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="resubmit-installation-cost">
+              Change<span class="govuk-visually-hidden">Total cost of installation</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Proof of customer invoice
+          </dt>
+          <dd class="govuk-summary-list__value">
+            invoice.jpg
+          </dd>
+
+          <dd class="govuk-summary-list__actions">
+
+            <strong class="govuk-tag govuk-tag--green" style="font-size: 16px !important">Accepted</strong>
+
+          </dd>
+
+          <dd class="govuk-summary-list__actions">
+          </dd>
+        </div>
+
+        </dl>
+        <div class="govuk-!-margin-top-7">
+          <a class="govuk-button" href="confirmResubmit.html">Resubmit claim</a>
+        </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

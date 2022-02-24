@@ -1,0 +1,126 @@
+{% extends "layout-installer.html" %}
+
+{% block pageTitle %}
+Rejected claim
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="rejectedOZEV2.html">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Resubmit photos</h1>
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-5">What was wrong</h2>
+    <p>Chargepoint unit not visible in off road photograph. Provide a photograph showing the installed chargepoint unit.</p>
+<br>
+
+<div>
+    <h2 class="govuk-heading-m">Photos previously added</h2>
+
+
+    <p>Photos added to Chargpoint 2</p>
+
+      <dl class="govuk-summary-list">
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Photo 1
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <a download href="/" class="govuk-link">image1.jpg</a>
+          </dd>
+
+          <dd class="govuk-summary-list__actions">
+
+            <strong class="govuk-tag govuk-tag--green" style="font-size: 16px !important">Accepted</strong>
+
+          </dd>
+
+        </div>
+
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Photo 2
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <a download href="/" class="govuk-link">image2.jpg</a>
+          </dd>
+
+          <dd class="govuk-summary-list__actions">
+
+            <strong class="govuk-tag govuk-tag--red" style="font-size: 16px !important">Rejected</strong
+
+          </dd>
+
+
+
+        </div>
+
+      </dl>
+  <div class="govuk-!-margin-top-7">
+
+      <h2 class="govuk-heading-m govuk-!-margin-top-5">Add new photo</h2>
+
+
+      <form action="">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="file-upload-1">
+            Add a new photo of the chargepoint
+          </label>
+          <p class="govuk-!-margin-top-1 govuk-hint">The photos must be a JPG, JPEG, PNG, GIF or BMP file.<br> Maximum upload size: 10MB</p>
+          <!-- <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file" multiple> -->
+          <!-- <input type="submit"> -->
+          <div class="moj-multi-file-upload__dropzone"><input class="govuk-file-upload moj-multi-file-upload__input" id="documents" name="documents" type="file" multiple=""><p class="govuk-body">Drag and drop files here or</p><label for="documents" class="govuk-button govuk-button--secondary">Choose files</label><div aria-live="polite" role="status" class="govuk-visually-hidden">Uploading files, please wait</div></div>
+        </div>
+        <!-- <button class="govuk-button govuk-button--secondary moj-multi-file-upload__button" data-module="govuk-button">
+            Upload photos
+        </button> -->
+      <form action="/action_page.php">
+
+  </div>
+      </div>
+
+  <div class="govuk-!-margin-top-7">
+    <a class="govuk-button" href="confirmResubmit.html">Resubmit claim</a>
+  </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

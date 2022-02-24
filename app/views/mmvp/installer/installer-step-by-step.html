@@ -1,0 +1,340 @@
+{% extends "layout-installer.html" %}
+
+{% block pageTitle %}
+  Step by step navigation
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-nav.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav()
+    stepByStepNavigation.start($element)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      Claim the EV chargepoint grant for landlords: step by step for installers
+    </h1>
+
+    <p>
+    Check what you need to do to claim the Electric vehicle (EV) chargepoint grant for landlords on the OZEV portal.
+    </p>
+
+    <div id="step-by-step-navigation" class="app-step-nav app-step-nav--large app-step-nav--active" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
+      <ol class="app-step-nav__steps">
+
+        <li class="app-step-nav__step js-step" id="check-youre-allowed-to-drive" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 1
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Apply as an OZEV authorised installer
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-check-youre-allowed-to-drive-1">
+            <p class="app-step-nav__paragraph">You must be an OZEV authorised installer to claim this grant.</p>
+
+            <p class="app-step-nav__paragraph">If you already have an OZEV authorised installer number you need to <a data-position="1.1" class="app-step-nav__link js-link" href="installer-account-guidance">get a link to access the OZEV portal</a>.</p>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="prepare-for-your-theory-test" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="4">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--logic">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    or
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Apply to become an authorised OZEV installer
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-driving-lessons-and-practice-3">
+            <p class="app-step-nav__paragraph">If you do not have an OZEV installer number you need to <a data-position="1.1" class="app-step-nav__link js-link" href="https://forms.dft.gov.uk/ozev-authorised-installer-application/">apply to be an OZEV authorised installer</a>.</p>
+
+            </div>
+
+        <li class="app-step-nav__step js-step" id="get-a-provisional-licence" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="2">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 2
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Get your first-time access to the OZEV portal
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-check-youre-allowed-to-drive-1">
+            <p class="app-step-nav__paragraph">You need a link to access the OZEV portal for the first time. You also need to create a password.</p>
+
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-get-a-provisional-licence-2">
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="2.1" class="app-step-nav__link js-link" href="installer-account-guidance">Request a link to access the portal</a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+
+
+
+        <li class="app-step-nav__step js-step" id="driving-lessons-and-practice" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="3">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 3
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Check your installer responsibilities
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-driving-lessons-and-practice-3">
+            <p class="app-step-nav__paragraph">We expect OZEV authorised installers to follow the grant rules. You need to be aware of the relevant legal requirements.</p>
+            <p class="app-step-nav__paragraph">You must also consider safety and accessibility needs when installing chargepoints.</p>
+
+          <ol class="app-step-nav__list " data-length="4">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.1" class="app-step-nav__link js-link" href="https://www.gov.uk/government/publications/electric-vehicle-homecharge-scheme-approved-chargepoint-model-list"> Check the list of residential approved chargepoint models</a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.1" class="app-step-nav__link js-link" href="govuk-installers">EV landlord chargepoint guidance: for installers</a>
+              </li>
+              <!--
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.2" class="app-step-nav__link js-link" href="https://www.gov.uk/government/publications/workplace-charging-scheme-approved-chargepoint-list">Check the list of commercial chargepoint models approved</a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.3" class="app-step-nav__link js-link" href="#">View the checklist for safety and legal responsibilities</a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.4" class="app-step-nav__link js-link" href="#">Check the guidance on how conduct a site survey</a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.5" class="app-step-nav__link js-link" href="#">Check how to notify the Distribution Network Operator (DNO) of the installation</a>
+              </li> -->
+            </ol>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="driving-lessons-and-practice" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="4">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 4
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Understand the EV landlord grant process and requirements
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-driving-lessons-and-practice-4">
+            <p class="app-step-nav__paragraph">Landlords, right to manage companies and property factors start the grant application process and installers are responsible for making the grant claim.</p>
+
+            <ol class="app-step-nav__list " data-length="4">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="4.2" class="app-step-nav__link js-link" href="govuk-installers">Check the EV landlord chargepoint guidance: for installers</a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="prepare-for-your-theory-test" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="4">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--logic">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    and
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Engage with customers
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-driving-lessons-and-practice-3">
+            <p class="app-step-nav__paragraph">Installers should engage with customers before submitting a claim. This is your opportunity to gather all the necessary information to make a successful grant claim.</p>
+
+            <p class="app-step-nav__paragraph">Installers will need to:</p>
+
+            <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-prepare-for-your-theory-test-4">
+              <ul class="app-step-nav__list " data-length="3">
+                <li class="app-step-nav__list-item js-list-item">
+                  •	check and confirm that the installation will take place in a private parking area
+                </li>
+                <li class="app-step-nav__list-item js-list-item ">
+                  •	survey the site to check it has sufficient capacity for the number and type of chargepoints that will be installed
+                </li>
+                <li class="app-step-nav__list-item js-list-item ">
+                  •	confirm the total number of chargepoints that will be installed
+                </li>
+                <li class="app-step-nav__list-item js-list-item ">
+                  •	confirm the total number chargepoint sockets that will be installed
+                </li>
+              </ul>
+
+              <p class="app-step-nav__paragraph">Once you are satisfied that you have all the required information and that the site is suitable for the installation, give your OZEV authorised installer number to your customer so that they can submit the grant application.</p>
+
+            </div>
+
+            <ol class="app-step-nav__list " data-length="4">
+              <li class="app-step-nav__list-item js-list-item ">
+
+                <a data-position="3.1" class="app-step-nav__link js-link" href="../landlord-grant-guidance.html#parking">Check guidance about private parking</a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.1" class="app-step-nav__link js-link" href="../landlord-grant-guidance.html">Check the guidance for landlords</a>
+              </li>
+              <!-- <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.2" class="app-step-nav__link js-link" href="#">Check the guidance for property management companies</a>
+              </li> -->
+            </ol>
+
+        </li>
+
+
+        <li class="app-step-nav__step js-step" id="driving-lessons-and-practice" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="4">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 5
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Collect evidence to show the installation is completed correctly
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-driving-lessons-and-practice-4">
+            <p class="app-step-nav__paragraph">You need to take photos of the chargepoints you have installed. These will be submitted as part of the claim to prove that the installation has been completed.</p>
+            <p class="app-step-nav__paragraph">The photos should:</p>
+            <ul class="app-step-nav__list " data-length="3">
+              <li class="app-step-nav__list-item js-list-item">
+                •	clearly show each chargepoint serial number and model 
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                •	be clear and in view of the property 
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                •	be a wide-angle view of the parking area if there are many bays  
+              </li>
+            </ul>
+            <h3 class="govuk-heading-s">Examples of photos you need to provide<h3>
+
+            <h3 class="govuk-heading-s govuk-!-margin-top-3">Chargepoint close up</h3>
+            <img src="https://ev-grants.herokuapp.com/public/images/ev-cp-close.jpeg" alt="Close up of the chargepoint">
+            <h3 class="govuk-heading-s govuk-!-margin-top-5">Chargepoint and the parking space</h3>
+            <img src="https://ev-grants.herokuapp.com/public/images/ev-cp-distance.jpg" alt="Image of the chargepoint taken from further away">
+            <p class="app-step-nav__paragraph govuk-!-margin-top-5">A maximum of 10 photos may be uploaded. They should be in JPEG, JPG, BMP, or PDF format and each one can be up to 10MB in size.</p>
+
+          </div>
+
+
+        <li class="app-step-nav__step js-step" id="book-and-manage-your-driving-test" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="6">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 6
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Prepare and submit the grant claim
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-book-and-manage-your-driving-test-6">
+            <p class="app-step-nav__paragraph">Once your customer has submitted their grant application it will appear on your installer dashboard.</p>
+            <p class="app-step-nav__paragraph">The installation must be finished before you can complete a claim.</p>
+
+
+            <ol class="app-step-nav__list " data-length="5">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="6.1" class="app-step-nav__link js-link" href="/iteration12/installer/signIn">Sign in to your installer account to submit a claim</a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+
+
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
