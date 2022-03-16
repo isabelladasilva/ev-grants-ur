@@ -7,8 +7,8 @@ require('./routes/iteration12/routing.js')(router);
 require('./routes/mmvp/routing.js')(router);
 
 require('./routes/HC/iteration10/routing.js')(router);
-require('./routes/HC/iteration11/routing.js')(router);
-require('./routes/HC/iteration12/routing.js')(router);
+//require('./routes/HC/iteration11/routing.js')(router);
+//require('./routes/HC/iteration12/routing.js')(router);
 
 //require('./routes/CarPark/iteration01/routing.js')(router);
 require('./routes/CarPark/iteration02/routing.js')(router);
