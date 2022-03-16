@@ -1,0 +1,87 @@
+{% extends "layout-installer-mvp.html" %}
+
+{% block pageTitle %}
+Add photos of the car park and the property
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+ <h1 class="govuk-heading-xl">Add photos of the car park and the property</h1>
+
+
+  <p class="govuk-body">Add photos that show where you have installed all chargepoints in the car park. Plus add a photo of the property that the car park serves. </p>
+
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        See examples of car park photos
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+      <h3 class="govuk-heading-s">Chargepoint and the parking space</h3>
+      <img src="https://ev-grants.herokuapp.com/public/images/ev-cp-distance.jpg" alt="Image of the chargepoint taken from further away">
+    </div>
+  </details>
+
+<!-- Multi file upload pattern from MOJ used as a reference
+https://design-patterns.service.justice.gov.uk/components/multi-file-upload/ -->
+
+<form action="">
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="file-upload-1">
+      You can upload up to 10 photos as proof of your installation.
+    </label>
+    <p class="govuk-!-margin-top-1 govuk-hint">The photos must be a JPG, JPEG, PNG, GIF or BMP file.<br> Maximum upload size for all photos is 10MB.</p>
+    <div class="govuk-form-group govuk-!-margin-top-5">
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+    </div>
+
+    <!-- <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file" multiple> -->
+    <!-- <input type="submit"> -->
+  <!--   <div class="moj-multi-file-upload__dropzone"><input class="govuk-file-upload moj-multi-file-upload__input" id="documents" name="documents" type="file" multiple=""><p class="govuk-body">Drag and drop files here or</p><label for="documents" class="govuk-button govuk-button--secondary">Choose files</label><div aria-live="polite" role="status" class="govuk-visually-hidden">Uploading files, please wait</div></div>
+  </div>
+  <!-- <button class="govuk-button govuk-button--secondary moj-multi-file-upload__button" data-module="govuk-button">
+      Upload photos
+  </button> -->
+<form action="/action_page.php">
+  </form>
+
+  <div class="govuk-button-group govuk-!-margin-top-7">
+    <a class="govuk-button" data-module="govuk-button" href="installation-cost">
+      Save and continue
+    </a>
+    <!-- <p><a href="chargepoint-dashboard.html">Remove chargepoint</a></p> -->
+
+  </div>
+
+
+
+
+  </div>
+</div>
+
+
+{% endblock %}

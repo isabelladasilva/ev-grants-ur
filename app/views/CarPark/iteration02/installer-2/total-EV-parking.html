@@ -1,0 +1,102 @@
+{% extends "layout-ll.html" %}
+
+{% block pageTitle %}
+How many EV parking bays will the infrastructure support?
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+
+</nav> -->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <h1 class="govuk-heading-xl">How many EV parking bays will the infrastructure support?</h1>
+
+    <p>We want to know how many EVs the infrastructure will be able to charge, before you install any chargepoints.</p>
+
+    <p>The grant will pay up £500 for each EV the infrastructure let you charge, regardless of whether you install the chargepoints now or later.</p>
+    <p>To get the grant for infrastructure, it will need to charge at least 5 EVs at the same time and install 1 chargepoint.</p>
+
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        What do we mean by infrastucture?
+      </span>
+    </summary>
+    <div class="govuk-details__text govuk-!-margin-top">
+    <ul>
+        <li>Cable routes, by which we mean channels for chargepoint cabling that run from the power supply to the  chargepoint location</li>
+        <li>Electrical containment systems</li>
+        <li>Any associated reinstatement work,</li>
+        <li>Signage</li>
+        <li>Earthing arrangements</li>
+        <li>Any onsite one off software purchases, but not ongoing software support or services</li>
+        <li>Grid connections, but not grid reinforcement</li>
+        <li>Concrete plinths or footings for future chargepoints</li>
+        <li>Vehicle barriers</li>
+        <li>Upgrades to existing electrical infrastructure</li>
+        <li>Labour</li>
+        <li>Project management costs</li>
+    </ul>
+    </div>
+  </details>
+
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+            Total number of EV parking bays
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </fieldset>
+    </div>
+
+    <br>
+
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="infrastructure">
+        Save and continue
+      </a>
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

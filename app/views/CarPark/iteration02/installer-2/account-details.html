@@ -1,0 +1,190 @@
+{% extends "layout-installer-mvp.html" %}
+
+{% block pageTitle %}
+Update your business details
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-xl " id="postcode">
+  Your account
+</h1>
+
+
+<div class="govuk-width-container"
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-column-one-quarter">
+      <nav class="moj-side-navigation" aria-label="Side navigation">
+        <ul class="moj-side-navigation__list">
+          <li class="moj-side-navigation__item">
+            <a href="account">Personal details</a>
+          </li>
+
+          <li class="moj-side-navigation__item moj-side-navigation__item--active">
+            <a href="account-details" aria-current=>Business details</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Business details</h1>
+
+            <dl class="govuk-summary-list">
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Business name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Electric City
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Type of account
+                </dt>
+                <dd class="govuk-summary-list__value">
+                Installer
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                Primary contact
+                </dt>
+                <dd class="govuk-summary-list__value">
+              Jodie Walters
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                    <!-- <a class="govuk-link" href="linked-ent">
+                    Change
+                  </a> -->
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                Email
+                </dt>
+                <dd class="govuk-summary-list__value">
+            name@email.co.uk
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                    <!-- <a class="govuk-link" href="linked-ent">
+                    Change
+                  </a> -->
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                OZEV Number
+                </dt>
+                <dd class="govuk-summary-list__value">
+              12345
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                    <!-- <a class="govuk-link" href="linked-ent">
+                    Change
+                  </a> -->
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+            City
+          </dt>
+          <dd class="govuk-summary-list__value">
+        London         </dd>
+          <dd class="govuk-summary-list__actions">
+
+          </dd>
+        </div>
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+              Postcode
+            </dt>
+            <dd class="govuk-summary-list__value">
+              E1 2AL
+            </dd>
+            <dd class="govuk-summary-list__actions">
+            <!--  <a class="govuk-link" href="account-landlord-type">
+                Change
+              </a> -->
+            </dd>
+          </div>
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                  Authorised for residential
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    Yes
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                  <!--  <a class="govuk-link" href="account-employees">
+                      Change
+                    </a> -->
+                  </dd>
+                </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Authorised for commercial
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Yes
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                    <!--  <a class="govuk-link" href="account-property-type">
+                        Change
+                      </a> -->
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Installer representative
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      No
+                    </dd>
+      <dd class="govuk-summary-list__actions">
+        <!--  <a class="govuk-link" href="account-property-type">
+                          Change
+                        </a> -->
+                    </dd>
+                  </div>
+              </dl>
+
+          <p>These details were provided when you registered cannot be changed.</p>
+          <p>To change any details you will need to contact DVLA by email, providing your business name and what you need to change.</p>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+{% endblock %}

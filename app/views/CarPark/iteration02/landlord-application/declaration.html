@@ -1,0 +1,66 @@
+{% extends "layout-ll.html" %}
+
+{% block pageTitle %}
+Declaration
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <!-- <span class="govuk-caption-l">Blue Tick Properties</span> -->
+
+    <h1 class="govuk-heading-xl">Declaration</h1>
+
+    <p>By continuing, you confirm that you:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>have agreed to complete the installation that you are applying for with an Office for Zero Emission Vehicles (OZEV) approved installer</li>
+      <li>will provide the correct information to the best of your knowledge</li>
+      <li>understand the information provided and any supporting evidence will be used to assess your application and claim for this grant</li>
+      <li>agree to be contacted by OZEV or its agents for audit purposes, should this installation be chosen for audit</li>
+      <li>understand that any chargepoints you apply for must be installed in the property's dedicated private parking</li>
+    </ul>
+
+    <p>You also confirm that you will consider the needs of EV owners who may be disabled or have mobility issues when installing a chargepoint.</p>
+
+    <div class="govuk-warning-text govuk-!-margin-top-7">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        <b>It is an offence to make a false declaration to obtain a grant and you could be fined or prosecuted.
+      </strong>
+    </div>
+
+        <div class="govuk-button-group govuk-!-margin-top-7">
+          <a class="govuk-button" data-module="govuk-button" href="installer-detail.html">
+            Accept and continue
+          </a>
+        </div>
+
+  </div>
+</div>
+
+
+{% endblock %}
