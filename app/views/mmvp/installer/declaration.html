@@ -1,4 +1,4 @@
-{% extends "layout-installer.html" %}
+{% extends "layout-installer-mvp.html" %}
 
 {% block pageTitle %}
 You must read the following before proceeding with your application -
@@ -40,17 +40,13 @@ You must read the following before proceeding with your application -
       <li>have conducted a survey prior to installation</li>
       <li>completed the BS7671 Electrical Installation Certificate</li>
       <li>notified the local Distribution Network Operator (DNO) of this installation</li>
-
+      <li>agree to work with OZEV or its agents should the installation be chosen for audit</li>
     </ul>
 
+    <p class="govuk-body">You also confirm that when installing a chargepoint, you will consider accessibility and mobility needs of EV owners.</p>
 
+    <p class="govuk-body">Your information will be handled in accordance with the <a href="https://www.gov.uk/government/organisations/office-for-low-emission-vehicles/about/personal-information-charter" rel="noreferrer noopener" along with target="_blank">OZEV personal information charter (opens in new tab)</a>.</p>
 
-    <!-- <div class="govuk-checkboxes__item govuk-!-margin-top-6">
-          <input class="govuk-checkboxes__input" id="Declaration" name="Declaration" type="checkbox" value="confirm">
-          <label class="govuk-label govuk-checkboxes__label" for="Declaration" style="padding-top: 0px ">
-            I confirm that I understand the grant conditions and that the information I have provided is true and correct to the best of my knowledge.
-          </label>
-        </div> -->
 
         <div class="govuk-warning-text govuk-!-margin-top-7">
           <span class="govuk-warning-text__icon" aria-hidden="true">!</span>

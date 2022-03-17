@@ -1,4 +1,4 @@
-{% extends "layout-installer.html" %}
+{% extends "layout-installer-mvp.html" %}
 
 {% block pageTitle %}
 Provide serial number and photographs for chargepoint 1
@@ -29,7 +29,7 @@ Provide serial number and photographs for chargepoint 1
   <div class="govuk-grid-column-two-thirds">
 
 
- <h1 class="govuk-heading-xl">Provide serial number and photographs</h1>
+ <h1 class="govuk-heading-xl">Provide the serial number and photographs</h1>
 
     <h2 class="govuk-heading-m">Chargepoint 1</h2>
 
@@ -136,7 +136,7 @@ Provide serial number and photographs for chargepoint 1
   <!-- <p>You must upload a minimum of 2 photos of the installed chargepoint. You can upload up to 10 photos.</p> -->
   <p>You need to provide:</p>
       <ul class="govuk-list govuk-list--bullet">
-        <li>a close up photo of the installed chargepoint</li>
+        <li>a close-up photo of the installed chargepoint</li>
         <li>a photo of the installed chargepoint and the parking space</li>
       </ul>
 
@@ -149,7 +149,7 @@ Provide serial number and photographs for chargepoint 1
       </span>
     </summary>
     <div class="govuk-details__text">
-      <h3 class="govuk-heading-s">Chargepoint close up</h3>
+      <h3 class="govuk-heading-s">Chargepoint close-up</h3>
       <img src="https://ev-grants.herokuapp.com/public/images/ev-cp-close.jpeg" alt="Close up of the chargepoint">
       <h3 class="govuk-heading-s">Chargepoint and the parking space</h3>
       <img src="https://ev-grants.herokuapp.com/public/images/ev-cp-distance.jpg" alt="Image of the chargepoint taken from further away">
@@ -164,7 +164,7 @@ https://design-patterns.service.justice.gov.uk/components/multi-file-upload/ -->
     <label class="govuk-label" for="file-upload-1">
       Upload a minimum of 2 photos of the chargepoint. You can upload up to 10 photos as proof of installation.
     </label>
-    <p class="govuk-!-margin-top-1 govuk-hint">The photos must be a JPG, JPEG, PNG, GIF or BMP file and each one can be up to 10MB in size.</p>
+    <p class="govuk-!-margin-top-1 govuk-hint">The photos must be a JPG, JPEG, PNG, GIF, PDF or BMP file and each one can be up to 10MB in size.</p>
     <div class="govuk-form-group govuk-!-margin-top-5">
         <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
     </div>

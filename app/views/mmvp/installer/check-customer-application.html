@@ -1,7 +1,7 @@
-{% extends "layout-installer.html" %}
+{% extends "layout-installer-mvp.html" %}
 
 {% block pageTitle %}
-Check your answers before sending your application
+Check your customer's grant application
 {% endblock %}
 
 {% block beforeContent %}
@@ -40,13 +40,13 @@ Check your answers before sending your application
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl">Review customer application</h1>
+    <h1 class="govuk-heading-xl">Check your customer's application</h1>
 
-    <p class="govuk-body">Sherborne Properties have sent this application. Check the details are correct before you start the installation.  </p>
+    <p class="govuk-body">Sherborne Properties have made this application. Check the details are correct before you start the installation.</p>
 
-    <p class="govuk-body">Submit this claim after you have completed the installation at the address listed below.</p>
+    <p class="govuk-body">When you have completed the installation you can finish and submit this claim.</p>
 
-    <h1 class="govuk-heading-m govuk-!-margin-top-5">Claim summary</h1>
+    <h2 class="govuk-heading-m govuk-!-margin-top-5">Application details</h2>
       <dl class="govuk-summary-list">
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
@@ -65,13 +65,13 @@ Check your answers before sending your application
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Customer name
+            Customer's name
           </dt>
           <dd class="govuk-summary-list__value">
             Sherborne Properties
           </dd>
         </div>
-        <div class="govuk-summary-list__row">
+        <!-- <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Installer name
           </dt>
@@ -81,15 +81,23 @@ Check your answers before sending your application
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Installer OZEV's number
+            Installer's OZEV number
           </dt>
           <dd class="govuk-summary-list__value">
             835722
           </dd>
+        </div> -->
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Date we approved your customer's application
+          </dt>
+          <dd class="govuk-summary-list__value">
+            13 July 2021
+          </dd>
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Status of application
+            Application status
           </dt>
           <dd class="govuk-summary-list__value">
             <strong class="govuk-tag govuk-tag--blue">Ready to Claim</strong>
@@ -107,10 +115,36 @@ Check your answers before sending your application
       </dl>
 
 
-    <h1 class="govuk-heading-m">Installation details</h1>
+    <h2 class="govuk-heading-m">Installation details</h2>
 
 
     <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Property type
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Residential
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Building type
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Indivdual flat or apartment building
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            <!-- Change<span class="govuk-visually-hidden"> xxx</span> -->
+          </a>
+        </dd>
+      </div>
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Private parking
@@ -167,7 +201,9 @@ Check your answers before sending your application
     </dl>
 
     <div class="govuk-inset-text">
-      <p class="govuk-body">If the details are not correct, ask your customer to cancel this application. They can submit a new application.</p>
+      <p class="govuk-body">If the details are not correct, ask your customer to cancel this application and submit a new one.</p>
+
+      <p class="govuk-body">You can continue with this claim if you installed fewer chargepoints and created less infrastructure than your customer put in their application.</p>
     </div>
 
 

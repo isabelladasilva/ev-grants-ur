@@ -7,7 +7,7 @@ router.post('/' + version + '/installer/subcontractor', function (req, res)
       if (installer_type == "installer") {
       res.redirect(301, '/' + version + '/installer/chargepoint-model')
       } else {
-      res.redirect(301, '/' + version + '/installer/confirmSubcontractor')
+      res.redirect(301, '/' + version + '/installer/confirm-subcontractor')
     }})
 
 router.post('/' + version + '/landlordReg/type-of-landlord', function (req, res){
@@ -94,7 +94,7 @@ router.post('/' + version + '/pmcApp/linked-enterprise', function (req, res){
       }})
 
 
-router.post('/' + version + '/installer/dateOfCompletion', function (req, res) {
+router.post('/' + version + '/installer/date-of-completion', function (req, res) {
                 res.redirect(301, '/' + version + '/installer/installation-cost')
         })
 
