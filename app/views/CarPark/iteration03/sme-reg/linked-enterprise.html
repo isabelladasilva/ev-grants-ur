@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Is your business part of a linked enterprise?
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" action="/linked-enterprise-choice" method="post">
+
+    <div class="govuk-form-group-govuk">
+      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            Is your business a linked enterprise?
+          </h1>
+        </legend>
+
+        <p class="govuk-body govuk-!-margin-top-5">If another organisation controls your enterprise, then your business is a linked enterprise.</p>
+
+
+
+        <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="linked_type" name="linked_type" type="radio" value="yes" data-aria-controls="conditional-linked">
+            <label class="govuk-label govuk-radios__label" for="linked_type">
+              Yes
+            </label>
+          </div>
+
+          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="linked_type2" name="linked_type" type="radio" value="no" data-aria-controls="conditional-linked-2">
+              <label class="govuk-label govuk-radios__label" for="linked_type">
+                No
+              </label>
+            </div>
+
+            <details class="govuk-details govuk-!-margin-top-5" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What is a linked enterprise
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+
+              <p class="govuk-body">A linked enterprise is a group of enterprises, businesses, franchises or companies that are treated as a single undertaking when applying for government funding.</p>
+              <p class="govuk-body">The grant limit applies to all parts of a linked enterprise and the number of chargepoint sockets available to you will depend on the number of grants allocated to all the organisations in that linked enterprise</p>
+              <p class="govuk-body">A group of linked enterprises will be treated as a single undertaking when one of the following is true:</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+                <li>one enterprise has a majority of the shareholders’ or members’ voting rights in another enterprise</li>
+                <li>one enterprise has the right to appoint or remove a majority of the members of the administrative, management or supervisory body of another enterprise</li>
+                <li>one enterprise has the right to exercise a dominant influence over another enterprise, pursuant to a contract entered into with that enterprise or to a provision in its memorandum or articles of association</li>
+                <li>one enterprise, which is a shareholder in or member of another enterprise, controls alone – pursuant to an agreement with other shareholders in or members of that enterprise – a majority of shareholders’ or members’ voting rights in that enterprise</li>
+              </ul>
+
+              <p class="govuk-body">Enterprises having any of these relationships through one or more other enterprises will also be considered to be a single undertaking.</p>
+
+              <h3 class="govuk-heading-s">
+                Example of a linked enterprise:
+              </h3>
+              <p class="govuk-body">Company A has a majority shareholding in company B, C, and D.  Therefore A, B, C and D are linked enterprises and considered as a single entity when they apply for government funding. Companies C and D have claimed grants for 10 chargepoint sockets, so there are 190 chargepoints that could be claimed by A and B for the year.</p>
+            </div>
+            </details>
+
+      </fieldset>
+
+    </div>
+
+
+
+<div class="govuk-button-group govuk-!-margin-top-5">
+  <button class="govuk-button" data-module="govuk-button">
+    Continue
+  </button>
+</div>
+
+</form>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

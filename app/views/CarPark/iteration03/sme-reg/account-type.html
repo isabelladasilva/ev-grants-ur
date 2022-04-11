@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Business type
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" action="/your-account-type" method="post">
+
+
+      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            Select the option that best describes your business
+          </h1>
+        </legend>
+        <span id="passport-issued-error" class="govuk-error-message">
+
+
+        <div class="govuk-radios govuk-!-margin-top-5 govuk-radios--conditional" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="business_type" name="business_type" type="radio" value="landlord" data-aria-controls="conditional-business">
+            <label class="govuk-label govuk-radios__label" for="business_type">
+              Landlord
+            </label>
+            <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+              You are:
+              <ul class="govuk-list govuk-list--bullet govuk-hint">
+                <li>the freeholder or leaseholder applying for properties you own or let</li>
+                <li>leaseholders applying as a Right to Manage company (RTM)</li>
+                <li>or a property factor in Scotland </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="business_type2" name="business_type" type="radio" value="pmc" data-aria-controls="conditional-business-2">
+              <label class="govuk-label govuk-radios__label" for="business_type2">
+                Property manager
+              </label>
+              <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                You are the representative or managing agent of one or more landlords applying on behalf of your clients.
+            </div>
+            </div>
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="business_type4" name="business_type" type="radio" value="sme" data-aria-controls="conditional-business-4">
+                <label class="govuk-label govuk-radios__label" for="business_type4">
+                Small to medium enterprise (SME)
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  You are the owner of an SME applying to install infrastructure and chargepoints for commercial use. 
+                </div>
+              </div>
+
+        </div>
+        </div>
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="business_type3" name="business_type" type="radio" value="installer" data-aria-controls="conditional-business-3">
+                <label class="govuk-label govuk-radios__label" for="business_type3">
+                Installer
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  You are the installer whose company is responsible for installing the chargepoint. 
+                </div>
+              </div>
+
+        </div>
+    </div>
+
+
+
+      </fieldset>
+
+
+
+<div class="govuk-button-group govuk-!-margin-top-5">
+  <button class="govuk-button" data-module="govuk-button">
+    Save and continue
+  </button>
+
+</div>
+
+</form>
+
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,237 @@
+{% extends "layout-installer-mvp.html" %}
+
+{% block pageTitle %}
+  Manage your claims
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+    <style type="text/css">
+
+
+
+.orange {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #c5490a !important;
+    border:1px solid #c5490a;
+    }
+
+    .red {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #b10e1e !important;
+    border:1px solid #b10e1e;
+    }
+
+    .green {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #006c56!important;
+    border:1px solid #006c56;
+    }
+
+
+table th {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+table td {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+govuk-label {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+
+    </style>
+
+    <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Manage your claims</h1>
+      </div>
+    </div>
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p>To start a new claim for the Electric Vehicle chargepoint grant for flat owner-occupiers and people living in rented properties, <a href="https://ev-grants.herokuapp.com/HC/iteration12/installer/application-setup/customer-details">add your customer's details</a>.</p>
+      </div>
+    </div>
+
+
+
+<br>
+<hr>
+
+<br>
+
+        <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+        <div class="moj-search">
+
+          <form action="#" method="post">
+
+            <div class="govuk-form-group">
+              <h2 class="govuk-heading-m">Find a claim</h2>
+
+              <div id="search-hint" class="govuk-hint moj-search__hint">
+                You can search using the customer name, postcode and reference number
+              </div>
+
+              <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint">
+            </div>
+
+            <button class="govuk-button moj-search__button " data-module="govuk-button">
+              Search
+            </button>
+
+          </form>
+        </div>
+        </div>
+        </div>
+
+<br>
+<br>
+<br>
+            <div class="govuk-grid-row">
+
+              <div class="govuk-grid-column-full">
+
+                <table class="govuk-table" style="font-size: 19px !important">
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Reference number</th>
+                      <th scope="col" class="govuk-table__header">Grant type</th>
+                      <th scope="col" class="govuk-table__header">Customer</th>
+                      <th scope="col" class="govuk-table__header">Postcode</th>
+                      <th scope="col" class="govuk-table__header">Claim status</th>
+                      <th scope="col" class="govuk-table__header">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">893903</td>
+                      <td class="govuk-table__cell">Residential car park</td>
+                      <td class="govuk-table__cell">Sherborne Properties</td>
+                      <td class="govuk-table__cell">EC1R 1BC</td>
+                      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue" style="font-size: 16px !important">Ready to Claim</strong></td>
+                      <td class="govuk-table__cell"><a href="check-customer-application">Submit claim by 13 Nov 2021</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">390466</td>
+                      <td class="govuk-table__cell">Residential car park</td>
+                      <td class="govuk-table__cell">Victoria House</td>
+                      <td class="govuk-table__cell">W1 1XX</td>
+                      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue" style="font-size: 16px !important">Ready to Claim</strong></td>
+                      <td class="govuk-table__cell"><a href="check-customer-application">Submit claim by 12 Dec 2021</a></td>
+                    </tr>
+                    <!--
+                <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">893903</td>
+                      <td class="govuk-table__cell">Residential landlord</td>
+                      <td class="govuk-table__cell">Urban Properties</td>
+                      <td class="govuk-table__cell">EC1R 1BC</td>
+                      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--orange" style="font-size: 16px !important">Expiring soon</strong></td>
+                      <td class="govuk-table__cell"><a href="renew-confirm">Renew by 20 Nov 2021</a></td>
+                    </tr>
+                    -->
+  <!--
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">098521</td>
+                      <td class="govuk-table__cell">Residential landlord</td>
+                      <td class="govuk-table__cell">Victoria House</td>
+                      <td class="govuk-table__cell">WC1N 1XX</td>
+                      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red" style="font-size: 16px !important">Rejected</strong></td>
+                      <td class="govuk-table__cell"><a href="resubmit-claim">Resubmit by 13 Dec 2021</a></td>
+                    </tr>  -->
+
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">893903</td>
+                      <td class="govuk-table__cell">Renters and flat owners</td>
+                      <td class="govuk-table__cell">Wickham Park</td>
+                      <td class="govuk-table__cell">EC1R 1BC</td>
+                      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow" style="font-size: 16px !important">Submitted for review</strong></td>
+                      <td class="govuk-table__cell"><a href="submitted-for-review">View claim</a></td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">098521</td>
+                      <td class="govuk-table__cell">Renters and flat owners</td>
+                      <td class="govuk-table__cell">Blue Tick Properties</td>
+                      <td class="govuk-table__cell">WC1N 1XX</td>
+                      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" style="font-size: 16px !important">Incomplete</strong></td>
+                      <td class="govuk-table__cell"><a href="subcontractor">Continue claim</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">864442</td>
+                      <td class="govuk-table__cell">Residential car park</td>
+                      <td class="govuk-table__cell">Blue Tick Properties</td>
+                      <td class="govuk-table__cell">E1 1XX</td>
+                      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green" style="font-size: 16px !important">Approved for payment</strong></td>
+                      <td class="govuk-table__cell"><a href="approved-for-payment">View claim</a></td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">098521</td>
+                      <td class="govuk-table__cell">Staff and fleet car park</td>
+                      <td class="govuk-table__cell">Blue Tick Properties</td>
+                      <td class="govuk-table__cell">WC1N 1XX</td>
+                      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" style="font-size: 16px !important">Declined</strong></td>
+                      <td class="govuk-table__cell"><a href="declined">View declined claim</a></td>
+                    </tr>
+
+
+
+
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+
+
+
+
+
+
+
+{% endblock %}

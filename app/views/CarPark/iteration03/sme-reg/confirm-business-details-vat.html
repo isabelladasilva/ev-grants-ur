@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Confirm the business details are correct
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-form-group">
+
+          <h1 class="govuk-heading-xl">
+            Confirm the company details
+          </h1>
+
+
+        <label class="govuk-label govuk-!-font-weight-bold" for="company-number">
+            UK VAT registration number
+        </label>
+        <p class="govuk-body">12050845</p>
+
+        <label class="govuk-label govuk-!-font-weight-bold" for="business-name">
+            Business name
+        </label>
+        <p class="govuk-body">Blue Tick Properties</p>
+
+        <label class="govuk-label govuk-!-font-weight-bold" for="business-address">
+            Registered business address
+        </label>
+        <p class="govuk-body">Kemp House,<br> 160 City Road,<br> London,<br> England, <br> EC1V 2NX</p>
+    </div>
+
+    <p class="govuk-body">If your company physical address is different from the registered address, you can still proceed. We will not use this to send any letters or correspondence. If you need to update it, you will need to contact Companies House. </p>
+
+
+    <p><a href="javascript:history.go(-1)">This is not my business
+    </a></p>
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="number-of-employees">
+        Confirm and continue
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+{% endblock %}

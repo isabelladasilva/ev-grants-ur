@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Account created
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="confirmation2.html">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-panel govuk-panel--confirmation">
+      <h1 class="govuk-panel__title">
+        Account created
+      </h1>
+      <!-- <div class="govuk-panel__body">
+        Your unique account number<br><strong>LD7850</strong>
+      </div> -->
+    </div>
+
+    <p class="govuk-body">We have sent you an email to confirm your account has been created.</p>
+
+    <h2 class="govuk-heading-m">What happens next</h2>
+
+    <p class="govuk-body">You can now use your email and password to sign in to your account and apply for the grant.</p>
+
+    <p class="govuk-body">
+      <a href="">Read more about the OZEV Electric Vehicle Commercial Infrastructure Grant.</a>
+    </p>
+
+    <p class="govuk-body">
+      <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds)
+    </p>
+
+    <a class="govuk-button govuk-!-margin-top-3" href="../sme-app/signIn">Sign in to your account</a>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "layout-installer-mvp.html" %}
+
+{% block pageTitle %}
+Confirm the subcontractor who completed this installation
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Confirm this is your subcontractor</h1>
+
+    <label class="govuk-label govuk-!-font-weight-bold" for="company-number">
+        Subcontractor's OZEV installer number
+    </label>
+    <p class="govuk-body">12050845</p>
+
+    <label class="govuk-label govuk-!-font-weight-bold" for="business-name">
+        Subcontractor name
+    </label>
+    <p class="govuk-body">Angus Young Installations</p>
+
+    <a class="govuk-body" href="responsible-for-installation">This is not my contractor</a>
+
+
+
+    <div class="govuk-button-group govuk-!-margin-top-7">
+      <a class="govuk-button" href="date-of-completion">
+        Confirm and continue
+      </a>
+      <!-- <p><a href="task-list">Save and continue later</a></p> -->
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

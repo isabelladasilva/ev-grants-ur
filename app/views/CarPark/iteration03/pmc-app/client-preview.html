@@ -1,0 +1,163 @@
+{% extends "layout-pmc.html" %}
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+    <style type="text/css">
+
+
+.orange {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #c5490a !important;
+    border:1px solid #c5490a;
+    }
+
+    .red {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #b10e1e !important;
+    border:1px solid #b10e1e;
+    }
+
+    .green {
+    font-size: 14px;
+    border: 1px solid;
+    padding: 4px 6px 2px 6px;
+    line-height: auto;
+    font-weight: 700;
+    margin-left: 5px;
+    background: #fff;
+    color: #006c56!important;
+    border:1px solid #006c56;
+    }
+
+
+table th {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+table td {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+govuk-label {
+    text-transform: none;
+    font-size: 19px !important;
+}
+
+    </style>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+  <h1 class="govuk-heading-l">Highfield Lodge</h1>
+</div>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div class="govuk-grid-row govuk-!-margin-top-4">
+      <div class="govuk-grid-column-one-half">
+      <p class="govuk-!-font-size-27 govuk-!-font-weight-bold">4<br><span class="govuk-body">Residential chargepoint sockets have been claimed</span></p>
+      </div>
+      <div class="govuk-grid-column-one-half">
+      <p class="govuk-!-font-size-27 govuk-!-font-weight-bold">196<br><span class="govuk-body">Residential chargepoint sockets remaining for this year</span></p>
+      </div>
+      </div>
+
+      <div class="govuk-button-group">
+        <a class="govuk-button" href="choose-grant">Start a new application</a>
+
+  <button class="govuk-button govuk-button--secondary govuk-!-margin-top-5" data-module="govuk-button">
+    Delete Landlord
+  </button>
+</div>
+
+
+
+
+
+                        <table class="govuk-table" style="font-size: 19px !important">
+                          <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                              <th scope="col" class="govuk-table__header">Reference number</th>
+                              <th scope="col" class="govuk-table__header">Grant type</th>
+                              <th scope="col" class="govuk-table__header">Postcode</th>
+                              <th scope="col" class="govuk-table__header">Claim status</th>
+                              <th scope="col" class="govuk-table__header">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+
+                            <h1 class="govuk-heading-m" style="margin-top:30px">Applications</h1>
+
+
+                            <tr class="govuk-table__row">
+                              <td class="govuk-table__cell">864442</td>
+                              <td class="govuk-table__cell">Residential</td>
+                              <td class="govuk-table__cell">E1 1XX</td>
+                              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green" style="font-size: 16px !important">Completed</strong></td>
+                              <td class="govuk-table__cell"><a href="installerCompleted.html">View installer claim</a></td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                              <td class="govuk-table__cell">864442</td>
+                              <td class="govuk-table__cell">Commercial</td>
+                              <td class="govuk-table__cell">SE1 1WX</td>
+                              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green" style="font-size: 16px !important">Completed</strong></td>
+                              <td class="govuk-table__cell"><a href="installerCompleted.html">View installer claim</a></td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                              <td class="govuk-table__cell">098521</td>
+                              <td class="govuk-table__cell">Residential</td>
+                              <td class="govuk-table__cell">WC1N 1XX</td>
+                              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" style="font-size: 16px !important">Declined</strong></td>
+                              <td class="govuk-table__cell"><a href="declined.html">View declined claim</a></td>
+                            </tr>
+
+                          </tbody>
+                        </table>
+
+      </div>
+    </div>
+
+
+
+{% endblock %}

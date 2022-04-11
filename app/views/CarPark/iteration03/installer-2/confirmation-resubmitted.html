@@ -1,0 +1,68 @@
+{% extends "layout-installer-mvp.html" %}
+
+{% block pageTitle %}
+Claim resubmitted -
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            We will now review your resubmitted claim
+          </h1>
+          <div class="govuk-panel__body">
+            Your reference number:<br><strong>098521</strong>
+          </div>
+        </div>
+
+        <p class="govuk-body">We have sent your customer an email to tell them you have resubmitted your claim.</p>
+
+
+        <h2 class="govuk-heading-m">What happens next</h2>
+
+        <p class="govuk-body">
+        The Office for Zero Emission Vehicles (OZEV) will now assess your claim.
+        </p>
+        <p class="govuk-body">
+          We will aim to tell you, within 20 working days, whether your claim is successful, or to ask you for more information.
+        </p>
+
+        <p class="govuk-body">
+          You can check the progress of your claim on your manage your claims page.
+        </p>
+
+
+    <div class="govuk-button-group govuk-!-margin-top-5">
+      <a class="govuk-button" data-module="govuk-button" href="installer-dashboard.html">
+        Manage your claims
+      </a>
+    </div>
+
+    <h3 class="govuk-heading-s govuk-!-margin-top-4">Help to make this service better</h3>
+
+    <p class="govuk-body">
+      <a href="https://www.smartsurvey.co.uk/s/EV-grants/" class="govuk-link">What did you think of this service? <span class="govuk-visually-hidden"></span></a>(takes 30 seconds)
+    </p>
+
+
+
+{% endblock %}

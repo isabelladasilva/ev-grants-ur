@@ -1,0 +1,142 @@
+{% extends "layout-ll.html" %}
+
+{% block pageTitle %}
+How much
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <!--<span class="govuk-caption-l">Infrastructure and chargepoint grant</span> -->
+
+    <h1 class="govuk-heading-xl">How much the grant could be worth</h1>
+
+    <p>See how much your customer can get off the cost for installing chargepoints, when you complete your claim.</p>
+    <p>We will limit the grant to up 75% of the cost of the installation.</p>
+    <p>There is a maximum limit of £30,000 for each landlord application, each year.</p>
+
+
+    <br>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            EV parking spaces enabled by infrastructure
+          </dt>
+          <dd class="govuk-summary-list__value">
+            5
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              <span class="govuk-visually-hidden"></span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Amount for infrastructure
+          </dt>
+          <dd class="govuk-summary-list__value">
+            £2500.00
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              <span class="govuk-visually-hidden"></span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Chargepoint sockets you installed
+          </dt>
+          <dd class="govuk-summary-list__value">
+            1
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              <span class="govuk-visually-hidden"></span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Amount for chargepoint sockets
+          </dt>
+          <dd class="govuk-summary-list__value">
+            £350.00
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              <span class="govuk-visually-hidden"></span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+
+      <h1 class="govuk-heading-m">Total</h1>
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Total EV infrastructure grant
+            </dt>
+            <dd class="govuk-summary-list__value">
+              £2850.00
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                <span class="govuk-visually-hidden"></span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+            <!-- <p>We will pay the grant amount to you. You must discount this amount from your final invoice to your customer.</p> -->
+
+            <br>
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="check-answers">
+        Continue
+      </a>
+    </div>
+
+
+  </div>
+</div>
+
+{% endblock %}

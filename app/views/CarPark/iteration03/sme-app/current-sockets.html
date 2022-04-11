@@ -1,0 +1,81 @@
+{% extends "layout-sme.html" %}
+
+{% block pageTitle %}
+How many chargepoint sockets are you installing at this property?
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a prototype – <a class="govuk-link" href="#">your feedback</a> to help us to improve this service.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="hmrc-language-select" aria-label="Language switcher">
+  <ul class="hmrc-language-select__list">
+    <li class="hmrc-language-select__list-item">
+      <span aria-current="true">English</span>
+    </li>
+    <li class="hmrc-language-select__list-item">
+      <a href="?cy" hreflang="cy" lang="cy" rel="alternate" class="govuk-link" data-journey-click="link - click:lang-select:Cymraeg">
+        <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+        <span aria-hidden="true">Cymraeg</span>
+      </a>
+    </li>
+  </ul>
+
+</nav> -->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-l">Highfield Properties</span>
+
+    <h1 class="govuk-heading-xl">How many EV charging parking bays will the infrastructure enable?</h1>
+
+    <p>We want to know how many EV charging parking bays your infrastructure will enable in your car park, before you install any chargepoints.</p>
+    <p>The grant will pay up £500 for each EV charging parking bay the infrastructure will let you charge, regardless of whether you install the chargepoints now or later.</p>
+    <p>To get the this grant, you need to put in the infrastructure to enable simultaneous charging for at least 5 EV parking bays, and to install 1 chargepoint with 1 chargepoint socket.</p>
+
+<br>
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+          Total number of EV parking bays your infrastructure will enable
+        </label>
+        <div id="more-detail-hint" class="govuk-hint">
+          Tell us the number you have agreed with your OZEV approved installer.
+        </div>
+        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+    </fieldset>
+  </div>
+
+    <br>
+
+
+    <div class="govuk-button-group">
+      <a class="govuk-button" data-module="govuk-button" href="future-sockets.html">
+        Continue
+      </a>
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

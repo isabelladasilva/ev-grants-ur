@@ -1,0 +1,458 @@
+{% extends "layout.html" %}
+
+
+
+{% block pageTitle %}
+GOV guidance
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+.app-c-contents-list__list-item {
+    padding-top: 10px;
+    line-height: 1.3;
+    list-style-type: none;
+}
+.app-c-contents-list__list-item {
+    padding-top: 7.5px;
+}
+.app-c-contents-list__list-item--dashed {
+    margin-left: -15px;
+    padding-right: 25px;
+}
+.app-c-contents-list__list-item--dashed::before {
+    content: "— ";
+    margin-left: -25px;
+    padding-right: 5px;
+}
+
+.part-navigation-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #bfc1c3;
+}
+/*pagination */
+.pub-c-pagination {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.pub-c-pagination__list {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 641px)
+.pub-c-pagination__item {
+    font-size: 16px;
+    line-height: 1.25;
+}
+.pub-c-pagination__item {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    float: left;
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+.pub-c-pagination__link:visited {
+    color: #005ea5;
+}
+a:visited {
+    color: #4c2c92;
+}
+a:link {
+    color: #005ea5;
+}
+.pub-c-pagination__link {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+@media (min-width: 641px)
+.pub-c-pagination__link-title {
+    font-size: 27px;
+    line-height: 1.25;
+}
+
+.pub-c-pagination__link-title {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 20px;
+    line-height: 1.1111111111;
+    display: block;
+}
+.visually-hidden, .visuallyhidden {
+    position: absolute;
+    left: -9999em;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.pub-c-pagination__link-label {
+    display: inline-block;
+    margin-top: 0.1em;
+    text-decoration: underline;
+}
+
+.pub-c-pagination__item--next {
+    float: right;
+    text-align: right;
+}
+
+@media (min-width: 641px)
+.pub-c-pagination__item {
+    font-size: 16px;
+    line-height: 1.25;
+}
+.pub-c-pagination__item {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    float: left;
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+.pub-c-pagination__list:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.pub-c-pagination__item--previous {
+    float: left;
+    text-align: left;
+}
+.pub-c-pagination__item--next {
+    float: right;
+    text-align: right;
+}
+
+
+</style>
+
+<div class="govuk-grid-row">
+
+<div class="govuk-grid-column-two-thirds">
+<span class="govuk-caption-xl gem-c-title__context">
+Guidance
+</span>
+<h1 class="govuk-heading-l">Residential electric vehicle car park grant: Guidance for landlords and property managers </h1>
+
+<p class="pub-c-lead-paragraph">
+Find out how landlord and property managers can get help with the cost of the infrastructure they need to install electric vehicle (EV) chargepoints in their car parks.</p>
+
+<p class="pub-c-lead-paragraph">This page has guidance on who can apply, how to apply and the grant rules.</p>
+
+
+<p class="pub-c-lead-paragraph">We recommend you talk to an Office of Zero Emissions Vehicles (OZEV) approved installer about the details involved in creating charging infrastructure in your car park.</p>
+
+
+<p class="pub-c-lead-paragraph">If you already started a claim <a href="https://ev-grants.herokuapp.com/CarPark/iteration01/landlord-application/signIn"> sign in to your account</a><p>
+
+
+<aside class="part-navigation-container" role="complementary">
+
+<nav role="navigation" class="app-c-contents-list " data-module="track-click" aria-label="Pages in this guide">
+<h2 class="govuk-body-s">
+Contents
+</h2>
+
+<ol class="gem-c-contents-list__list">
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 1" data-track-label="#overview" data-track-options="" href="#overview">Overview</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 2" data-track-label="#who-can-apply?" data-track-options="" href="#who-can-apply?">Who can apply?</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 3" data-track-label="#can-you-get-the-grant-with-your-property?" data-track-options="" href="#can-you-get-the-grant-with-your-property?">Can you get the grant with your property?</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 4" data-track-label="#how-much-is-the-car-park-grant-worth?" data-track-options="" href="#how-much-is-the-car-park-grant-worth?">How much is the residential EV car park grant worth?</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 5" data-track-label="#work-with-an-OZEV-authorised-installer" data-track-options="" href="#work-with-an-OZEV-authorised-installer">Work with an OZEV authorised Installer</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 6" data-track-label="#how-the-grant-works" data-track-options="" href="#how-the-grant-works">How the grant works</a>
+</li>
+
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 7" data-track-label="#what-you-should-do-before-you-apply" data-track-options="" href="#what-you-should-do-before-you-apply">What you should do before you apply</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 8" data-track-label="#create-an-account-before-you-apply" data-track-options="" href="#create-an-account-before-you-apply">Create an account before you apply</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 9" data-track-label="#information-you-need-for-the-application" data-track-options="" href="#information-you-need-for-the-application">Information you need for the application</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 10" data-track-label="#apply-for-EV-car-park-grant" data-track-options="" href="#apply-for-EV-car-park-grant">Apply for the residential EV car park grant</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 11" data-track-label="#rules" data-track-options="" href="#rules">Grant rules and restrictions</a>
+</li>
+
+<li class="app-c-contents-list__list-item app-c-contents-list__list-item--dashed">
+<a class="gem-c-contents-list__link govuk-link  govuk-link--no-underline" data-track-category="contentsClicked" data-track-action="content_item 12" data-track-label="#other-help-you-can-get" data-track-options="" href="#other-help-you-can-get">Other help you can get</a>
+</li>
+
+
+</ol>
+</nav>
+</aside>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7"" id="overview">Overview</h2>
+
+
+<p class="govuk-body">The OZEV wants to help businesses and organisations who rent, lease or manage residential properties install EV chargepoints in their car parks.</p>
+
+<p class="govuk-body">The residential EV car park grant will give you money towards the infrastructure as well as installing the chargepoints.</p>
+
+<p class="govuk-body">You do not have to install all the chargepoints the infrastructure allows. You can plan for the future by creating infrastructure now that can charge EVs with chargepoints later on.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+<summary class="govuk-details__summary">
+<span class="govuk-details__summary-text">
+What do we mean by infrastructure?
+</span>
+</summary>
+<div class="govuk-details__text">
+<p>Infrastructure for chargepoints means:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>cabling that runs from the power supply to the chargepoint location</li>
+<li>electrical systems</li>
+<li>signage</li>
+<li>any onsite one-off software purchases, but not ongoing software support or services</li>
+<li>grid connections</li>
+<li>concrete plinths or footings for future chargepoints</li>
+<li>vehicle barriers</li>
+<li>upgrades to existing electrical infrastructure in the property</li>
+<li>labour</li>
+<li>project management</li>
+</ul>
+</div>
+</details>
+
+
+
+<p class="govuk-body">If you already have the infrastructure you need to install chargepoints, you can apply for the <a rel="noreferrer noopener" target="_blank" href="https://ev-grants.herokuapp.com/mmvp/landlord-grant-guidance">EV chargepoint grant for landlords (opens a new tab)</a></p>
+<p class="govuk-body">You can also apply for the EV landlord chargepoint grant if you have already had the infrastructure grant and now want to install further chargepoints.</p>
+
+
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7"" id="who-can-apply?">Who can apply?</h2>
+
+<p class="govuk-body">You can apply for this grant if you are a:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>landlord with property that you let or intend to let</li>
+<li>right to manage (RTM) company</li>
+<li>residents' management company (RMC)
+<li>company owning the freehold</li>
+<li>company owning the building’s common areas including shareholders who are the leaseholders</li>
+<li>leaseholder who has the freeholder’s consent to install a chargepoint</li>
+<li>property factors (in Scotland)</li>
+<li>private registered providers of social housing (PRP)</li>
+<li>housing association</li>
+<li>public authority</li>
+</ul>
+
+<p class="govuk-body">You must be a UK registered company and registered for VAT or at Companies House.</p>
+
+<p class="govuk-body">If you are a registered company, charity or public sector organisation you can use your Companies House company registration number or VAT registration number to apply.</p>
+
+<p class="govuk-body">Your company registration number is the best number to use as it will speed up the application process.</p>
+
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="can-you-get-the-grant-with-your-property?">Can you get the grant with your property?</h2>
+
+
+<p class="govuk-body">Your property must:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>be in England, Wales, Scotland or Northern Ireland. Properties in the Channel Islands and Isle of Man cannot get this grant
+<li>have a private off-street car park with at least 5 parking bays, which are part of the property</li>
+</ul>
+
+<p class="govuk-body">You cannot get a grant if you need to lay cables over public land such as pavements, even if this is a temporary arrangement.</p>
+
+<p class="govuk-body">This grant does not cover holiday rental properties.</p>
+
+<h3 class="govuk-heading-s">You must have private off-street parking</h3>
+
+<p class="govuk-body">The space where you are applying to install chargepoints must have a private parking space. You must own the parking space or have the sole legal right to it.</p>
+
+<p class="govuk-body">The private parking may be connected to the property or separate from it.</p>
+
+<p class="govuk-body">You must be able to show you have legal entitlement to the parking space if it is separate from the property. You may prove this by showing us proof of Land Registry title deeds.</p>
+
+<p class="govuk-body">If you do not own the parking space or have the sole legal right to it, you cannot apply for the grant. This includes rented spaces.</p>
+
+
+
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7"" id="how-much-is-the-car-park-grant-worth?">How much is the residential EV car park grant worth?</h2>
+
+<p class="govuk-body">The residential EV car park grant pays towards both the infrastructure and any chargepoints that you install at the same time as the infrastructure.</p>
+
+<h3 class="govuk-heading-s govuk-!-margin-top-7" id="how-the-grant-works">How much for infrastructure</h3>
+
+<p class="govuk-body">You can get up to £500 towards each EV charging parking bay the infrastructure supports.</p>
+
+<h3 class="govuk-heading-s">How much for chargepoints</h3>
+
+<p class="govuk-body">You can get up to £350 towards the cost of buying and installing each chargepoint socket.  Some chargepoints have 2 sockets. Each chargepoint socket can charge an EV.</p>
+
+<p class="govuk-body">To get the full amount, the grant has to be less than 75% of the cost on the installation.</p>
+
+<h3 class="govuk-heading-s">Example</h3>
+
+<p class="govuk-body">To get the minimum residential EV car park grant you would need to create the infrastructure to enable 5 EVs parking bays and to install a chargepoint with at least 1 socket.</p>
+
+<p class="govuk-body">5 x £500 + 1 x £350 = £2,850.</p>
+
+
+<h3 class="govuk-heading-s">Grant limitations</h3>
+
+<p class="govuk-body">As a landlord or property manager, you can make 30 applications each financial year. The financial year runs from 6 April to 5 April the next year.</p>
+
+<p class="govuk-body">Each application can be for up to a maximum of £30,000 and only be for one address.</p>
+
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="work-with-an-OZEV-authorised-installer">Work with an OZEV authorised installer</h2>
+
+<p class="govuk-body">Only <a rel="noreferrer noopener" target="_blank" href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1026192/evhs-installer-authorisations-log.csv/preview">OZEV authorised installers (opens in a new tab)</a> can claim for the EV residential infrastructure grant.</p>
+
+<p class="govuk-body">Installers must make sure that any chargepoint they install is listed on the <a rel="noreferrer noopener" target="_blank" href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1052507/electric-vehicle-homecharge-scheme-approved-chargepoint-model-list.csv/preview">OZEV approved chargepoint model list</a></p>
+
+<p class="govuk-body">Your installer will help you understand the installation process.</p>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="how-the-grant-works">How the grant works</h2>
+
+<ol class="govuk-list govuk-list--number">
+<li>You need create an account and make an application for the grant.</li>
+<li>As soon as you have submitted it, we can tell you whether you are eligible for the grant.</li>
+<li>If your application is successful, your installer will have 90 days to get the work done and to submit their part of the claim. </li>
+<li>If you or your installer need more time, you can request an extra 90 days for up to 12 months from the date you first applied.</li>
+<li>When your installer finishes the installation, they have to prove it is complete. This means that when your installer submits their part of the claim, they must send us proof that the work is done. This evidence includes a copy of your invoice and photos of the chargepoints they installed.</li>
+<li>OZEV pays the grant to your OZEV authorised installer who passes the discount on to you. </li>
+ </ol>
+
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="what-you-should-do-before-you-apply">What you should do before you apply</h2>
+
+<p class="govuk-body">Before you begin your application, you should:</p>
+<ol class="govuk-list govuk-list--bullet">
+<li>talk to an <a rel="noreferrer noopener" target="_blank" href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1026192/evhs-installer-authorisations-log.csv/preview">OZEV authorised installer (opens in a new tab)</a> about your needs</li>
+<li>get a quote from your installer based on your requirements. It is important you follow their recommendation on whether you need infrastructure to be able to charge EVs in your car park</li>
+<li>confirm that any chargepoints they will install are on the <a rel="noreferrer noopener" target="_blank" href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1052507/electric-vehicle-homecharge-scheme-approved-chargepoint-model-list.csv/preview">OZEV approved chargepoint model list</a></li>
+<li>understand the <a href="#rules"> grant rules and restrictions</a></li>
+<li>make sure all the tenants or leaseholders agree with the costs and the plans
+<li>workout how you will manage the chargepoints once they are installed, including maintenance and the electricity costs</li>
+<li>consider the accessibility of the chargepoints for EV owners who may be disabled or have mobility needs</li>
+</ol>
+
+<h3 class="govuk-heading-s">You will be responsible for managing EV fire risk</h3>
+
+<p class="govuk-body">Landlords, property owners and property managers are responsible for making sure that they check their car parks for potential EV fires.</p>
+
+<p class="govuk-body">This means you must assess the parking area and put in place adequate and proportionate fire protection measures to guard against the risk to life from fire.</p>
+<p class="govuk-body">You must also maintain these measures and update them as necessary when installing EV chargepoints. Your duties are covered in the <a rel="noreferrer noopener" target="_blank" href="https://www.gov.uk/government/publications/regulatory-reform-fire-safety-order-2005-guidance-note-enforcement">Regulatory Reform (Fire Safety) Order 2005 (opens a new tab)</a></p>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="create-an-account-before-you-apply">Create an account before you apply</h2>
+
+<p class="govuk-body">To create an account, you will need one of the following:</p>
+<ol class="govuk-list govuk-list--bullet">
+  <li>company registration number</li>
+  <li>VAT registration number</li>
+</ol>
+
+<p class="govuk-body">You will also need:</p>
+<ol class="govuk-list govuk-list--bullet">
+  <li>access to an email address</li>
+  <li>UK mobile phone with signal as we will send you a security code</li>
+</ol>
+
+<p class="govuk-body">If you are a linked enterprise, you must apply through your controlling company using their company registration number.</p>
+
+<p><a href="https://ev-grants.herokuapp.com/CarPark/iteration01/landlord-application/start">Create an account or sign in</a><p>
+
+
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="information-you-need-for-the-application">Information you need for the application</h2>
+
+<p class="govuk-body">If you are applying for a grant you need to create an account where you can manage your applications.</p>
+
+<ol class="govuk-list govuk-list--number">
+<li>Get a quote from the installer.</li>
+<li>Get your installer’s OZEV number.</li>
+<li>Know how many parking bays the car park has, overall. This includes those bays that will not have infrastructure or chargepoints.</li>
+<li>Have a note of the car park’s address </li>
+<li>Understand how many parking bays the infrastructure will enable and how many chargepoint sockets you want to install now.</li>
+</ol>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="apply-for-EV-residential-infrastructure-grant">Apply for the residential EV car park grant</h2>
+
+<p class="govuk-body">When you are sure you understand how the grant works and you have agreed with your installer what work they will carry out, you can start your application.</p>
+
+<p class="govuk-body"><a rel="noreferrer noopener" target="_blank" href="https://ev-grants.herokuapp.com/CarPark/iteration01/landlord-application/signIn">Sign in or create an account and start your application (opens a new tab)</a></p>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="rules">Grant rules and restrictions</h2>
+
+<ul class="govuk-list govuk-list--bullet">
+<li>You can apply for one address per application. There may be multiple residences in one property that share the car park and multiple chargepoint sockets can be applied for in the same application.</li>
+<li>Each application should be treated as one job and have a single invoice.</li>
+<li>A twin or double chargepoint counts as 2 chargepoint sockets.</li>
+<li>One application should be handled by one installer. If you use multiple installers you will need to submit multiple applications.</li>
+<li>The grant approved amount is valid for 90 days from the application submission date. If the work is not completed within 90 days you will have the option to extend the approval period for another 90 days.</li>
+</ul>
+
+<p class="govuk-body">OZEV reserves the right to take whatever action it thinks is appropriate if there is any evidence of:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>grant requirements not being upheld</li>
+    <li>fraudulent activity</li>
+  <li>misuse of government funding by any party</li>
+</ul>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-7" id="other-grants">Other help you can get</h2>
+<p class="govuk-body">There are other grants available for:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li><a href="https://www.gov.uk/guidance/workplace-charging-scheme-guidance-for-applicant">Businesses</a> - Workplace charging scheme (WCS)</li>
+  <li><a href="https://energysavingtrust.org.uk/grants-and-loans/domestic-charge-point-funding/">Energy Savings Trust</a> - Domestic chargepoint funding in Scotland</li>
+  <li><a href="https://www.gov.uk/government/publications/customer-guidance-electric-vehicle-homecharge-scheme/electric-vehicle-homecharge-scheme-guidance-for-customers">EV Homecharge Scheme (EVHS)</a> - for tenants only</li>
+</ul>
+
+</div>
+
+
+{% endblock %}
