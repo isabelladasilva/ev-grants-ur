@@ -33,7 +33,7 @@ module.exports = function (router) {
   //landlord - number of parking spaces
   router.post('/landlord-parking', function (req, res)
   {
-    if (req.session.data['parking-spaces1'] == "1 to 4") {
+    if (req.session.data['parking-spaces'] == "1-4") {
       res.redirect(landlordPath + '/ineligible-parking');
     } else {
       res.redirect(landlordPath + '/parking');
@@ -42,7 +42,7 @@ module.exports = function (router) {
 
 
   //What type of account does the user need
-  router.post('/your-account-type', function (req, res){
+  router.post('/3/your-account-type', function (req, res){
         if (req.session.data['business_type'] == "landlord") {
         res.redirect(basicPath + '/landlordReg/email')
         } else if (req.session.data['business_type'] == "pmc") {
@@ -54,7 +54,7 @@ module.exports = function (router) {
       }})
 
       //Is the user a linked enterprise
-      router.post('/linked-enterprise-choice', function (req, res)
+      router.post('/3/linked-enterprise-choice', function (req, res)
       {
         if (req.session.data['linked_type'] == "yes") {
           res.redirect(smePath + '/id-linked-enterprise');
@@ -64,19 +64,19 @@ module.exports = function (router) {
       })
 
       //SME - Number of employees
-      router.post('/no-of-employees', function (req, res){
-            if (req.session.data['employees'] == "1 to 9") {
+      router.post('/3/no-of-employees', function (req, res){
+            if (req.session.data['employees'] == "0 to 9") {
             res.redirect(smePath + '/check-answers')
           } else if (req.session.data['employees'] == "10 to 49") {
             res.redirect(smePath + '/check-answers')
-          } else if (req.session.data['employees'] == "50 to 250") {
+          } else if (req.session.data['employees'] == "50 to 249") {
           res.redirect(smePath + '/check-answers')
             } else {
             res.redirect(smePath + '/cannot-proceed-employees')
           }})
 
           //SME - Chargepoints for staff or fleet use
-          router.post('/staff-or-fleet', function (req, res)
+          router.post('/3/staff-or-fleet', function (req, res)
           {
             if (req.session.data['fleet'] == "yes") {
               res.redirect(smeAppPath + '/declaration');
@@ -86,7 +86,7 @@ module.exports = function (router) {
           })
 
           //SME - number of parking spaces
-          router.post('/sme-parking-spaces', function (req, res)
+          router.post('/3/sme-parking-spaces', function (req, res)
           {
             if (req.session.data['parking-spaces'] == "1 to 4") {
               res.redirect(smeAppPath + '/cannot-proceed-parking');
@@ -96,7 +96,7 @@ module.exports = function (router) {
           })
 
           //PMC - number of parking spaces
-          router.post('/pmc-parking-spaces', function (req, res)
+          router.post('/3/pmc-parking-spaces', function (req, res)
           {
             if (req.session.data['parking-spaces'] == "1 to 4") {
               res.redirect(pmcAppPath + '/cannot-proceed-parking');
