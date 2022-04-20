@@ -36,8 +36,10 @@ Business type
       <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
           <h1 class="govuk-fieldset__heading">
-            What type of account do you need?
+            Why do you want to create an account?
           </h1>
+
+          <p>Tell us what you want to do, so we can create the right account for you.</p>
         </legend>
         <span id="passport-issued-error" class="govuk-error-message">
 
@@ -46,39 +48,24 @@ Business type
           <div class="govuk-radios__item">
             <input class="govuk-radios__input" id="business_type" name="business_type" type="radio" value="landlord" data-aria-controls="conditional-business">
             <label class="govuk-label govuk-radios__label" for="business_type">
-              Landlord
+              I want chargepoints for people who rent or lease in my property
             </label>
-            <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
-              You are:
-              <ul class="govuk-list govuk-list--bullet govuk-hint">
-                <li>the freeholder or leaseholder applying for properties you own or let</li>
-                <li>leaseholders applying as a Right to Manage company (RTM)</li>
-                <li>or a property factor in Scotland </li>
-              </ul>
-
-            </div>
           </div>
 
           <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
             <div class="govuk-radios__item">
               <input class="govuk-radios__input" id="business_type2" name="business_type" type="radio" value="pmc" data-aria-controls="conditional-business-2">
               <label class="govuk-label govuk-radios__label" for="business_type2">
-                Property management company
+                I want chargepoints on behalf of my landlord and property managing clients
               </label>
-              <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
-                You are the representative or managing agent of one or more landlords applying on behalf of your clients.
-            </div>
             </div>
 
             <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="business_type4" name="business_type" type="radio" value="sme" data-aria-controls="conditional-business-4">
                 <label class="govuk-label govuk-radios__label" for="business_type4">
-                Small to medium enterprise (SME)
+                I want chargepoints for my staff and fleet car park
                 </label>
-                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
-                  You are the owner of an SME applying to install infrastructure and chargepoints for commercial use. 
-                </div>
               </div>
 
         </div>
@@ -88,11 +75,8 @@ Business type
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="business_type3" name="business_type" type="radio" value="installer" data-aria-controls="conditional-business-3">
                 <label class="govuk-label govuk-radios__label" for="business_type3">
-                Installer
+                I want to claim grant for chargepoints I install for my customers
                 </label>
-                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
-                  You are the installer whose company is responsible for installing the chargepoint. 
-                </div>
               </div>
 
         </div>

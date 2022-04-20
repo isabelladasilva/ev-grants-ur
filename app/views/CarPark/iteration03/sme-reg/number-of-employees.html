@@ -25,7 +25,7 @@ How many employees does your company have?
 
 {% block content %}
 
-<form class="form" action="/no-of-employees" method="post">
+<form class="form" action="/3/no-of-employees" method="post">
 
 
 <div class="govuk-form-group">
@@ -36,9 +36,9 @@ How many employees does your company have?
     </legend>
     <div class="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="employees" name="employees" type="radio" value="1 to 9">
+        <input class="govuk-radios__input" id="employees" name="employees" type="radio" value="0 to 9">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-          1 to 9 employees
+          0 to 9 employees
         </label>
       </div>
       <div class="govuk-radios__item">
@@ -48,24 +48,18 @@ How many employees does your company have?
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="employees3" name="employees" type="radio" value="50 to 250">
+        <input class="govuk-radios__input" id="employees3" name="employees" type="radio" value="50 to 249">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
-          50 to 250 employees
+          50 to 249 employees
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="employees4" name="employees" type="radio" value="More than 250">
+        <input class="govuk-radios__input" id="employees4" name="employees" type="radio" value="More than 249">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
-          More than 250 employees
+          More than 249 employees
         </label>
       </div>
-      <p>or</p>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="employees5" name="employees" type="radio" value="No employees">
-        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
-          I don't have any employees
-        </label>
-      </div>
+
 
   </fieldset>
 </div>

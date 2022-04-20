@@ -1,7 +1,7 @@
 {% extends "layout-pmc.html" %}
 
 {% block pageTitle %}
-Claim declined
+Claim completed
 {% endblock %}
 
 {% block beforeContent %}
@@ -41,9 +41,9 @@ Claim declined
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    <h1 class="govuk-heading-xl">Claim declined</h1>
+    <h1 class="govuk-heading-xl">Claim approved</h1>
 
-      <p>This claim has been declined because you did not meet the eligibility criteria. You cannot resubmit it.</p>
+    <p>The grant claim submitted by your installer has been approved.</p>
 
       <dl class="govuk-summary-list govuk-!-margin-top-7">
         <h1 class="govuk-heading-m">Claim summary</h1>
@@ -52,7 +52,7 @@ Claim declined
             Grant type
           </dt>
           <dd class="govuk-summary-list__value">
-            EV infrastructure grant for staff and fleets
+            EV infrastructure grant for residential car parks
           </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -109,12 +109,12 @@ Claim declined
             Status of claim
           </dt>
           <dd class="govuk-summary-list__value">
-            <strong class="govuk-tag govuk-tag--grey">Declined</strong>
+            <strong class="govuk-tag govuk-tag--green">Completed</strong>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Date the claim was declined
+            Date the claim was approved
           </dt>
           <dd class="govuk-summary-list__value">
           13 December 2021
@@ -300,7 +300,131 @@ Claim declined
         </dl>
 
 
-            <a class="govuk-button" href="dashboard">Back to dashboard</a>
+
+      <a class="govuk-button" href="dashboard">Back to dashboard</a>
+
+        <!-- <h1 class="govuk-heading-m">Claim history</h1>
+
+
+        <div class="moj-timeline">
+
+        <div class="moj-timeline__item">
+
+        <div class="moj-timeline__header">
+          <h2 class="moj-timeline__title">Claim complete</h2>
+
+          <p class="moj-timeline__byline">by OZEV</p>
+
+        </div>
+
+        <p class="moj-timeline__date">
+          <time datetime="2019-06-14T14:01:00.000Z">13 December 2021 at 14:00</time>
+        </p>
+
+        <div class="moj-timeline__description">
+          <p>The claim is now completed and your installer will receive payment.</p>
+        </div>
+
+
+        </div>
+
+        <div class="moj-timeline__item">
+
+        <div class="moj-timeline__header">
+          <h2 class="moj-timeline__title">Claim resubmitted</h2>
+
+          <p class="moj-timeline__byline">by Electric City Installers</p>
+
+        </div>
+
+        <p class="moj-timeline__date">
+          <time datetime="2019-05-28T10:45:00.000Z">17 October 2021 at 10:45</time>
+        </p>
+
+        <div class="moj-timeline__description">
+          <p>Evidence was resubmitted to OZEV.</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li><a class="govuk-link" href="#">View claim</a></li>
+          </ul>
+        </div>
+
+        </div>
+
+
+        <div class="moj-timeline__item">
+
+        <div class="moj-timeline__header">
+          <h2 class="moj-timeline__title">Claim submitted</h2>
+
+          <p class="moj-timeline__byline">by Electric City Installers</p>
+
+        </div>
+
+        <p class="moj-timeline__date">
+          <time datetime="2019-05-28T10:45:00.000Z">17 October 2021 at 10:45</time>
+        </p>
+
+        <div class="moj-timeline__description">
+          <ul class="govuk-list govuk-list--bullet">
+            <li><a class="govuk-link" href="#">View claim</a></li>
+          </ul>
+        </div>
+
+        </div>
+
+        <div class="moj-timeline__item">
+
+        <div class="moj-timeline__header">
+          <h2 class="moj-timeline__title">Claim started</h2>
+
+          <p class="moj-timeline__byline">by Electric City Installers</p>
+
+        </div>
+
+        <p class="moj-timeline__date">
+          <time datetime="2019-05-21T13:15:00.000Z">15 October 2021 at 15:00</time>
+        </p>
+
+        </div>
+
+        <div class="moj-timeline__item">
+
+        <div class="moj-timeline__header">
+          <h2 class="moj-timeline__title">Eligibility confirmed</h2>
+
+          <p class="moj-timeline__byline">by OZEV</p>
+
+        </div>
+
+        <p class="moj-timeline__date">
+          <time datetime="2019-05-21T13:15:00.000Z">21 September 2021 at 17:00</time>
+        </p>
+        <div class="moj-timeline__description">Your application has been received – reference 390466</div>
+
+        </div>
+
+        <div class="moj-timeline__item">
+
+        <div class="moj-timeline__header">
+          <h2 class="moj-timeline__title">Application submitted</h2>
+
+          <p class="moj-timeline__byline">by Bluetick Properties</p>
+
+        </div>
+
+        <p class="moj-timeline__date">
+          <time datetime="2019-05-28T10:45:00.000Z">21 September 2021 at 16:00</time>
+        </p>
+
+        <div class="moj-timeline__description">
+          <ul class="govuk-list govuk-list--bullet">
+            <li><a class="govuk-link" href="#">View application</a></li>
+          </ul>
+        </div>
+
+        </div>
+
+          </div>-->
 
 
   </div>

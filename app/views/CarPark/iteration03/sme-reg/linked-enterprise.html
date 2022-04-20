@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Is your business part of a linked enterprise?
+Is your company part of a linked enterprise?
 {% endblock %}
 
 {% block beforeContent %}
@@ -28,19 +28,19 @@ Is your business part of a linked enterprise?
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    <form class="form" action="/linked-enterprise-choice" method="post">
+    <form class="form" action="/3/linked-enterprise-choice" method="post">
 
     <div class="govuk-form-group-govuk">
       <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
           <h1 class="govuk-fieldset__heading">
-            Is your business a linked enterprise?
+            Is your company part of a linked enterprise?
           </h1>
         </legend>
 
-        <p class="govuk-body govuk-!-margin-top-5">If another organisation controls your enterprise, then your business is a linked enterprise.</p>
-
-
+        <p class="govuk-body govuk-!-margin-top-5">Most enterprises and companies are independent and are not linked enterprises.</p>
+        
+        <p class="govuk-body govuk-!-margin-top-5">A linked enterprise is directly or indirectly owned or controlled by another enterprise.</p>
 
         <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
           <div class="govuk-radios__item">
@@ -58,33 +58,36 @@ Is your business part of a linked enterprise?
               </label>
             </div>
 
-            <details class="govuk-details govuk-!-margin-top-5" data-module="govuk-details">
-            <summary class="govuk-details__summary">
-              <span class="govuk-details__summary-text">
-                What is a linked enterprise
-              </span>
-            </summary>
-            <div class="govuk-details__text">
+      <details class="govuk-details govuk-!-margin-top-7" data-module="govuk-details">
 
-              <p class="govuk-body">A linked enterprise is a group of enterprises, businesses, franchises or companies that are treated as a single undertaking when applying for government funding.</p>
-              <p class="govuk-body">The grant limit applies to all parts of a linked enterprise and the number of chargepoint sockets available to you will depend on the number of grants allocated to all the organisations in that linked enterprise</p>
-              <p class="govuk-body">A group of linked enterprises will be treated as a single undertaking when one of the following is true:</p>
-
-          <ul class="govuk-list govuk-list--bullet">
-                <li>one enterprise has a majority of the shareholders’ or members’ voting rights in another enterprise</li>
-                <li>one enterprise has the right to appoint or remove a majority of the members of the administrative, management or supervisory body of another enterprise</li>
-                <li>one enterprise has the right to exercise a dominant influence over another enterprise, pursuant to a contract entered into with that enterprise or to a provision in its memorandum or articles of association</li>
-                <li>one enterprise, which is a shareholder in or member of another enterprise, controls alone – pursuant to an agreement with other shareholders in or members of that enterprise – a majority of shareholders’ or members’ voting rights in that enterprise</li>
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              What is a linked enterprise
+            </span>
+          </summary>
+            <div class="govuk-details__text ">
+              <p>Linked enterprises are enterprises which have any of the following relationships with each other:</p>
+              <ul class="govuk-list govuk-list--bullet ">
+              <li>if your company is not a partner with or linked to another enterprise then you are not a linked enterprise</li>
+              <li>if your company is independent and it does not have any other company participating in it, then it is not a linked enterprise</li>
+              <li>if another company or enterprise has a large stake in your company, it is likely that your company is a linked enterprise</li>
+              <li>if another company or enterprise controls your company it is likely that your company is a linked enterprise</li>
               </ul>
-
-              <p class="govuk-body">Enterprises having any of these relationships through one or more other enterprises will also be considered to be a single undertaking.</p>
-
-              <h3 class="govuk-heading-s">
+              <h3 class="govuk-heading-s govuk-!-margin-top-4">
                 Example of a linked enterprise:
               </h3>
-              <p class="govuk-body">Company A has a majority shareholding in company B, C, and D.  Therefore A, B, C and D are linked enterprises and considered as a single entity when they apply for government funding. Companies C and D have claimed grants for 10 chargepoint sockets, so there are 190 chargepoints that could be claimed by A and B for the year.</p>
+              <p class="govuk-body">Volkswagen Group UK is a company that works like a linked enterprise (or controlling enterprise). Some of its brands include:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                    <li>Volkswagen</li>
+                    <li>Audi</li>
+                    <li>SEAT</li>
+                    <li>ŠKODA</li>
+                    <li>Volkswagen Commercial Vehicles</li>
+                  </ul>
+              <p class="govuk-body">Take Audi as an example. If Audi want to apply for a chargepoint grant they need to use the Volkswagen Group UK number. That is their controlling company's number, not their Audi Companies House number.</p>
+              <p class="govuk-body">If you are still unsure about being a linked enterprise there is more information in the <a href="https://www.gov.uk/hmrc-internal-manuals/international-manual/intm412100">HMRC internal manual</a> and the <a href="https://ec.europa.eu/growth/smes/sme-definition_en">European Commission User guide</a> to the SME Definition.</p>
             </div>
-            </details>
+        </details>
 
       </fieldset>
 

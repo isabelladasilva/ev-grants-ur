@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Enter the linked enterprise company registration number
+Enter the company registration number of the enterprise that owns or controls your company
 {% endblock %}
 
 {% block beforeContent %}
@@ -31,23 +31,25 @@ Enter the linked enterprise company registration number
       <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
           <h1 class="govuk-fieldset__heading">
-            Enter the linked enterprise company registration number
+           Enter the company registration number of the enterprise that owns or controls your company
           </h1>
         </legend>
 
-        <p class="govuk-body govuk-!-margin-top-7">We will use this to confirm the business details of the enterprise that controls your organisation.</p>
+        <p class="govuk-body govuk-!-margin-top-7">We will use this number to confirm the details of your linked enterprise company.</p>
+        <p class="govuk-body govuk-!-margin-top-7">The company registration number is the best number to use for a fast registration.</p>
         <br>
         <div class="govuk-form-group">
           <label class="govuk-label" for="address-county">
             Company registration number
           </label>
           <div id="hint" class="govuk-hint">
-        This is the number assigned by Companies House when a company is formed and officialy registered
+        Companies House provides this number when a company registers with them.
       </div>
           <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
           <br>
           <br>
           <p><a class="govuk-link" href="company-identification-vat">I don't have a company registration number</a></p>
+          <p>You can use the VAT registration number of your controlling enterprise. Ask them for this information.</p>
 
       </fieldset>
     </div>
